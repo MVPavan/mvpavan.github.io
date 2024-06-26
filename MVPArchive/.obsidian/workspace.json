@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "459eb07e91486f8e",
+        "id": "dbc71a41fbdc9e71",
         "type": "tabs",
         "children": [
           {
-            "id": "c9a58f862d52a51a",
+            "id": "b9dbd77c5a1786ed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Shortcuts.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shortcuts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shortcuts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Shortcuts.md"
-              }
+              "state": {}
             }
           },
           {
@@ -154,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9a58f862d52a51a",
+  "active": "b9dbd77c5a1786ed",
   "lastOpenFiles": [
     "Shortcuts.md",
     "mvpavan.github.io/index.html",
