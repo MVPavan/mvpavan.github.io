@@ -1,2 +1,66 @@
 # theme: minima
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
+
+title: MVPavan's Notes
+email: mvpavan42@gmail.com
+description: >-
+  Welcome to my GitHub Pages site.
+baseurl: "" # leave this empty for GitHub Pages
+url: "https://mvpavan.github.io" # replace with your GitHub Pages URL
+
+# Build settings
+# theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
+
+# Add other configurations as needed
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+livereload: true
+footer_menu: example_footer_menu
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+  - jekyll-redirect-from
+
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+
+
+cookie_policy: /cookie-policy/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "M V Pavan"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
+
+collections:
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false

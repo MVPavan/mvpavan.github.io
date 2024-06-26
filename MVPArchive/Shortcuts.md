@@ -1,3 +1,12 @@
+---
+layout: page
+title: Obsidian
+subtitle: Getting Started
+# menubar: docs_menu
+show_sidebar: false
+toc: true
+---
+
 ### Obsidian Heading and Formatting Shortcuts
 
 Obsidian uses Markdown for formatting, and here are some essential shortcuts to enhance your note-taking experience:
