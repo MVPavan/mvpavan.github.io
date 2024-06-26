@@ -1,0 +1,131 @@
+
+################### Triton ###################
+tritonserver --model-repository=/model_repo --grpc-infer-allocation-pool-size=16 --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose=1 --trace-file=/tmp/trace.json --trace-rate=100 --trace-level=TIMESTAMPS --trace-log-frequency=50 --trace-count=200
+
+tritonserver --model-control-mode=explicit --model-repository=/model_repo --grpc-infer-allocation-pool-size=16 --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose=1
+
+tritonserver --model-control-mode=explicit --model-repository=/model_repo --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose 0
+
+tritonserver --model-control-mode=poll --model-repository=/model_repo --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose 0
+
+curl -X POST localhost:8000/v2/repository/models/irra_vision/load
+curl -X POST localhost:8000/v2/repository/models/irra_vision/unload
+
+
+################### DeepStream ###################
+
+GST_DEBUG=nvdspreprocess:5 DS_CUSTOM_SEQUENC_DEBUG=1 python3 run_ds.py
+
+sudo dot -Tsvg 0.00.00.082814307-pipeline_rtsp.dot -o pipeline.svg
+./gstshark-plot /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/gst_logs/gstshark -s tracer.pdf -l extern
+nsys profile --stats=true -o /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/reports/triton_numpy tritonserver --model-control-mode=explicit --model-repository=/model_repo --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose 0
+
+################### TensorRT ###################
+
+/usr/src/tensorrt/bin/trtexec 
+--onnx=/model_repo/yolov7_nms/1/model.onnx
+--minShapes=images:1x3x640x640 --optShapes=images:1x3x640x640 --maxShapes=images:1x3x640x640
+--fp16 / --best /--int8
+--calib=identity-calib-new.cache (if best)
+--inputIOFormats=fp16:chw --outputIOFormats=fp16:chw 
+--saveEngine=yolox_best_2212.plan
+--memPoolSize=workspace:10282 (optional)
+
+
+/usr/src/tensorrt/bin/trtexec --onnx=clip_img_rstp.onnx \
+--minShapes=img_input:1x3x384x128 --optShapes=img_input:8x3x384x128 --maxShapes=img_input:32x3x384x128 --fp16 \
+ --inputIOFormats=fp16:chw --outputIOFormats=fp16:chw --saveEngine=clip_img_rstp.plan
+ 
+/usr/src/tensorrt/bin/trtexec --onnx=clip_txt_rstp.onnx \
+--minShapes=txt_input:1x77 --optShapes=txt_input:1x77 --maxShapes=txt_input:1x77 --fp16 --saveEngine=clip_txt_rstp.plan
+
+
+################### perf and model analyzer ###################
+
+perf_analyzer -m irra_text_trt --concurrency-range 1:4 -b 1  -i grpc --shared-memory=cuda
+
+perf_analyzer -m ensemble_yolox --concurrency-range 1:4 -b 32  -i grpc --verbose-csv --collect-metrics --measurement-interval 20000 -f ensemble_yolox_perf.csv
+
+perf_analyzer \
+        -m irra_vision \
+        --concurrency-range 1:16 \
+        -b 32 \
+        -i grpc \
+        --verbose-csv \
+        --collect-metrics \
+        --measurement-interval 20000 \
+        -f irra_vision_perf.csv \
+		
+perf_analyzer \
+        -m irra_vision_trt \
+        --concurrency-range 1:8 \
+        -b 16 \
+        -i grpc \
+        --verbose-csv \
+        --collect-metrics \
+        --measurement-interval 200000 \
+        -f irra_vision_trt_perf.csv
+
+model-analyzer profile \
+    --model-repository /data/triton_model_repo \
+    --profile-models yolox_best --triton-launch-mode=docker \
+    --output-model-repository-path /home/adminlinux/model_analyzer_output/yolox_ma_test/yolox_best
+    --export-path profile_results
+
+
+model-analyzer profile \
+    --model-repository /model_repo \
+    --profile-models ensemble_yolox --triton-launch-mode=remote \
+    --output-model-repository-path /data/model_analyzer_output/ensemble_yolox
+    --export-path profile_results
+		
+################### nysy ###################
+
+nsys profile --stats=true -o reports/A2_32_yolox_best_12fps_triton  python3 run_ds.py
+nsys stats report3.sqlite > report3.log
+
+nsys profile --stats=true -o /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/reports/triton  python3 run_triton.py
+nsys stats /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/reports/triton.sqlite > /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/reports/triton.log
+
+nsys profile --stats=true -o /home/adminlinux/acvs-tycoai-ds-triton-benchmark/benchmark_scripts/reports/triton_fp16 tritonserver --model-repository=/model_repo --grpc-infer-allocation-pool-size=16 --exit-on-error=false --allow-metrics=true --allow-gpu-metrics=true --log-verbose=0 --model-control-mode=explicit --load-model=ensemble_yolox --load-model=yolox_postprocess --load-model=yolox --load-model=yolox_preprocess
+
+################### TAO ###################
+
+/data/CODES/nvidia_manthana/opensource/tao_converter/tao-converter resnet34_peoplenet_int8.etlt \
+              -c resnet34_peoplenet_int8.txt \
+              -k tlt_encode \
+              -d 3,544,960 \
+              -o output_cov/Sigmoid,output_bbox/BiasAdd \
+              -t fp16 \
+              -m 16 \
+              -e model_fp16.plan
+
+./tao-converter ../models/peoplenet_v261/resnet34_peoplenet_int8.etlt \
+              -c ../models/peoplenet_v261/resnet34_peoplenet_int8.txt \
+              -k tlt_encode \
+              -d 3,544,960 \
+              -o output_cov/Sigmoid,output_bbox/BiasAdd \
+              -t int8 \
+              -m 32 \
+              -e /model_repo/peoplenet_tao/2/model.plan		  
+
+python tao_client.py \
+      /data/nvidia_local/data/coco_yolo_c10_val \
+      -m peoplenet_tao \
+      -x 1 \
+      -b 8 \
+      --mode DetectNet_v2 \
+      --class_list person,bag,face \
+      -i grpc \
+      -u 127.0.0.1:8001 \
+      --async \
+      --output_path /data/nvidia_local/data/coco_yolo_c10_val_peoplenet \
+      --postprocessing_config /data/nvidia_local/tao-toolkit-triton-apps/tao_triton/python/clustering_specs/clustering_config_peoplenet.prototxt
+
+####################################################################
+
+docker run -d --gpus all -i -t --name tyco_triton --privileged=true --cap-add=SYS_ADMIN --network=host \
+      --shm-size=2g --ulimit memlock=-1 --ulimit stack=67108864 --security-opt apparmor:unconfined \
+      -v /etc/localtime:/etc/localtime:ro -v /opt/models:/model_repo --entrypoint /bin/bash tycoai_triton_server:gpu-full
+
+
