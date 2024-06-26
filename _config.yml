@@ -10,7 +10,7 @@ url: "https://mvpavan.github.io" # replace with your GitHub Pages URL
 
 # Build settings
 # theme: bulma-clean-theme
-remote_theme: chrisrhymes/bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 
 # Add other configurations as needed
 markdown: kramdown

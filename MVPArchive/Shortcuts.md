@@ -57,6 +57,3 @@ These shortcuts will help you quickly format and structure your notes in Obsidia
 - [Bulma – A clean, modern Jekyll theme – Jekyll Themes](https://jekyllthemes.io/theme/bulma)
 - [Hyde – A brazen two-column theme – Jekyll Themes](https://jekyllthemes.io/theme/hyde)
 - [Forty – Landing page and portfolio theme – Jekyll Themes](https://jekyllthemes.io/theme/forty-jekyll-theme)
-
-
-![[gates_error.png]]
