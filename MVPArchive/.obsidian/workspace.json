@@ -128,9 +128,17 @@
                 "file": "Shortcuts.md"
               }
             }
+          },
+          {
+            "id": "b24d3c3e912de583",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",

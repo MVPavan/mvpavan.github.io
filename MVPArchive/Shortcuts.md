@@ -44,4 +44,7 @@ Obsidian uses Markdown for formatting, and here are some essential shortcuts to 
 
 These shortcuts will help you quickly format and structure your notes in Obsidian.
 
-obsidian://open?vault=MVPArchive&file=Shortcuts
+### Best Jekyll themes
+- [Bulma – A clean, modern Jekyll theme – Jekyll Themes](https://jekyllthemes.io/theme/bulma)
+- [Hyde – A brazen two-column theme – Jekyll Themes](https://jekyllthemes.io/theme/hyde)
+- [Forty – Landing page and portfolio theme – Jekyll Themes](https://jekyllthemes.io/theme/forty-jekyll-theme)
