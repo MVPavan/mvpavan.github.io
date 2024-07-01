@@ -1,2 +1,3 @@
 
 Types of distributed training:
+- 
