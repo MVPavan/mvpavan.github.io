@@ -11,8 +11,12 @@
             "id": "b9dbd77c5a1786ed",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Shortcuts.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Shortcuts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Shortcuts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Shortcuts.md"
+              }
             }
           },
           {
@@ -146,8 +154,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9dbd77c5a1786ed",
+  "active": "5425c8d10821d8cf",
   "lastOpenFiles": [
+    "Untitled",
+    "AI",
     "Shortcuts.md",
     "mvpavan.github.io/index.html",
     "mvpavan.github.io/_config.yml",
@@ -165,7 +175,6 @@
     "gen2_commands.txt",
     "EdgeAI.drawio",
     "gates_error.png",
-    "Untitled.canvas",
-    "Untitled"
+    "Untitled.canvas"
   ]
 }
