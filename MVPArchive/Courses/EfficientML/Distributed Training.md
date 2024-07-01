@@ -7,4 +7,5 @@ Types of distributed training:
 	- Deepspeed:
 		- Zero - 1,2,3
 - Pipeline Parallel:
-- Tensor Parallel
+- Tensor Parallel:
+- 
