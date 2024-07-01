@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "Courses/EfficientML/Distributed Training.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "Courses/EfficientML/Distributed Training.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "Courses/EfficientML/Distributed Training.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shortcuts.md"
+                "file": "Courses/EfficientML/Distributed Training.md"
               }
             }
           },
@@ -138,11 +139,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,11 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "b9dbd77c5a1786ed",
   "lastOpenFiles": [
-    "Untitled",
-    "AI",
     "Shortcuts.md",
+    "Courses/EfficientML/Distributed Training.md",
+    "Courses/EfficientML",
+    "Courses",
+    "AI",
     "mvpavan.github.io/index.html",
     "mvpavan.github.io/_config.yml",
     "mvpavan.github.io/README.md",
