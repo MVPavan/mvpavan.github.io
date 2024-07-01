@@ -1,2 +1,2 @@
 
-Types of distribu
+Types of distributed training:
