@@ -1,7 +1,8 @@
 
 ###### Resources:
-	- https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
-	- https://huggingface.co/docs/transformers/v4.20.1/en/perf_train_gpu_many
+- https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
+- [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
+
 
 Types of distributed training:
 - Data Parallel: Replicate model across gpu and distribute data across each gpu.
@@ -36,5 +37,18 @@ Conclusion:
 - The only communication DDP performs per batch is sending gradients, whereas DP does 5 different data exchanges per batch.
 - Under DP gpu 0 performs a lot more work than the rest of the gpus, thus resulting in under-utilization of gpus.
 - By default pytorch recommends DDP over DP, even for single node, multi gpu setup due to python GIL restrictions over multi threading.
+
+
+## Deepspeed ZeRO:
+[ZeRO & DeepSpeed: New system optimizations enable training models with over 100 billion parameters - Microsoft Research](https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters/)
+
+Core deep learning algorithm involves three components for any model apart from inputs:
+1. Parameters
+2. Gradient
+3. Optimizer state
+Thus Deepspeed zero is divided into three stages:
+- Stage 1 - Optimizer State Partitioning (Pos)
+- Stage 2 - Add Gradient Partitioning (Pos+g)
+- Stage 3 - Add Parameter Partitioning (Pos+g+p)
 
 ![[Pasted image 20240703171554.png]]
