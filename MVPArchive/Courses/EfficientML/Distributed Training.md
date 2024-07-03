@@ -3,15 +3,13 @@
 - https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
 
-
 Types of distributed training:
 - Data Parallel: Replicate model across gpu and distribute data across each gpu.
-	- DP
-	- DDP
+	- DP, DDP: User if model fits in single gpu
 	- Deepspeed:
 		- Zero - 1, 2, 3(=FSDP in pytorch)
-- Pipeline Parallel:
-- Tensor Parallel:
+- Pipeline Parallel
+- Tensor Parallel
 
 ![[Pasted image 20240703184727.png]]
 
@@ -86,6 +84,7 @@ Split a weight tensor into N chunks, parallelize computation and aggregate resul
 ![[Pasted image 20240703185009.png]]
 ![[Pasted image 20240703185030.png]]
 
-
-
+There are libraries which support 3D parallelism out of the box, below are a few.
+- Deepspeed
+- Nvidia Nemo.
 
