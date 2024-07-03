@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "06c722d207277a28",
+        "id": "68514eb4c158acd5",
         "type": "tabs",
         "children": [
           {
-            "id": "7c1328f371604e29",
+            "id": "a513e9608e37249a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,22 +147,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c1328f371604e29",
+  "active": "5425c8d10821d8cf",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Distributed Training.md",
+    "Attachments/Pasted image 20240703185030.png",
+    "Attachments",
     "Shortcuts.md",
-    "Courses/EfficientML/Distributed Training.md",
-    "Pasted image 20240703185030.png",
-    "Pasted image 20240703185009.png",
-    "Pasted image 20240703184944.png",
-    "Pasted image 20240703184727.png",
-    "Pasted image 20240703184602.png",
-    "Pasted image 20240703184517.png",
-    "Pasted image 20240703183721.png",
-    "Pasted image 20240703183650.png",
-    "Pasted image 20240703174204.png",
-    "Pasted image 20240703173906.png",
-    "Courses/EfficientML",
-    "Courses",
+    "Attachments/Pasted image 20240703185009.png",
+    "Attachments/Pasted image 20240703184944.png",
+    "Attachments/Pasted image 20240703184727.png",
+    "Attachments/Pasted image 20240703184602.png",
+    "Attachments/Pasted image 20240703184517.png",
+    "Attachments/Pasted image 20240703183721.png",
+    "Attachments/Pasted image 20240703183650.png",
+    "Attachments/Pasted image 20240703174204.png",
+    "Attachments/Pasted image 20240703173906.png",
+    "AI/Courses/EfficientML",
+    "AI/Courses",
     "AI",
     "mvpavan.github.io/index.html",
     "mvpavan.github.io/_config.yml",
@@ -177,7 +178,6 @@
     "Untitled 1.md",
     "TYCOAI_Architecture.pdf",
     "gen2_commands.txt",
-    "EdgeAI.drawio",
     "Untitled.canvas"
   ]
 }
