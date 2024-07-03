@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dbc71a41fbdc9e71",
+        "id": "7431ce43ecdbfb8c",
         "type": "tabs",
         "children": [
           {
-            "id": "b9dbd77c5a1786ed",
+            "id": "1f2988ca73f5ca3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -155,10 +155,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9dbd77c5a1786ed",
+  "active": "1f2988ca73f5ca3d",
   "lastOpenFiles": [
-    "Shortcuts.md",
+    "Pasted image 20240703171554.png",
+    "Pasted image 20240703171020.png",
     "Courses/EfficientML/Distributed Training.md",
+    "Shortcuts.md",
     "Courses/EfficientML",
     "Courses",
     "AI",
