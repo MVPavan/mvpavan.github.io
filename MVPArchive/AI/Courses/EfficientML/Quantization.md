@@ -1,7 +1,13 @@
-Contents:
-- [Introduction](#Introduction)
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 
-# Introduction
+## Introduction
 
 - INT8 (1S-7B) = 1 bytes (for INT there is not exponent and mantissa only bits)
 - FP32 (1 sign, 8 exponent, 23 mantissa - 1S-8E-23M) - requires 32 bits to store = 4x8 bits = 4 bytes
@@ -19,7 +25,7 @@ Contents:
 | **BFloat16** | 16          | 1         | 8        | 7        | Good      | ~10^38 |
 | **Int8**     | 8           | 1         | N/A      | N/A      | Avg       | ~2^7   |
 
-# Types of Quantization:
+## Types of Quantization:
 
 Quantization can happen in two ways:
 - Activation Quantization (Calibration)
@@ -53,11 +59,11 @@ Symmetric vs Asymmetric:
 ![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
 
 
-# Quantization in Training:
+## Quantization in Training:
 - Post Training Quantization (PTQ) - All methods above
 - Quantization aware Training (QAT)
 
-#### Quantization aware Training (QAT):
+### Quantization aware Training (QAT):
 - Quantize:
 	- Quantize weight and hold both quantized (BF16) and unquantized (FP32) weights. 
 - Forward Pass:
@@ -70,5 +76,5 @@ One of the famous QAT method is QLoRA:
 - Pretrained weights in 4-bit precision.
 - LoRA in full precision
 
-
+  
 

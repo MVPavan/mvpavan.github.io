@@ -1,5 +1,12 @@
-
-###### Resources:
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+## Resources
 - https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
 
@@ -14,7 +21,7 @@ Types of distributed training:
 
 ![[Pasted image 20240703184727.png]]
 
-## Data Parallel:
+## Data Parallel
 
 | Feature                  | DataParallel (DP)                           | DistributedDataParallel (DDP)                                                          |
 | ------------------------ | ------------------------------------------- | -------------------------------------------------------------------------------------- |
@@ -42,7 +49,7 @@ Conclusion:
 ^82e76e
 
 
-### Deepspeed ZeRO Data Parallel:
+## Deepspeed ZeRO Data Parallel
 [ZeRO & DeepSpeed: New system optimizations enable training models with over 100 billion parameters - Microsoft Research](https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters/)
 
 Core deep learning algorithm involves three components for any model apart from inputs:
@@ -63,7 +70,7 @@ Speed vs Memory:
 - Bandwidth requirement - Zero 3 >  Zero 2 >  Zero 1 
 
 
-## Pipeline Parallel (Model Parallel):
+## Pipeline Parallel (Model Parallel)
 
 Splits the model across gpus, useful if model size larger than single gpu memory.
 
@@ -74,14 +81,14 @@ Splits the model across gpus, useful if model size larger than single gpu memory
 - Good for loading very large models
 - Higher GPU idle time, it can be reduced using micro batches as shown above, still GPU utilization is poor compared to other techniques.
 
-## Tensor Parallel:
+## Tensor Parallel
 
 Split a weight tensor into N chunks, parallelize computation and aggregate results via all reduce.
 
 ![[Pasted image 20240703184517.png]]
 
 
-## 2D & 3D Parallelism:
+## 2D & 3D Parallelism
 
 ![[Pasted image 20240703184944.png]]
 ![[Pasted image 20240703185009.png]]

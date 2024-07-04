@@ -1,11 +1,20 @@
-Terminology:
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+## Introduction:
+
 - Pruning - Making weight/activations to zero such that specific hardware can make use of it.
 - Pruning ratio - Percentage of weights/neurons to be pruned. 60% pruning implies 60% of total neurons are pruned.
 - N:M Sparsity - In each contiguous M elements, N of them are pruned.
 
 ![](attachments/Pasted%20image%2020240704110201.png)
 
-Two types of pruning:
+Two types of pruning: 
 1. Synapses pruning
 2. Neuron pruning
 
