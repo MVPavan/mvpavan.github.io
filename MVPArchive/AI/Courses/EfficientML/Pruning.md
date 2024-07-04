@@ -53,3 +53,10 @@ Channel Pruning:
 
 
 ## Automatic Pruning:
+
+Layer wise pruning:
+- Sensitivity analysis for per layer pruning ratio, by observing accuracy degrade with each pruning ratio.
+![](attachments/Pasted%20image%2020240704151409.png)
+
+AMC: Auto ML for model compression:
+- Pruning 
