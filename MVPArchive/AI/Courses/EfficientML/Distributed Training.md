@@ -4,7 +4,7 @@
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
 
 Types of distributed training:
-- Data Parallel: Replicate model across gpu and distribute data across each gpu.
+- [Distributed Training](Distributed%20Training.md) Data Parallel: Replicate model across gpu and distribute data across each gpu.
 	- DP, DDP: User if model fits in single gpu
 	- Deepspeed:
 		- Zero - 1, 2, 3(=FSDP in pytorch)

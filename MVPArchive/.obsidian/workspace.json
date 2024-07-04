@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Distributed Training.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Distributed Training.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Distributed Training.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md"
+                "file": "AI/Courses/EfficientML/Distributed Training.md"
               }
             }
           },
@@ -157,19 +157,22 @@
   },
   "active": "a513e9608e37249a",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/Pruning.md",
-    "AI/Courses/EfficientML/Untitled",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703185030.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703185009.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703184944.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703184727.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703184602.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703184517.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703183721.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703183650.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703174204.png",
-    "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703173906.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240703171020.png",
+    "AI/Courses/EfficientML/ML Perf.md",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704095840.png",
+    "AI/Courses/EfficientML/attachments",
+    "Pasted image 20240704095619.png",
+    "AI/Courses/EfficientML/Pasted image 20240704095538.png",
+    "AI/Courses/EfficientML/files/Pasted image 20240704095747.png",
+    "AI/Courses/EfficientML/files",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704095711.png",
+    "AI/Courses/EfficientML/Pasted image 20240704095458.png",
+    "AI/Courses/EfficientML/Pasted image 20240704095414.png",
+    "Pasted image 20240704095117.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240703185030.png",
     "AI/Courses/EfficientML/att_distributed_training",
     "AI/Courses/EfficientML/Attachments",
     "Attachments",
@@ -180,7 +183,6 @@
     "mvpavan.github.io/index.html",
     "mvpavan.github.io/_config.yml",
     "mvpavan.github.io/README.md",
-    "mvpavan.github.io/LICENSE",
     "Untitled.md",
     "Untitled 5.md",
     "Untitled 2.md",
