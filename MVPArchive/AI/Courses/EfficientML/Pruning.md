@@ -12,11 +12,6 @@ Two types of pruning:
 ![](attachments/Pasted%20image%2020240704105958.png)
 
 
-![](attachments/Pasted%20image%2020240704110036.png)
-Iterative pruning:
-- Prune pre trained model.
-- finetune pruned model for 1-5 epochs.
-- Iterate pruning and finetuning as requirement.
 
 ![](attachments/Pasted%20image%2020240704110219.png)
 
@@ -30,6 +25,7 @@ Pattern-based pruning:
 - supported from Ampere GPU architecture
 - Maintains accuracy
 ![](attachments/Pasted%20image%2020240704125201.png)
+
 ![](attachments/Pasted%20image%2020240704125326.png)
 
 Channel Pruning:
@@ -59,4 +55,14 @@ Layer wise pruning:
 ![](attachments/Pasted%20image%2020240704151409.png)
 
 AMC: Auto ML for model compression:
-- Pruning 
+- Pruning as RL problem
+
+
+## Iterative Pruning:
+
+![](attachments/Pasted%20image%2020240704110036.png)
+
+Iterative pruning:
+- Prune pre trained model.
+- finetune pruned model for 1-5 epochs.
+- Iterate pruning and finetuning as requirement.
