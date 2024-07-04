@@ -1,3 +1,5 @@
+Terminology:
+- Pruning - Making weight/activations to zero such that 
 
 ![](attachments/Pasted%20image%2020240704110201.png)
 
@@ -17,6 +19,7 @@ Iterative pruning:
 ![](attachments/Pasted%20image%2020240704110219.png)
 
 Fine grained Pruning:
-
+- Flexible pruning indices
+- Usually results in larger pruning ratios.
 
 
