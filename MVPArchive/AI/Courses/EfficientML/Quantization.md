@@ -19,13 +19,53 @@ Contents:
 | **BFloat16** | 16          | 1         | 8        | 7        | Good      | ~10^38 |
 | **Int8**     | 8           | 1         | N/A      | N/A      | Avg       | ~2^7   |
 
-
 # Types of Quantization:
 
-1. K-Means-based Weight Quantization
-2. Linear Quantization
+Quantization can happen in two ways:
+- Activation Quantization (Calibration)
+	- Range of activations varies with input
+	- Use sample input, infer and calculate range of activations for linear quantization. 
+
+- Weight Quantization
+	1. K-Means-based Weight Quantization
+	2. Linear Quantization
+		1. AWQ: Activation aware weight quantization
+		2. GPTQ: GPT Quantized
+		3. BNB: Bits and Bytes Quantized
 
 ### K-Means-based Weight Quantization
 
 ![](attachments/Pasted%20image%2020240704184537.png)
-- cluster weights 
+- cluster weights
+
+### Linear Quantization
+- Symmetric 
+- Asymmetric
+
+An affine mapping of integers to real numbers ==r = S(q-Z)
+
+![](attachments/Pasted%20image%2020240704184804.png)
+
+Full Connected Layer and Conv Layer:
+![](attachments/Pasted%20image%2020240704185026.png)
+
+Symmetric vs Asymmetric:
+![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
+
+
+
+
+
+# Quantization in Training:
+
+#### Quantization aware Training:
+- Quantize:
+	- Quantize weight and hold both quantized and unquantized weights.
+- Forward Pass:
+	- Use Quantized version of model for inference
+- Back Prop:
+	- 
+
+
+
+
