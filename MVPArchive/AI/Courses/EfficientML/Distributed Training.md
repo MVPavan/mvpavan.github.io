@@ -4,12 +4,13 @@
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
 
 Types of distributed training:
-- [Distributed Training](Distributed%20Training.md) Data Parallel: Replicate model across gpu and distribute data across each gpu.
+- [Data Parallel:](#Data%20Parallel): Replicate model across gpu and distribute data across each gpu.
 	- DP, DDP: User if model fits in single gpu
-	- Deepspeed:
+	- [Deepspeed ZeRO Data Parallel:](#Deepspeed%20ZeRO%20Data%20Parallel):
 		- Zero - 1, 2, 3(=FSDP in pytorch)
-- Pipeline Parallel
-- Tensor Parallel
+- [Pipeline Parallel (Model Parallel):](#Pipeline%20Parallel%20(Model%20Parallel))
+- [Tensor Parallel:](#Tensor%20Parallel)
+- [2D & 3D Parallelism:](#2D%20&%203D%20Parallelism)
 
 ![[Pasted image 20240703184727.png]]
 
@@ -37,6 +38,8 @@ Conclusion:
 - Under DP gpu 0 performs a lot more work than the rest of the gpus, thus resulting in under-utilization of gpus.
 
 > By default pytorch recommends DDP over DP, even for single node, multi gpu setup due to python GIL restrictions over multi threading.
+
+^82e76e
 
 
 ### Deepspeed ZeRO Data Parallel:

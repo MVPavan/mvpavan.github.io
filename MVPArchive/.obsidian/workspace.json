@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md"
+                "file": "AI/Courses/EfficientML/Pruning.md"
               }
             }
           },
@@ -157,11 +157,11 @@
   },
   "active": "a513e9608e37249a",
   "lastOpenFiles": [
-    "AI/Courses/EfficientML/DP.md",
-    "AI/Courses/EfficientML/Distributed Training.md",
+    "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Pruning.md",
+    "AI/Courses/EfficientML/Distributed Training.md",
+    "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240703171020.png",
-    "AI/Courses/EfficientML/ML Perf.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704095840.png",
     "AI/Courses/EfficientML/attachments",
     "Pasted image 20240704095619.png",
