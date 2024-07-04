@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md"
+                "file": "AI/Courses/EfficientML/Untitled.md"
               }
             }
           },
@@ -155,8 +155,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "a513e9608e37249a",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Distributed Training.md",
+    "AI/Courses/EfficientML/Untitled.md",
     "AI/Courses/EfficientML/Untitled",
     "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703185030.png",
     "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703185009.png",
@@ -170,7 +172,6 @@
     "AI/Courses/EfficientML/att_distributed_training/Pasted image 20240703173906.png",
     "AI/Courses/EfficientML/att_distributed_training",
     "AI/Courses/EfficientML/Attachments",
-    "AI/Courses/EfficientML/Distributed Training.md",
     "Attachments",
     "Shortcuts.md",
     "AI/Courses/EfficientML",
@@ -180,7 +181,6 @@
     "mvpavan.github.io/_config.yml",
     "mvpavan.github.io/README.md",
     "mvpavan.github.io/LICENSE",
-    "mvpavan.github.io",
     "Untitled.md",
     "Untitled 5.md",
     "Untitled 2.md",
