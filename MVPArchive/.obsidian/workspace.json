@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Quantization.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Quantization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "AI/Courses/EfficientML/Quantization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md"
+                "file": "AI/Courses/EfficientML/Quantization.md"
               }
             }
           },
@@ -157,6 +157,8 @@
   },
   "active": "a513e9608e37249a",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Pruning.md",
+    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704151409.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704151146.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704130512.png",
@@ -167,9 +169,7 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240704110219.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704110201.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704110036.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704105958.png",
     "AI/Courses/EfficientML/Efficient ML.md",
-    "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/attachments",
