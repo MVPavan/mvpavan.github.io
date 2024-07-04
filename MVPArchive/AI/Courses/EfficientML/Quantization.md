@@ -53,19 +53,22 @@ Symmetric vs Asymmetric:
 ![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
 
 
-
-
-
 # Quantization in Training:
+- Post Training Quantization (PTQ) - All methods above
+- Quantization aware Training (QAT)
 
-#### Quantization aware Training:
+#### Quantization aware Training (QAT):
 - Quantize:
-	- Quantize weight and hold both quantized and unquantized weights.
+	- Quantize weight and hold both quantized (BF16) and unquantized (FP32) weights. 
 - Forward Pass:
-	- Use Quantized version of model for inference
+	- Use Quantized version of model for inference (BF16)
 - Back Prop:
-	- 
+	- Use original unquantized version of model weights (FP32)
 
+
+One of the famous QAT method is QLoRA:
+- Pretrained weights in 4-bit precision.
+- LoRA in full precision
 
 
 
