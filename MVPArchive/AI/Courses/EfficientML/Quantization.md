@@ -83,6 +83,22 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 - Back Prop:
 	- Use original unquantized version of model weights (FP32)
 
+## STOA Quantization Techniques
+- LLM.int8
+- GPTQ
+- AWQ
+- QLoRA
+
+
+### LLM.int8
+
+![](attachments/Mixed-int8.gif)
+LLM.int8() seeks to complete the matrix multiplication computation in three steps:
+
+1. From the input hidden states, extract the outliers (i.e. values that are larger than a certain threshold) by column.
+2. Perform the matrix multiplication of the outliers in FP16 and the non-outliers in int8.
+3. Dequantize the non-outlier results and add both outlier and non-outlier results together to receive the full result in FP16.
+
 
 One of the famous QAT method is QLoRA:
 - Pretrained weights in 4-bit precision.
