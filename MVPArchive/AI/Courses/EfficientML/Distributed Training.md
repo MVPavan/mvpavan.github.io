@@ -1,11 +1,10 @@
-```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 0 # Include headings up to the specified level
-includeLinks: true # Make headings clickable
-debugInConsole: false # Print debug info in Obsidian console
-```
+- [[#Resources|Resources]]
+- [[#Data Parallel|Data Parallel]]
+- [[#Deepspeed ZeRO Data Parallel|Deepspeed ZeRO Data Parallel]]
+- [[#Pipeline Parallel (Model Parallel)|Pipeline Parallel (Model Parallel)]]
+- [[#Tensor Parallel|Tensor Parallel]]
+- [[#2D & 3D Parallelism|2D & 3D Parallelism]]
+
 ## Resources
 - https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
