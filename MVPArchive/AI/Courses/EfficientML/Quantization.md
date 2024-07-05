@@ -76,8 +76,6 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 	- Lets say n=32 and using 4-bit SQ, resulting tensor is actually Qed to 4.5 bit
 	- 4-bit (every element is stored in 4 bit) + 0.5 bit (scale in 16 bits for every 32 bits (group size n), 16/32)
 
-
-
 ## Quantization in Training
 - Post Training Quantization (PTQ) - All methods above
 - Quantization aware Training (QAT)
@@ -96,7 +94,6 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 - AWQ
 - QLoRA - NF4
 
-
 ### LLM.int8
 
 ![](attachments/Mixed-int8.gif)
@@ -110,11 +107,20 @@ LLM.int8() seeks to complete the matrix multiplication computation in three step
 
 #### Optimal Brain Quantizer (OBQ)
 
-- **Objective:** Minimize performance degradation by quantizing weights W^​ such that the outputs W^X​ closely match the original outputs WX
-- **Quantization Process:** Quantize the easiest weight first Wq, then adjust remaining non-quantized weights using DeltaF to compensate for the quantization error using the Hessian matrix.
+- **Objective:** Minimize performance degradation by quantizing weights W<sup>^</sup>​ such that the outputs W<sup>^</sup>X​ closely match the original outputs WX
+- **Quantization Process:** Quantize the easiest weight first W<sub>q</sub>, then adjust remaining non-quantized weights using $\delta$<sub>F</sub> to compensate for the quantization error using the Hessian matrix.
 - **Outlier Handling:** Quantize outlier weights immediately to prevent large quantization errors.
-    
-- **Hessian Matrix Adjustment:** Update the Hessian matrix by removing the row and column associated with the quantized weight using Gaussian elimination to avoid redundant computations.
+- **Hessian Matrix Adjustment:** For next iteration update the Hessian matrix by removing the row and column associated with the quantized weight using Gaussian elimination to avoid redundant computations.
+
+![](attachments/Pasted%20image%2020240705172944.png)
+
+#### GPTQ Algorithm
+1. The GPTQ algorithm begins with a Cholesky decomposition of the Hessian inverse (a matrix that helps decide how to adjust the weights)
+2. It then runs in loops, handling batches of columns at a time.
+3. For each column in a batch, it quantizes the weights, calculates the error, and updates the weights in the block accordingly.
+4. After processing the batch, it updates all remaining weights based on the block’s errors.
+
+![](attachments/Pasted%20image%2020240705173101.png)
 
 ### QLoRA NF4
 

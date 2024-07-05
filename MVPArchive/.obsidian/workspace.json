@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b2580277a194a1f0",
+        "id": "e7d09725c9d94be4",
         "type": "tabs",
         "children": [
           {
-            "id": "8e15dbf5f7412d40",
+            "id": "6f1b43561ce5eb24",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -155,8 +155,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e15dbf5f7412d40",
+  "active": "6f1b43561ce5eb24",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705173101.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705172944.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705172827.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705172711.png",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705132049.png",
     "AI/Courses/EfficientML/attachments/Mixed-int8.gif",
@@ -168,9 +172,6 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704185026.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704185016.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704184911.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704184804.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704184537.png",
     "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/attachments",
     "AI/Courses/EfficientML/files",
