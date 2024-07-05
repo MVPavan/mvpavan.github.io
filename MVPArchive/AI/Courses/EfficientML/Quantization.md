@@ -25,7 +25,7 @@ debugInConsole: false # Print debug info in Obsidian console
 | **BFloat16** | 16          | 1         | 8        | 7        | Good      | ~10^38 |
 | **Int8**     | 8           | 1         | N/A      | N/A      | Avg       | ~2^7   |
 
-## Types of Quantization:
+## Types of Quantization
 
 Quantization can happen in two ways:
 - Activation Quantization (Calibration)
@@ -55,15 +55,24 @@ An affine mapping of integers to real numbers ==r = S(q-Z)
 Full Connected Layer and Conv Layer:
 ![](attachments/Pasted%20image%2020240704185026.png)
 
-Symmetric vs Asymmetric:
+Symmetric (SQ) vs Asymmetric (SQ):
 ![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
+- In practice symmetric Q is used for 8 bit Q and asymmetric for 2,4 etc..
+- Symmetric Q is simple but can have not so tight range which effects the Q precision and Q error.
+
+#### Quantization Granularities
+- Tensor - S,Z are calculated per tensor
+- Channel/Vector - S,Z are calculated per channel
+- Group - S,Z are calculated per group, group size are usually n=32,64,128.. elements
+	- Lets say n=32 and using SQ
 
 
-## Quantization in Training:
+
+## Quantization in Training
 - Post Training Quantization (PTQ) - All methods above
 - Quantization aware Training (QAT)
 
-### Quantization aware Training (QAT):
+### Quantization aware Training (QAT)
 - Quantize:
 	- Quantize weight and hold both quantized (BF16) and unquantized (FP32) weights. 
 - Forward Pass:
