@@ -9,10 +9,13 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ## Introduction
 
-- INT8 (1S-7B) = 1 bytes (for INT there is not exponent and mantissa only bits)
-- FP32 (1 sign, 8 exponent, 23 mantissa - 1S-8E-23M) - requires 32 bits to store = 4x8 bits = 4 bytes
-- FP16 (1S-5E-10M) = 2 bytes
-- BF16 (1S-8E-7M) = 2 bytes
+- INT8 (S1-B7) = 1 bytes (for INT there is not exponent and mantissa only bits)
+- FP32 (1 sign, 8 exponent, 23 mantissa - S1-E8-M23) - requires 32 bits to store = 4x8 bits = 4 bytes
+- FP16 (S1-E5-M10) = 2 bytes
+- BF16 (S1-E8-M7) = 2 bytes
+- FP8 (S1-E4-M3) = 1 bytes
+- FP8 (S1-E5-M2) = 1 bytes
+- FP4 S1E3/S1E2M1 = 0.5 bytes
 - Subnormal values -  E = 0
 - Normal Values - E != 0
 
@@ -23,8 +26,9 @@ debugInConsole: false # Print debug info in Obsidian console
 | **Float32**  | 32          | 1         | 8        | 23       | Best      | ~10^38 |
 | **Float16**  | 16          | 1         | 5        | 10       | Better    | ~10^4  |
 | **BFloat16** | 16          | 1         | 8        | 7        | Good      | ~10^38 |
+| FP8          | 8           | 1         | 4/5      | 3/2      | Avg       |        |
 | **Int8**     | 8           | 1         | N/A      | N/A      | Avg       | ~2^7   |
-
+![](attachments/Pasted%20image%2020240705132049.png)
 ## Types of Quantization
 
 Quantization can happen in two ways:
@@ -87,7 +91,7 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 - LLM.int8
 - GPTQ
 - AWQ
-- QLoRA
+- QLoRA - NF4
 
 
 ### LLM.int8
@@ -100,9 +104,14 @@ LLM.int8() seeks to complete the matrix multiplication computation in three step
 3. Dequantize the non-outlier results and add both outlier and non-outlier results together to receive the full result in FP16.
 
 
-One of the famous QAT method is QLoRA:
-- Pretrained weights in 4-bit precision.
-- LoRA in full precision
+### QLoRA NF4
+
+- Here 4 bits are used to represent quantization level rather than actual values. 
+- **Range Selection:** For NF4, the range is chosen to cover most of the weight values typically found in language models. Usually the range is [-1, 1] as layers are normalized.
+- **Mapping:** Determine the 16 logarithmically spaced quantization levels within this range.
+- **Non-Uniform Levels:** Example levels might be [-1, -0.5, -0.25, ..., 0.015, ..., 0.25, 0.5, 1] (simplified for illustration).
+- **Mapping Weight:** Find the closest NF4 level to 0.015. In this case, it might directly map to one of the defined levels.
+- **Storage:** Store the weight as a 4-bit value corresponding to the identified level.
 
   
 
