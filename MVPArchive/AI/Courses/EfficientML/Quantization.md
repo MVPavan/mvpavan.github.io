@@ -105,8 +105,8 @@ LLM.int8() seeks to complete the matrix multiplication computation in three step
 
 ### GPTQ
 
+GPTQ is a one-shot weight quantization method based on approximate second-order information, that is both highly accurate and highly-efficient. GPTQ is inspired from OBQ.
 #### Optimal Brain Quantizer (OBQ)
-
 - **Objective:** Minimize performance degradation by quantizing weights W<sup>^</sup>​ such that the outputs W<sup>^</sup>X​ closely match the original outputs WX
 - **Quantization Process:** Quantize the easiest weight first W<sub>q</sub>, then adjust remaining non-quantized weights using $\delta$<sub>F</sub> to compensate for the quantization error using the Hessian matrix.
 - **Outlier Handling:** Quantize outlier weights immediately to prevent large quantization errors.
@@ -115,12 +115,26 @@ LLM.int8() seeks to complete the matrix multiplication computation in three step
 ![](attachments/Pasted%20image%2020240705172944.png)
 
 #### GPTQ Algorithm
+- **Objective:** Reduce the model size while minimizing MSE same as OBQ.
+- **Calibration Dataset:** Use a representative calibration dataset to perform inference on the quantized model, which helps in refining the quantization quality.
+- **Quantization Scheme:** Use a hybrid quantization scheme where model weights are quantized as int4, and activations are kept in float16. During inference, weights are dynamically dequantized to float16, and actual computations are performed in float16.
+
+Algorithm:
 1. The GPTQ algorithm begins with a Cholesky decomposition of the Hessian inverse (a matrix that helps decide how to adjust the weights)
 2. It then runs in loops, handling batches of columns at a time.
 3. For each column in a batch, it quantizes the weights, calculates the error, and updates the weights in the block accordingly.
 4. After processing the batch, it updates all remaining weights based on the block’s errors.
 
 ![](attachments/Pasted%20image%2020240705173101.png)
+
+### SmoothQuant
+- Quantizing weights is very easy
+- Quantizing activations is input dependent and is prone to more outliers
+- Migrate the difficulty (outliers) from activations to weights.
+
+![](attachments/Pasted%20image%2020240705175717.png)
+
+
 
 ### QLoRA NF4
 
