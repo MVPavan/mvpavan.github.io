@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "Shortcuts.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "Shortcuts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
+                "file": "Shortcuts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md"
+                "file": "Shortcuts.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "6f1b43561ce5eb24",
   "lastOpenFiles": [
-    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/Pruning.md",
+    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705193321.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705192348.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705192324.png",
