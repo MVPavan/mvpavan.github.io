@@ -1,11 +1,4 @@
-```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 0 # Include headings up to the specified level
-includeLinks: true # Make headings clickable
-debugInConsole: false # Print debug info in Obsidian console
-```
+
 - [[#Introduction|Introduction]]
 - [[#Types of Quantization|Types of Quantization]]
 	- [[#Types of Quantization#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
@@ -99,7 +92,7 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 
 ## STOA Quantization Techniques
 - LLM.int8
-- GPTQ
+- GPTQ (OBQ)
 - AWQ
 - QLoRA - NF4
 
@@ -110,9 +103,18 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 LLM.int8() seeks to complete the matrix multiplication computation in three steps:
 
 1. From the input hidden states, extract the outliers (i.e. values that are larger than a certain threshold) by column.
-2. Perform the matrix multiplication of the outliers in FP16 and the non-outliers in int8.
+2. Perform the matrix multiplication of the outliers in FP16 and the non-outliers in int8 after quantizing.
 3. Dequantize the non-outlier results and add both outlier and non-outlier results together to receive the full result in FP16.
 
+### GPTQ
+
+#### Optimal Brain Quantizer (OBQ)
+
+- **Objective:** Minimize performance degradation by quantizing weights W^​ such that the outputs W^X​ closely match the original outputs WX
+- **Quantization Process:** Quantize the easiest weight first Wq, then adjust remaining non-quantized weights using DeltaF to compensate for the quantization error using the Hessian matrix.
+- **Outlier Handling:** Quantize outlier weights immediately to prevent large quantization errors.
+    
+- **Hessian Matrix Adjustment:** Update the Hessian matrix by removing the row and column associated with the quantized weight using Gaussian elimination to avoid redundant computations.
 
 ### QLoRA NF4
 
