@@ -106,12 +106,12 @@ LLM.int8() seeks to complete the matrix multiplication computation in three step
 
 ### QLoRA NF4
 
-- Here 4 bits are used to represent quantization level rather than actual values. 
+- Here 4 bits are used to represent quantization level rather than actual values. So 4 bits can represent 16 levels. 
 - **Range Selection:** For NF4, the range is chosen to cover most of the weight values typically found in language models. Usually the range is [-1, 1] as layers are normalized.
-- **Mapping:** Determine the 16 logarithmically spaced quantization levels within this range.
-- **Non-Uniform Levels:** Example levels might be [-1, -0.5, -0.25, ..., 0.015, ..., 0.25, 0.5, 1] (simplified for illustration).
-- **Mapping Weight:** Find the closest NF4 level to 0.015. In this case, it might directly map to one of the defined levels.
-- **Storage:** Store the weight as a 4-bit value corresponding to the identified level.
+- **Mapping:** Determine the 16 Equally/logarithmically spaced quantization levels within this range. For equal spaced example levels might be [-1, -0.8667, -0.733, …,0.6, 0.733, 0.8667, 1].
+- **Mapping Weight:** Lets say our weight is 0.5678 find the closest NF4 value to it which is 0.6.
+- **Storage:** Now instead of storing 0.6 like in linear mapping Q, store the level of 0.6 which is 13 as a 4-bit value.
+- **De-Q**: Convert 13 level to 0.6 and use it, now Q err is 0.6-0.5678 = 0.0322
 
   
 
