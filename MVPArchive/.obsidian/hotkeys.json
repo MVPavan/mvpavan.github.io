@@ -1,5 +1,5 @@
 {
-  "automatic-table-of-contents:insert-automatic-table-of-contents-docs": [
+  "obsidian-plugin-toc:create-toc": [
     {
       "modifiers": [
         "Mod"

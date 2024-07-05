@@ -6,6 +6,16 @@ maxLevel: 0 # Include headings up to the specified level
 includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
+- [[#Introduction|Introduction]]
+- [[#Types of Quantization|Types of Quantization]]
+	- [[#Types of Quantization#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
+	- [[#Types of Quantization#Linear Quantization|Linear Quantization]]
+		- [[#Linear Quantization#Quantization Granularities|Quantization Granularities]]
+- [[#Quantization in Training|Quantization in Training]]
+	- [[#Quantization in Training#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
+- [[#STOA Quantization Techniques|STOA Quantization Techniques]]
+	- [[#STOA Quantization Techniques#LLM.int8|LLM.int8]]
+	- [[#STOA Quantization Techniques#QLoRA NF4|QLoRA NF4]]
 
 ## Introduction
 
