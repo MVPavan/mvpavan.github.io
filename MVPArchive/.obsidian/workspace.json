@@ -154,8 +154,7 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "janitor:Janitor: scan vault": false,
-      "obsidian-file-cleaner:Clean files": false
+      "janitor:Janitor: scan vault": false
     }
   },
   "active": "6f1b43561ce5eb24",
