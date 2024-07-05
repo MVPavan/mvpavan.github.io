@@ -39,6 +39,8 @@ Quantization can happen in two ways:
 		2. GPTQ: GPT Quantized
 		3. BNB: Bits and Bytes Quantized
 
+![](attachments/Pasted%20image%2020240705091622.png)
+
 ### K-Means-based Weight Quantization
 
 ![](attachments/Pasted%20image%2020240704184537.png)
@@ -55,7 +57,7 @@ An affine mapping of integers to real numbers ==r = S(q-Z)
 Full Connected Layer and Conv Layer:
 ![](attachments/Pasted%20image%2020240704185026.png)
 
-Symmetric (SQ) vs Asymmetric (SQ):
+Symmetric (SQ) vs Asymmetric (ASQ):
 ![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
 - In practice symmetric Q is used for 8 bit Q and asymmetric for 2,4 etc..
 - Symmetric Q is simple but can have not so tight range which effects the Q precision and Q error.
@@ -64,7 +66,8 @@ Symmetric (SQ) vs Asymmetric (SQ):
 - Tensor - S,Z are calculated per tensor
 - Channel/Vector - S,Z are calculated per channel
 - Group - S,Z are calculated per group, group size are usually n=32,64,128.. elements
-	- Lets say n=32 and using SQ
+	- Lets say n=32 and using 4-bit SQ, resulting tensor is actually Qed to 4.5 bit
+	- 4-bit (every element is stored in 4 bit) + 0.5 bit (scale in 16 bits for every 32 bits (group size n), 16/32)
 
 
 
