@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "AI/Courses/EfficientML/Quantization.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 233.5
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -152,26 +152,29 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "janitor:Janitor: scan vault": false,
+      "obsidian-file-cleaner:Clean files": false
     }
   },
   "active": "6f1b43561ce5eb24",
   "lastOpenFiles": [
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705175717.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705173101.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705172944.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705172827.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705172711.png",
+    "AI/Courses/EfficientML/Quantization.docx",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705181909.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705181844.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240703185030.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704095840.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704105958.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704110036.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704110201.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704110219.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704125201.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704125326.png",
     "AI/Courses/EfficientML/Quantization.md",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705132049.png",
-    "AI/Courses/EfficientML/attachments/Mixed-int8.gif",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705091622.png",
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/Pruning.md",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704185253.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704185026.png",
     "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/attachments",
     "AI/Courses/EfficientML/files",

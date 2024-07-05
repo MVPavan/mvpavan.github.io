@@ -145,5 +145,5 @@ Algorithm:
 - **Storage:** Now instead of storing 0.6 like in linear mapping Q, store the level of 0.6 which is 13 as a 4-bit value.
 - **De-Q**: Convert 13 level to 0.6 and use it, now Q err is 0.6-0.5678 = 0.0322
 
-  
 
+  

@@ -2,5 +2,8 @@
   "obsidian-git",
   "o2",
   "automatic-table-of-contents",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "janitor",
+  "obsidian-file-cleaner",
+  "obsidian-pandoc"
 ]
