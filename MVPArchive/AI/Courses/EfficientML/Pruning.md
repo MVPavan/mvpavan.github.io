@@ -1,12 +1,11 @@
-```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 0 # Include headings up to the specified level
-includeLinks: true # Make headings clickable
-debugInConsole: false # Print debug info in Obsidian console
-```
-## Introduction:
+- [[#Introduction:|Introduction:]]
+- [[#Pruning Criteria:|Pruning Criteria:]]
+		- [[#Magnitude based:|Magnitude based:]]
+		- [[#Scaling-based:|Scaling-based:]]
+- [[#Automatic Pruning:|Automatic Pruning:]]
+- [[#Iterative Pruning:|Iterative Pruning:]]
+
+## Introduction
 
 - Pruning - Making weight/activations to zero such that specific hardware can make use of it.
 - Pruning ratio - Percentage of weights/neurons to be pruned. 60% pruning implies 60% of total neurons are pruned.
@@ -44,20 +43,20 @@ Channel Pruning:
 ![](attachments/Pasted%20image%2020240704125646.png)
 ![](attachments/Pasted%20image%2020240704125721.png)
 
-## Pruning Criteria:
+## Pruning Criteria
 
-#### Magnitude based:
+#### Magnitude based
 - Element wise pruning using absolute magnitude threshold
 - vector wise pruning using vector wise L1/L2/Lp norms
 
-#### Scaling-based:
+#### Scaling-based
 - Used for channel (filter) pruning
 - Trainable scaling factor is multiplied to each output channel and channels with small scaling factor are pruned.
 - Scaling factors can be reused from Batch norm layers.
 ![](attachments/Pasted%20image%2020240704130512.png)
 
 
-## Automatic Pruning:
+## Automatic Pruning
 
 Layer wise pruning:
 - Sensitivity analysis for per layer pruning ratio, by observing accuracy degrade with each pruning ratio.
@@ -67,7 +66,7 @@ AMC: Auto ML for model compression:
 - Pruning as RL problem
 
 
-## Iterative Pruning:
+## Iterative Pruning
 
 ![](attachments/Pasted%20image%2020240704110036.png)
 

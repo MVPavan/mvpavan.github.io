@@ -8,7 +8,13 @@
 	- [[#Quantization in Training#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
 - [[#STOA Quantization Techniques|STOA Quantization Techniques]]
 	- [[#STOA Quantization Techniques#LLM.int8|LLM.int8]]
+	- [[#STOA Quantization Techniques#GPTQ|GPTQ]]
+		- [[#GPTQ#Optimal Brain Quantizer (OBQ)|Optimal Brain Quantizer (OBQ)]]
+		- [[#GPTQ#GPTQ Algorithm|GPTQ Algorithm]]
+	- [[#STOA Quantization Techniques#SmoothQuant|SmoothQuant]]
+	- [[#STOA Quantization Techniques#Activation Aware Quantization|Activation Aware Quantization]]
 	- [[#STOA Quantization Techniques#QLoRA NF4|QLoRA NF4]]
+
 
 ## Introduction
 
@@ -50,8 +56,15 @@ Quantization can happen in two ways:
 
 ### K-Means-based Weight Quantization
 
+- Cluster weights into M clusters using any clustering algorithm.
+- QAT:
+	- Obtain gradients
+	- Cluster gradients
+	- And apply to centroids as shown below
+
+![](attachments/Pasted%20image%2020240705193321.png)
+
 ![](attachments/Pasted%20image%2020240704184537.png)
-- cluster weights
 
 ### Linear Quantization
 - Symmetric 
@@ -134,8 +147,15 @@ Algorithm:
 
 ![](attachments/Pasted%20image%2020240705175717.png)
 
+### Activation Aware Quantization
 
+1. **Collect Activation Statistics**: During this calibration phase, a subset of the data is used to collect statistics on the activations produced by the model. This involves running the model on this data and recording the range of values and the distribution of activations.
+2. **Search Weight Quantization Parameters**: Weights are quantized by taking the activation statistics into account (scale). Concretely, we perform a space search for quantization parameters (e.g., scales and zero points), to minimize the distortions incurred by quantization on output activations. As a result, the quantized weights can be accurately represented with fewer bits.
+3. **Quantize** : With the quantization parameters in place, the model weights are quantized using a reduced number of bits.
 
+![](attachments/Pasted%20image%2020240705192348.png)
+- Just keeping 1% of salient weight improves PPL(perplexity) from 43.2 to 13.0
+- (c) Weights are scales based on activation statistics before Quantization.
 ### QLoRA NF4
 
 - Here 4 bits are used to represent quantization level rather than actual values. So 4 bits can represent 16 levels. 

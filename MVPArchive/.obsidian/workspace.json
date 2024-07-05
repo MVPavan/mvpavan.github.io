@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Quantization.md",
-                "mode": "preview",
+                "file": "AI/Courses/EfficientML/Pruning.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/Quantization.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/Quantization.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/Quantization.md"
+                "file": "AI/Courses/EfficientML/Pruning.md"
               }
             }
           },
@@ -158,8 +158,13 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "6f1b43561ce5eb24",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Quantization.md",
+    "AI/Courses/EfficientML/Pruning.md",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705193321.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705192348.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705192324.png",
     "output/attachment",
     "output",
     "AI/Courses/EfficientML/Quantization.docx",
@@ -170,13 +175,8 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240704105958.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704110036.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704110201.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704110219.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704125201.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704125326.png",
-    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
-    "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/DP.md",
     "AI/Courses/EfficientML/attachments",
     "AI/Courses/EfficientML/files",
@@ -186,7 +186,6 @@
     "Shortcuts.md",
     "AI/Courses/EfficientML",
     "AI/Courses",
-    "AI",
     "mvpavan.github.io/README.md",
     "Untitled.md",
     "Untitled 5.md",
