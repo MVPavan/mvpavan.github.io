@@ -2,8 +2,7 @@
 layout: page
 title: Obsidian
 subtitle: Getting Started
-# menubar: docs_menu
-show_sidebar: false
+show_sidebar: true
 toc: true
 ---
 
@@ -49,8 +48,8 @@ Obsidian uses Markdown for formatting, and here are some essential shortcuts to 
 - **Horizontal Line**: `---` or `***` 
 ---
 ***
-
-
+- W<sub>subscript</sub> , W<sup>superscript</sup>, match symbols - $\lambda$  
+-  $$Anything\ in\ block$$
 These shortcuts will help you quickly format and structure your notes in Obsidian.
 
 ### Best Jekyll themes
