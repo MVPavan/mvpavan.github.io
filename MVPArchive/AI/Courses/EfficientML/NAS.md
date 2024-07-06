@@ -61,6 +61,19 @@ Neural Architecture Search
 
 
 
+## NAS
+
+![](attachments/Pasted%20image%2020240706140336.png)
+
+### Search Space
+
+#### Cell-level Search Space
+
+
+
+
+
+
 
 
 
