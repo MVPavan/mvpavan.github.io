@@ -95,7 +95,19 @@ Size of search space:
 	![](attachments/Pasted%20image%2020240706154519.png)
 -  Width Dimension
 	![](attachments/Pasted%20image%2020240706154604.png)
-	
+-  Kernel Size Dimension
+	![](attachments/Pasted%20image%2020240706155023.png)
+- Topology Connection
+	![](attachments/Pasted%20image%2020240706155217.png)
+- TinyML
+	![](attachments/Pasted%20image%2020240706155412.png)
+
+
+
+
+
+
+
 
 
 
