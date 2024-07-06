@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Courses/EfficientML/NAS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Courses/EfficientML/NAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Courses/EfficientML/NAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shortcuts.md"
+                "file": "AI/Courses/EfficientML/NAS.md"
               }
             }
           },
@@ -172,10 +172,11 @@
   },
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Pruning.md",
+    "Shortcuts.md",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/NAS.md",
     "conflict-files-obsidian-git.md",
-    "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705193321.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240705192348.png",
@@ -197,7 +198,6 @@
     "AI/Courses/EfficientML/att_distributed_training",
     "AI/Courses/EfficientML/Attachments",
     "Attachments",
-    "Shortcuts.md",
     "AI/Courses/EfficientML",
     "AI/Courses",
     "mvpavan.github.io/README.md",
