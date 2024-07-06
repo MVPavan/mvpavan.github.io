@@ -36,4 +36,48 @@ Neural Architecture Search
 ![](attachments/Pasted%20image%2020240706091833.png)
 
 
+### ResNeXt: Grouped Convolution
+
+![](attachments/Pasted%20image%2020240706094241.png)
+
+
+### MobileNet: Depthwise Convolutions
+
+![](attachments/Pasted%20image%2020240706094933.png)
+
+
+![](attachments/Pasted%20image%2020240706095006.png)
+
+![](attachments/Pasted%20image%2020240706095024.png)
+
+![](attachments/Pasted%20image%2020240706095047.png)
+
+### ShuffleNet: 1x1 Group Conv & Channel shuffle
+
+- Further reduce the cost by replacing 1x1 convolution with 1x1 group convolution.
+- Exchange information across different groups via channel shuffle
+
+![](attachments/Pasted%20image%2020240706095543.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
