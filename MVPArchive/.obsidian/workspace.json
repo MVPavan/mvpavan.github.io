@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/NAS.md",
+                "file": "Investing/Equity/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/EfficientML/NAS.md",
+                "file": "Investing/Equity/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/EfficientML/NAS.md",
+                "file": "Investing/Equity/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/EfficientML/NAS.md"
+                "file": "Investing/Equity/Untitled.md"
               }
             }
           },
@@ -170,9 +170,11 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
-    "Untitled",
+    "AI/Courses/EfficientML/NAS.md",
+    "Investing/Equity/Untitled.md",
+    "Investing/Equity",
     "Investing",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
@@ -187,7 +189,6 @@
     "AI/Courses/EfficientML/Pruning.md",
     "Shortcuts.md",
     "AI/Courses/EfficientML/Quantization.md",
-    "AI/Courses/EfficientML/NAS.md",
     "conflict-files-obsidian-git.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "output/attachment",
@@ -200,7 +201,6 @@
     "AI/Courses/EfficientML/att_distributed_training",
     "AI/Courses/EfficientML/Attachments",
     "Attachments",
-    "AI/Courses/EfficientML",
     "mvpavan.github.io/README.md",
     "Untitled.md",
     "Untitled 5.md",
