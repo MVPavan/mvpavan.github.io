@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investing/Equity/Untitled.md",
+                "file": "Investing/Equity/Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Investing/Equity/Untitled.md",
+                "file": "Investing/Equity/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investing/Equity/Untitled.md",
+                "file": "Investing/Equity/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Investing/Equity/Untitled.md"
+                "file": "Investing/Equity/Notes.md"
               }
             }
           },
@@ -173,7 +173,7 @@
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
     "AI/Courses/EfficientML/NAS.md",
-    "Investing/Equity/Untitled.md",
+    "Investing/Equity/Notes.md",
     "Investing/Equity",
     "Investing",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
