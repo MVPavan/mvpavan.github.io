@@ -11,7 +11,10 @@
 [Types | Modular Docs](https://docs.modular.com/mojo/manual/types)
 
 Basic numerical types defined in Mojo are actually SMID's of size 1.
+`Int8 = Scalar[DType.int8]`
 `Float64 = SMID[DType.float64, 1]` 
+`Scalar = SIMD[size=1]`
+
 
 
 ### Variables
@@ -63,4 +66,20 @@ def function_name():
 ```
 - default ownership - borrowed, but if the function mutates the argument, it makes a mutable copy
 - default supports declared and undeclared variables.
+
+
+### Memory
+
+### Arc
+Reference-counted smart pointers
+#### Reference
+Defines a non-nullable safe reference
+`Reference[type:AnyType, is_mutable:bool, lifetime: usually varibale lifetime, AddressSpace: generic = 0]`
+- Use subscript syntax `ref[]` to access the element.
+
+
+### Loops
+
+### for
+- iterating through for loop creates var variable and assigns reference to object, use `[]` to access value.
 
