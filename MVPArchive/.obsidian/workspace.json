@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "AI/Models/Vision Transformers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "AI/Models/Vision Transformers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "AI/Models/Vision Transformers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Investing/Equity/Notes.md"
+                "file": "AI/Models/Vision Transformers.md"
               }
             }
           },
@@ -159,11 +159,14 @@
   },
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
+    "Investing/Equity/Notes.md",
+    "AI/Models/Vision Transformers.md",
+    "AI/Models/Untitled",
+    "AI/Models",
     "AI/Modular/MAX",
     "AI/Modular/Mojo",
     "AI/Modular",
     "AI/Courses/EfficientML/NAS.md",
-    "Investing/Equity/Notes.md",
     "Investing/Equity",
     "Investing",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
@@ -186,9 +189,6 @@
     "AI/Courses/EfficientML/Quantization.docx",
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/DP.md",
-    "AI/Courses/EfficientML/attachments",
-    "AI/Courses/EfficientML/files",
-    "AI/Courses/EfficientML/att_distributed_training",
     "mvpavan.github.io/README.md",
     "Untitled.md",
     "Untitled 5.md",
