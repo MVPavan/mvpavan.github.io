@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6f1b43561ce5eb24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI/Courses/EfficientML/Pruning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f6079e9b6beb49d8",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,6 +159,9 @@
   },
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
+    "AI/Modular/MAX",
+    "AI/Modular/Mojo",
+    "AI/Modular",
     "AI/Courses/EfficientML/NAS.md",
     "Investing/Equity/Notes.md",
     "Investing/Equity",
@@ -199,8 +189,6 @@
     "AI/Courses/EfficientML/attachments",
     "AI/Courses/EfficientML/files",
     "AI/Courses/EfficientML/att_distributed_training",
-    "AI/Courses/EfficientML/Attachments",
-    "Attachments",
     "mvpavan.github.io/README.md",
     "Untitled.md",
     "Untitled 5.md",
