@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Models/Vision Transformers.md",
+                "file": "AI/Modular/Mojo/Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Models/Vision Transformers.md",
+                "file": "AI/Modular/Mojo/Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Models/Vision Transformers.md",
+                "file": "AI/Modular/Mojo/Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Models/Vision Transformers.md"
+                "file": "AI/Modular/Mojo/Intro.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
-    "Investing/Equity/Notes.md",
     "AI/Models/Vision Transformers.md",
+    "AI/Modular/Mojo/Intro.md",
+    "Investing/Equity/Notes.md",
     "AI/Models/Untitled",
     "AI/Models",
     "AI/Modular/MAX",
