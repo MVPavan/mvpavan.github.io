@@ -51,12 +51,14 @@ compile time temporary value that cant change at runtime
 
 #### fn
 ```
-fn function_name(k:dtype) -> dtype:
+fn function_name[p:dtype #parameter](k:dtype #argument) -> dtype:
 	
 ```
 - default ownership - borrowed, read-only
 - default only supports declared variables.
 - inputs and outputs are also strongly typed
+- parameter is compile time variable, and argument is runtime variable.
+	- parameter should be available by compile time 
 
 
 #### def
@@ -83,3 +85,10 @@ Defines a non-nullable safe reference
 ### for
 - iterating through for loop creates var variable and assigns reference to object, use `[]` to access value.
 
+
+
+### Decorators
+
+#### @parameter
+
+- add the `@parameter` decorator on an `if` statement or on a nested function to run that code at compile time.
