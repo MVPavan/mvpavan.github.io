@@ -123,7 +123,7 @@ Defines a non-nullable safe reference
 #### Lifecycle
 - Uninitialized: `var ptr: UnsafePointer[Int]`
 - Null/invalid pointer -> address 0 : `var ptr: UnsafePointer[Int]()`
-- alloc -> allocates n dtype blocks of memory: `var ptr = UnsafePointer[dtype].alloc(n)`
+- alloc -> allocates n dtype contiguous blocks of memory: `var ptr = UnsafePointer[dtype].alloc(n)`
 	- after allocation memory is still uninitialized, dereferencing causes undefined behavior
 - Initialization:
 	```
@@ -140,4 +140,39 @@ Defines a non-nullable safe reference
 
 ![](attachments/Pasted%20image%2020240713130310.png)
 
+#### Methods
+- [​`destroy_pointee`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/destroy_pointee): Destroy the pointed-to value.
+- [​`move_from_pointee`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/move_from_pointee): Move the value at the pointer out.
+- [​`initialize_pointee_move`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/initialize_pointee_move): Emplace a new value into the pointer location, moving from `value`.
+- [​`initialize_pointee_copy`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/initialize_pointee_copy): Emplace a copy of `value` into the pointer location.
+- [​`move_pointee`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/move_pointee): Moves the value `src` points to into the memory location pointed to by `dest`
+- [free](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/UnsafePointer#free ) : frees memory allocated by the pointer, will not call destructors on its values, use destroy pointee or any other move methods from above.
 
+#### `DTypePointer`: handling numeric data[​](https://docs.modular.com/mojo/manual/pointers#dtypepointer-handling-numeric-data "Direct link to dtypepointer-handling-numeric-data")
+
+A [`DTypePointer`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer) is an unsafe pointer that supports some additional methods for loading and storing numeric data. Like the [`SIMD`](https://docs.modular.com/mojo/stdlib/builtin/simd/SIMD) type, it's parameterized on [`DType`](https://docs.modular.com/mojo/stdlib/builtin/dtype/DType) as described in [SIMD and DType](https://docs.modular.com/mojo/manual/types#simd-and-dtype).
+
+- `DTypePointer` works with are trivial types, so no copy or move or destroy methods required.
+- Has [`alloc()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#alloc) , [`free()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#free) and [`address_of()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#address_of) 
+- use subscript notation `[]` or use the [`load()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#load) and [`store()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#store) methods to access values.
+- Use [`simd_strided_load()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#simd_strided_load) and [`simd_strided_store()`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePointer#simd_strided_store) methods for efficient SIMD operations
+
+Note:  `DTypePointer` is depreciated. `UnsafePointer` can handle most things that `DTypePointer` does except for SIMD operations. In future `SIMD` type supports all these operations, so  `UnsafePointer` can just use them.
+
+
+### Safety[​](https://docs.modular.com/mojo/manual/pointers#safety "Direct link to Safety")
+
+Unsafe pointers are unsafe for several reasons:
+- Memory management is up to the user. 
+- `UnsafePointer` and `DTypePointer` values are _nullable_ or can be _initialized_.
+- Mojo doesn't track lifetimes for the data pointed to by an `UnsafePointer`, so managing memory and knowing when to destroy objects is user responsibility.
+
+### `UnsafePointer` and `Reference`[​](https://docs.modular.com/mojo/manual/pointers#unsafepointer-and-reference "Direct link to unsafepointer-and-reference")
+
+The [`Reference`](https://docs.modular.com/mojo/stdlib/memory/reference/Reference) type is essentially a safe pointer type.
+- `Reference` is _non-nullable_. A reference always points to something.
+- No alloc or free on `Reference`— only point to an existing value.
+- `Reference` only refers to a single value. You can't do pointer arithmetic with a `Reference`.
+- `Reference` has an associated _lifetime_, which connects it back to an original, owned value. The lifetime ensures that the value won't be destroyed while the reference exists.
+
+The `Reference` type shouldn't be confused with the immutable and mutable references used with the `borrowed` and `inout` argument conventions. Those references do not require explicit dereferencing, unlike a `Reference` or `UnsafePointer`.
