@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/SIMD.md",
+                "file": "AI/Courses/AK/NNHero/MicroGrad.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 233.5,
+    "collapsed": true
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/SIMD.md",
+                "file": "AI/Courses/AK/NNHero/MicroGrad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/SIMD.md",
+                "file": "AI/Courses/AK/NNHero/MicroGrad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/SIMD.md"
+                "file": "AI/Courses/AK/NNHero/MicroGrad.md"
               }
             }
           },
@@ -159,8 +160,11 @@
   },
   "active": "0226da03dd030dc0",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/SIMD.md",
+    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Courses/AK/NNHero",
+    "AI/Courses/AK",
+    "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/attachments",
     "AI/Modular/Mojo/Mandelbrot.md",
@@ -188,8 +192,6 @@
     "AI/Courses/EfficientML/Quantization.md",
     "conflict-files-obsidian-git.md",
     "AI/Courses/EfficientML/Distributed Training.md",
-    "output/attachment",
-    "output",
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/DP.md",
     "mvpavan.github.io/README.md",
