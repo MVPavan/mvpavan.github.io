@@ -1,19 +1,11 @@
-- [[#SIMD|SIMD]]
-- [[#Types|Types]]
-- [[#Variables|Variables]]
-- [[#Value ownership|Value ownership]]
-- [[#Alias|Alias]]
-- [[#Struct|Struct]]
-- [[#Functions|Functions]]
-	- [[#Functions#fn|fn]]
-	- [[#Functions#def|def]]
-- [[#Memory|Memory]]
-- [[#Arc|Arc]]
-	- [[#Arc#Reference|Reference]]
-- [[#Loops|Loops]]
-- [[#for|for]]
-- [[#Decorators|Decorators]]
-	- [[#Decorators#@parameter|@parameter]]
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 
 ### SIMD
 - Single Instruction multiple data, stores.
@@ -86,28 +78,14 @@ def function_name():
 - default ownership - borrowed, but if the function mutates the argument, it makes a mutable copy
 - default supports declared and undeclared variables.
 
-
-### Memory
-
-### Arc
-Reference-counted smart pointers
-#### Reference
-Defines a non-nullable safe reference
-`Reference[type:AnyType, is_mutable:bool, lifetime: usually varibale lifetime, AddressSpace: generic = 0]`
-- Use subscript syntax `ref[]` to access the element.
-
-
 ### Loops
 
-### for
+#### for
 - iterating through for loop creates var variable and assigns reference to object, use `[]` to access value.
-
-
 
 ### Decorators
 
 #### @parameter
-
 - add the `@parameter` decorator on an `if` statement or on a nested function to run that code at compile time.
 
 
@@ -160,14 +138,14 @@ A [`DTypePointer`](https://docs.modular.com/mojo/stdlib/memory/unsafe/DTypePoin
 Note:  `DTypePointer` is depreciated. `UnsafePointer` can handle most things that `DTypePointer` does except for SIMD operations. In future `SIMD` type supports all these operations, so  `UnsafePointer` can just use them.
 
 
-### Safety[​](https://docs.modular.com/mojo/manual/pointers#safety "Direct link to Safety")
+#### Safety[​](https://docs.modular.com/mojo/manual/pointers#safety "Direct link to Safety")
 
 Unsafe pointers are unsafe for several reasons:
 - Memory management is up to the user. 
 - `UnsafePointer` and `DTypePointer` values are _nullable_ or can be _initialized_.
 - Mojo doesn't track lifetimes for the data pointed to by an `UnsafePointer`, so managing memory and knowing when to destroy objects is user responsibility.
 
-### `UnsafePointer` and `Reference`[​](https://docs.modular.com/mojo/manual/pointers#unsafepointer-and-reference "Direct link to unsafepointer-and-reference")
+#### ​Reference[](https://docs.modular.com/mojo/manual/pointers#unsafepointer-and-reference "Direct link to unsafepointer-and-reference")
 
 The [`Reference`](https://docs.modular.com/mojo/stdlib/memory/reference/Reference) type is essentially a safe pointer type.
 - `Reference` is _non-nullable_. A reference always points to something.
@@ -176,3 +154,6 @@ The [`Reference`](https://docs.modular.com/mojo/stdlib/memory/reference/Referen
 - `Reference` has an associated _lifetime_, which connects it back to an original, owned value. The lifetime ensures that the value won't be destroyed while the reference exists.
 
 The `Reference` type shouldn't be confused with the immutable and mutable references used with the `borrowed` and `inout` argument conventions. Those references do not require explicit dereferencing, unlike a `Reference` or `UnsafePointer`.
+
+​#### Arc
+Reference-counted smart pointers

@@ -24,5 +24,14 @@
       ],
       "key": "P"
     }
+  ],
+  "automatic-table-of-contents:insert-automatic-table-of-contents-docs": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "\\"
+    }
   ]
 }
