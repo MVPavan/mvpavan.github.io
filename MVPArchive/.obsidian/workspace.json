@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/Mandlebrot.md",
+                "file": "AI/Modular/Mojo/Mandelbrot.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/Mandlebrot.md",
+                "file": "AI/Modular/Mojo/Mandelbrot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/Mandlebrot.md",
+                "file": "AI/Modular/Mojo/Mandelbrot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/Mandlebrot.md"
+                "file": "AI/Modular/Mojo/Mandelbrot.md"
               }
             }
           },
@@ -160,7 +160,7 @@
   "active": "f6079e9b6beb49d8",
   "lastOpenFiles": [
     "AI/Modular/Mojo/Intro.md",
-    "AI/Modular/Mojo/Mandlebrot.md",
+    "AI/Modular/Mojo/Mandelbrot.md",
     "AI/Models/Vision Transformers.md",
     "Investing/Equity/Notes.md",
     "AI/Models/Untitled",

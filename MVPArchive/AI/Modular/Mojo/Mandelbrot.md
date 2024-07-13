@@ -1,4 +1,4 @@
-## mandlebrot
+## Mandelbrot
 
 [Mbot Part1](https://www.modular.com/blog/how-mojo-gets-a-35-000x-speedup-over-python-part-1)
 
@@ -9,10 +9,6 @@
   
 
 [Mbot Part3](https://www.modular.com/blog/mojo-a-journey-to-68-000x-speedup-over-python-part-3)
-
-  
-  
-
 ### Params
 
 ```
