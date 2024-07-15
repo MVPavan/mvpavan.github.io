@@ -1,3 +1,4 @@
+[Mojo By Example: A Comprehensive Introduction to the Mojo Programming Language (ruhati.net)](https://ruhati.net/mojo/)
 ```table-of-contents
 title: 
 style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
