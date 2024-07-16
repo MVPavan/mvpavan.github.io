@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/SIMD.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/SIMD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/SIMD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md"
+                "file": "AI/Modular/Mojo/SIMD.md"
               }
             }
           },
@@ -159,11 +159,11 @@
   },
   "active": "0226da03dd030dc0",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/Intro.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Modular/Mojo/SIMD.md",
     "AI/Courses/AK/NNHero",
     "AI/Courses/AK",
-    "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/attachments",
     "AI/Modular/Mojo/Mandelbrot.md",
