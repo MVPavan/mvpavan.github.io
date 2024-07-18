@@ -157,8 +157,9 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "0226da03dd030dc0",
+  "active": "5425c8d10821d8cf",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/Untitled",
     "AI/Modular/Mojo/SIMD.md",
     "AI/Modular/Mojo/Intro.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
