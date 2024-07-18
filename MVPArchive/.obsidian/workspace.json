@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ae361d445c74e86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md",
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/Intro.md"
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md"
               }
             }
           },
@@ -157,17 +170,18 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "8ae361d445c74e86",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/Untitled",
-    "AI/Modular/Mojo/SIMD.md",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/Intro.md",
+    "AI/Modular/Mojo/benchmarks",
+    "AI/Modular/Mojo/SIMD.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Courses/AK/NNHero",
     "AI/Courses/AK",
     "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/attachments",
-    "AI/Modular/Mojo/Mandelbrot.md",
     "AI/Models/Vision Transformers.md",
     "Investing/Equity/Notes.md",
     "AI/Models/Untitled",
@@ -177,7 +191,6 @@
     "AI/Modular",
     "AI/Courses/EfficientML/NAS.md",
     "Investing/Equity",
-    "Investing",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
