@@ -13,26 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ae361d445c74e86",
+            "id": "7ba7b67979700c5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
+                "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,9 +169,10 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "8ae361d445c74e86",
+  "active": "0226da03dd030dc0",
   "lastOpenFiles": [
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/benchmarks",

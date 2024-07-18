@@ -98,7 +98,7 @@ using the best latencies from python:
 	Mojo Result Tensor shape:  256x256x3
 	Numpy Org Tensor shape:  (640, 640, 3)
 	Numpy Result Tensor shape:  (256, 256, 3)
-	Average error:  0.4065704345703125
+	Average error:  0.906005859375
 	---------------------
 	Benchmark Report (s)
 	---------------------
@@ -144,18 +144,53 @@ using the best latencies from python:
 ```
 
 3. SIMD Vectorization + Parallelization
-
-- `2160x3840x3 -> 480x854x3` (Mojo benchmark crashing, did manual)
+- `640x640x3 -> 256x256x3`:
+```
+	Mojo Org Tensor shape:  640x640x3
+	Mojo Result Tensor shape:  256x256x3
+	Numpy Org Tensor shape:  (640, 640, 3)
+	Numpy Result Tensor shape:  (256, 256, 3)
+	Average error:  0.906005859375
+	---------------------
+	Benchmark Report (s)
+	---------------------
+	Mean: 0.00012330201849217637
+	Total: 5.6342857349999997
+	Iters: 45695
+	Warmup Mean: 0.00029481879999999997
+	Warmup Total: 0.001474094
+	Warmup Iters: 5
+	Fastest Mean: 0.0001233020184921764
+	Slowest Mean: 0.0001233020184921764
+	
+	resize:  640x640x3 -> 256x256x3 :  0.00012330201849217637 s
+	speedup over python:  13858.10983701539
+	speedup over opencv:  2.5543165504880907
+	speedup in opencv:  0.39149415518171204
+	worst speedup in opencv:  0.39149415518171216
+```
+- `2160x3840x3 -> 480x854x3`
 ```
 	Mojo Org Tensor shape:  2160x3840x3
 	Mojo Result Tensor shape:  480x854x3
 	Numpy Org Tensor shape:  (2160, 3840, 3)
 	Numpy Result Tensor shape:  (480, 854, 3)
-	Average error:  0.3744877049180328
+	Average error:  0.5209252211813687
+	---------------------
+	Benchmark Report (s)
+	---------------------
+	Mean: 0.00056374303959517047
+	Total: 6.3500015980000004
+	Iters: 11264
+	Warmup Mean: 0.0017351432
+	Warmup Total: 0.008675716
+	Warmup Iters: 5
+	Fastest Mean: 0.00056374303959517036
+	Slowest Mean: 0.00056374303959517036
 	
-	resize:  2160x3840x3 -> 480x854x3 :  0.0018480969160000001 s
-	Iterations:  1000
-	speedup over python:  5794.4650102918531
-	speedup over opencv:  0.25904079782219586
-	speedup in opencv:  3.8603957693428441
+	resize:  2160x3840x3 -> 480x854x3 :  0.00056374303959517047 s
+	speedup over python:  18995.769638380512
+	speedup over opencv:  0.84920338868780065
+	speedup in opencv:  1.1775741987384343
+	worst speedup in opencv:  1.1775741987384341
 ```

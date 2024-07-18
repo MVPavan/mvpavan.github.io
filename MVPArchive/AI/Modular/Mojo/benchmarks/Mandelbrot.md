@@ -37,7 +37,7 @@ Total time: 1.8795693259999999
    `Total time:  0.024893037999999999 -> 288x over python`
 3. Move from mojo lists to Tensor object
    `Total time:  7.3664000000000005e-05 -> 68300x over python`
-   1. interestingly if I dont have any return, its crazy fast:
+   1. interestingly if I don't have any return, its crazy fast:
 	```
         Total time:  2.7599999999999998e-07
         speedup over python:  26002109.322386485
@@ -70,7 +70,7 @@ Total time: 1.8795693259999999
         Slowest Mean: 0.0047023332451456307
 	```
 4. Vectorize
-   1. If I return tensor with smid width of int64:
+   1. If I return tensor with simd width of int64:
         ```
         Total time:  0.010292099000000001
         speedup over python:  697.29043346538629
@@ -87,7 +87,7 @@ Total time: 1.8795693259999999
         Slowest Mean: 4.7557165841930925e-09
         ```
 
-    2. moved from tensor to buffer and no return, with smid width of int64
+    2. moved from tensor to buffer and no return, with simd width of int64
         ```
         Total time:  2.7399999999999999e-07
         speedup over python:  26191905.740798064
@@ -104,7 +104,7 @@ Total time: 1.8795693259999999
         Slowest Mean: 5.0925092556541993e-09
         ```
 
-    3. With smid width of int64
+    3. With simd width of int64
         ```
         Total time:  1.05e-07
         speedup over python:  68348401.647415906
@@ -132,7 +132,7 @@ max_iter = 1000
 #### python
 `time:  770.2003130670637`
 #### mojo
-1. Vectorize with smidwidth of int64
+1. Vectorize with simdwidth of int64
    1. no return
         ```
         Total time:  1.85e-07
@@ -167,7 +167,7 @@ max_iter = 1000
         ```
 
   
-2. Parallelize over height
+2. Parallelize over height (only with return output)
    1. `Parallelize(num_work_items=height)`
     ```
     Total time:  0.033214595999999999
