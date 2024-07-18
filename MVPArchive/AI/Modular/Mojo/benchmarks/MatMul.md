@@ -68,3 +68,190 @@ GFLOP/sec :  474.80047354419173
 
 ## Mojo
 
+### Just for loops
+
+- `512x256 @ 256x512`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 0.64016959076470581
+Total: 10.882883043
+Iters: 17
+Warmup Mean: 0.69197315560000006
+Warmup Total: 3.4598657780000002
+Warmup Iters: 5
+Fastest Mean: 0.64016959076470592
+Slowest Mean: 0.64016959076470592
+
+Matmul :  512x256 @ 256x512
+Total GFLOPS:  0.13421772800000001
+GFLOP/sec:  0.20965964321996622
+speedup over python:  120.35439899987139
+speedup over numpy:  0.0016070718994381961
+speedup in numpy:  622.24969545518297
+worst speedup in numpy:  622.24969545518309
+```
+- `2048x1024 @ 1024x2048`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 40.9093318165
+Total: 245.455990899
+Iters: 6
+Warmup Mean: 40.8972278066
+Warmup Total: 204.486139033
+Warmup Iters: 5
+Fastest Mean: 40.9093318165
+Slowest Mean: 40.9093318165
+
+Matmul :  2048x1024 @ 1024x2048
+
+GFLOP/sec:  0.2099749424050826
+speedup over python:  1.8833655533675633
+speedup over numpy:  0.00047661128344174706
+speedup in numpy:  2098.1458785002164
+worst speedup in numpy:  2098.1458785002164
+```
+
+
+
+### SIMD Vectorization
+
+- `512x256 @ 256x512`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 0.012332463752118645
+Total: 11.641845782000001
+Iters: 944
+Warmup Mean: 0.0146965052
+Warmup Total: 0.073482526000000006
+Warmup Iters: 5
+Fastest Mean: 0.012332463752118644
+Slowest Mean: 0.012332463752118644
+
+Matmul :  512x256 @ 256x512
+Total GFLOPS:  0.13421772800000001
+GFLOP/sec:  10.883285829803651
+speedup over python:  6247.5128979190004
+speedup over numpy:  0.083421981274104037
+speedup in numpy:  11.987248261513317
+worst speedup in numpy:  11.987248261513315
+```
+- `2048x1024 @ 1024x2048`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 40.9093318165
+Total: 245.455990899
+Iters: 6
+Warmup Mean: 40.8972278066
+Warmup Total: 204.486139033
+Warmup Iters: 5
+Fastest Mean: 40.9093318165
+Slowest Mean: 40.9093318165
+
+Matmul :  2048x1024 @ 1024x2048
+GFLOP/sec:  0.2099749424050826
+speedup over python:  1.8833655533675633
+speedup over numpy:  0.00047661128344174706
+speedup in numpy:  2098.1458785002164
+worst speedup in numpy:  2098.1458785002164
+```
+
+
+### SIMD Vectorization and Parallelization
+
+- `512x256 @ 256x512`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 0.0016582828104565537
+Total: 11.259740282999999
+Iters: 6790
+Warmup Mean: 0.0045278230000000003
+Warmup Total: 0.022639115000000001
+Warmup Iters: 5
+Fastest Mean: 0.0016582828104565537
+Slowest Mean: 0.0016582828104565537
+
+Matmul :  512x256 @ 256x512
+Total GFLOPS:  0.13421772800000001
+GFLOP/sec:  80.937779221776751
+speedup over python:  46462.054523297731
+speedup over numpy:  0.62039994246190278
+speedup in numpy:  1.6118634634809101
+worst speedup in numpy:  1.6118634634809101
+```
+- `2048x1024 @ 1024x2048`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 40.9093318165
+Total: 245.455990899
+Iters: 6
+Warmup Mean: 40.8972278066
+Warmup Total: 204.486139033
+Warmup Iters: 5
+Fastest Mean: 40.9093318165
+Slowest Mean: 40.9093318165
+
+Matmul :  2048x1024 @ 1024x2048
+GFLOP/sec:  0.2099749424050826
+speedup over python:  1.8833655533675633
+speedup over numpy:  0.00047661128344174706
+speedup in numpy:  2098.1458785002164
+worst speedup in numpy:  2098.1458785002164
+```
+
+
+### Just for loops
+
+- `512x256 @ 256x512`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 0.64016959076470581
+Total: 10.882883043
+Iters: 17
+Warmup Mean: 0.69197315560000006
+Warmup Total: 3.4598657780000002
+Warmup Iters: 5
+Fastest Mean: 0.64016959076470592
+Slowest Mean: 0.64016959076470592
+
+Matmul :  512x256 @ 256x512
+GFLOP/sec:  0.20965964321996622
+speedup over python:  120.35439899987139
+speedup over numpy:  0.0016070718994381961
+speedup in numpy:  622.24969545518297
+worst speedup in numpy:  622.24969545518309
+```
+- `2048x1024 @ 1024x2048`
+```
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 40.9093318165
+Total: 245.455990899
+Iters: 6
+Warmup Mean: 40.8972278066
+Warmup Total: 204.486139033
+Warmup Iters: 5
+Fastest Mean: 40.9093318165
+Slowest Mean: 40.9093318165
+
+Matmul :  2048x1024 @ 1024x2048
+GFLOP/sec:  0.2099749424050826
+speedup over python:  1.8833655533675633
+speedup over numpy:  0.00047661128344174706
+speedup in numpy:  2098.1458785002164
+worst speedup in numpy:  2098.1458785002164
+```
