@@ -3,6 +3,31 @@
 [Mbot Part1](https://www.modular.com/blog/how-mojo-gets-a-35-000x-speedup-over-python-part-1)
 [Mbot Part2](https://www.modular.com/blog/how-mojo-gets-a-35-000x-speedup-over-python-part-2)
 [Mbot Part3](https://www.modular.com/blog/mojo-a-journey-to-68-000x-speedup-over-python-part-3)
+
+## CPU
+
+- Physical cores: 20
+- Physical + Logical cores: 40
+```
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   46 bits physical, 48 bits virtual
+CPU(s):                          40
+On-line CPU(s) list:             0-39
+Thread(s) per core:              2
+Core(s) per socket:              10
+Socket(s):                       2
+NUMA node(s):                    2
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           85
+Model name:                      Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+Stepping:                        7
+CPU MHz:                         2400.000
+CPU max MHz:                     3200.0000
+CPU min MHz:                     1000.0000
+```
 ### Params
 
 ```
