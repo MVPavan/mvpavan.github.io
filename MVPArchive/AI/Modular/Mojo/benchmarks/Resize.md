@@ -1,10 +1,11 @@
-- [[#CPU|CPU]]
-- [[#Bilinear|Bilinear]]
-	- [[#Bilinear#1. Python|1. Python]]
-	- [[#Bilinear#2. Mojo|2. Mojo]]
-		- [[#2. Mojo#Error|Error]]
-		- [[#2. Mojo#Latency|Latency]]
-
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 
 ## CPU
 
@@ -33,7 +34,7 @@ CPU min MHz:                     1000.0000
 
 ## Bilinear
 
-### 1. Python
+### Python
 
 ```
 Bilinear resize from (640, 640, 3) to (256, 256):
@@ -49,7 +50,7 @@ Python: 10.476222490519286 s
 cv2 resize is 21883.248995744227 times faster than python
 ```
 
-### 2. Mojo
+### Mojo
 #### Error
 Mojo numpy Error checking:
 ```
@@ -81,7 +82,7 @@ using the best latencies from python:
     Python: 10.476222490519286 s
 ```
 
-1. Pure For loops: 
+##### 1. Pure For loops: 
 - `640x640x3 -> 256x256x3`:
 ```
     ---------------------
@@ -124,7 +125,7 @@ using the best latencies from python:
 	worst speedup in opencv:  102.68609930780877
 ```
 
-2. SIMD Vectorization
+##### 2. SIMD Vectorization
 - `640x640x3 -> 256x256x3`:
 ```
 	Mojo Org Tensor shape:  640x640x3
@@ -176,7 +177,7 @@ using the best latencies from python:
 	worst speedup in opencv:  12.680934884153054
 ```
 
-3. SIMD Vectorization + Parallelization
+##### 3. SIMD Vectorization + Parallelization
 - `640x640x3 -> 256x256x3`:
 ```
 	Mojo Org Tensor shape:  640x640x3

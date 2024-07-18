@@ -171,9 +171,9 @@
   },
   "active": "0226da03dd030dc0",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/benchmarks",
     "AI/Modular/Mojo/SIMD.md",
