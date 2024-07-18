@@ -213,47 +213,50 @@ worst speedup in numpy:  6.4627108093897254
 ```
 
 
-### Just for loops
+### SIMD Vectorize, Parallel using DTypePointer
+Earlier used Tensor
 
 - `512x256 @ 256x512`
 ```
 ---------------------
 Benchmark Report (s)
 ---------------------
-Mean: 0.64016959076470581
-Total: 10.882883043
-Iters: 17
-Warmup Mean: 0.69197315560000006
-Warmup Total: 3.4598657780000002
+Mean: 0.00063344754129086812
+Total: 13.484831259
+Iters: 21288
+Warmup Mean: 0.0057730554000000002
+Warmup Total: 0.028865277000000002
 Warmup Iters: 5
-Fastest Mean: 0.64016959076470592
-Slowest Mean: 0.64016959076470592
+Fastest Mean: 0.00063344754129086812
+Slowest Mean: 0.00063344754129086812
 
 Matmul :  512x256 @ 256x512
-GFLOP/sec:  0.20965964321996622
-speedup over python:  120.35439899987139
-speedup over numpy:  0.0016070718994381961
-speedup in numpy:  622.24969545518297
-worst speedup in numpy:  622.24969545518309
+Total GFLOPS:  0.13421772800000001
+GFLOP/sec:  211.8845196343884
+speedup over python:  121631.58167362913
+speedup over numpy:  1.6241259033009681
+speedup in numpy:  0.61571581240564033
+worst speedup in numpy:  0.61571581240564033
 ```
 - `2048x1024 @ 1024x2048`
 ```
 ---------------------
 Benchmark Report (s)
 ---------------------
-Mean: 40.9093318165
-Total: 245.455990899
-Iters: 6
-Warmup Mean: 40.8972278066
-Warmup Total: 204.486139033
+Mean: 0.054670777668181819
+Total: 12.027571087
+Iters: 220
+Warmup Mean: 0.057961355399999998
+Warmup Total: 0.28980677700000002
 Warmup Iters: 5
-Fastest Mean: 40.9093318165
-Slowest Mean: 40.9093318165
+Fastest Mean: 0.054670777668181819
+Slowest Mean: 0.054670777668181819
 
 Matmul :  2048x1024 @ 1024x2048
-GFLOP/sec:  0.2099749424050826
-speedup over python:  1.8833655533675633
-speedup over numpy:  0.00047661128344174706
-speedup in numpy:  2098.1458785002164
-worst speedup in numpy:  2098.1458785002164
+Total GFLOPS:  8.5899345920000005
+GFLOP/sec:  157.12113414840465
+speedup over python:  0.0
+speedup over numpy:  0.35664115224675202
+speedup in numpy:  2.8039388996481325
+worst speedup in numpy:  2.8039388996481325
 ```
