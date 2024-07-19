@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "0cd7f0c809b889ce",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
+          },
+          {
             "id": "7ba7b67979700c5a",
             "type": "leaf",
             "state": {
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +181,7 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "0226da03dd030dc0",
+  "active": "0cd7f0c809b889ce",
   "lastOpenFiles": [
     "Investing/Equity/Notes.md",
     "Investing/Equity/Screener.md",
