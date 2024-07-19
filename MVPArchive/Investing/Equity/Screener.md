@@ -1,6 +1,3 @@
-
-Here's the markdown table for the metrics in the image, without the numbers:
-
 | Market Cap          | Current Price       | High / Low          |
 | ------------------- | ------------------- | ------------------- |
 | Stock P/E           | Book Value          | Dividend Yield      |
@@ -22,5 +19,3 @@ Here's the markdown table for the metrics in the image, without the numbers:
 | Promoter holding    | Pledged percentage  | Change in Prom Hold |
 | Chg in DII Hold     | Chg in FII Hold     | Chg in FII Hold 3Yr |
 | FII holding         | Avg Vol 1Yr         |                     |
-
-Would you like me to explain any of these financial metrics?
