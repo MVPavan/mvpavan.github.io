@@ -34,6 +34,17 @@ CPU min MHz:                     1000.0000
 
 ## Bilinear
 
+### Bilinear Resize Benchmark Results
+
+| Method                | Resize (640x640x3 to 256x256x3) | Speedup over Python | Speedup over OpenCV | Resize (2160x3840x3 to 480x854) | Speedup over Python | Speedup over OpenCV |
+| --------------------- | ------------------------------- | ------------------- | ------------------- | ------------------------------- | ------------------- | ------------------- |
+| Python                | 1.7087 s                        | N/A                 | N/A                 | 10.4762 s                       | N/A                 | N/A                 |
+| OpenCV                | 0.0003 s                        | 5425.3690           | N/A                 | 0.0005 s                        | 21883.2490          | N/A                 |
+| Mojo (For Loops)      | 0.0077 s                        | 221.8717            | 0.0410              | 0.0492 s                        | 217.8379            | 0.0097              |
+| Mojo (SIMD)           | 0.0010 s                        | 1755.0607           | 0.323               | 0.0061 s                        | 1763.9810           | 0.0789              |
+| Mojo (SIMD+ Parallel) | 0.0001 s                        | 13858.1098          | 2.5543              | 0.0006 s                        | 18995.7696          | 0.8492              |
+
+
 ### Python
 
 ```

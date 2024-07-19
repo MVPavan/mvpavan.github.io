@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66f7dfb815d92bd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "73f0b87044cd90df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5,
-    "collapsed": true
+    "width": 233.5
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/MatMul.md"
+                "file": "AI/Modular/Mojo/benchmarks/Resize.md"
               }
             }
           },
@@ -158,13 +182,13 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "7ba7b67979700c5a",
+  "active": "73f0b87044cd90df",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/benchmarks/MatMul.md",
+    "AI/Modular/Mojo/benchmarks/Resize.md",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
-    "AI/Modular/Mojo/benchmarks/Resize.md",
-    "AI/Modular/Mojo/benchmarks/MatMul.md",
-    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/benchmarks",
     "AI/Modular/Mojo/SIMD.md",

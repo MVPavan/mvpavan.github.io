@@ -32,6 +32,20 @@ CPU min MHz:                     1000.0000
 ```
 
 > Mojo is using only physical cores where as numpy utilizing all 40 cores
+
+
+## MatMul Benchmark Results
+
+| Metric                              | 512x256 @ 256x512 | Speed over Python | Speedup over NumPy | 2048x1024 @ 1024x2048 | Speedup over NumPy |
+| ----------------------------------- | ----------------- | ----------------- | ------------------ | --------------------- | ------------------ |
+| Python (Lists)                      | 77                | N/A               | N/A                | N/A                   | N/A                |
+| NumPy                               | 0.0010            | 74844.5881        | N/A                | 0.0195                | N/A                |
+| Mojo (For Loops)                    | 0.6402            | 120.2806          | 0.0016             | 40.9093               | 0.0005             |
+| Mojo (SIMD)                         | 0.0123            | 6243.6854         | 0.0834             | 1.0428                | 0.0187             |
+| Mojo (SIMD + Parallel)              | 0.0017            | 46433.6542        | 0.6204             | 0.1260                | 0.1547             |
+| Mojo (SIMD+ Parallel+ DTypePointer) | 0.0006            | 121557.0351       | 1.6241             | 0.0547                | 0.3566             |
+
+
 ## Python (Using Lists) 😀
 - `512x256 @ 256x512`
 ```
