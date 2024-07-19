@@ -116,7 +116,7 @@ Slowest Mean: 40.9093318165
 Matmul :  2048x1024 @ 1024x2048
 
 GFLOP/sec:  0.2099749424050826
-speedup over python:  1.8833655533675633
+speedup over python:  0.0
 speedup over numpy:  0.00047661128344174706
 speedup in numpy:  2098.1458785002164
 worst speedup in numpy:  2098.1458785002164

@@ -8,28 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0226da03dd030dc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Investing/Equity/Screener.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0cd7f0c809b889ce",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
-          },
-          {
             "id": "7ba7b67979700c5a",
             "type": "leaf",
             "state": {
@@ -41,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Investing/Equity/Screener.md",
+                "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investing/Equity/Screener.md",
+                "file": "AI/Modular/Mojo/benchmarks/MatMul.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Investing/Equity/Screener.md"
+                "file": "AI/Modular/Mojo/benchmarks/MatMul.md"
               }
             }
           },
@@ -181,10 +158,10 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "0cd7f0c809b889ce",
+  "active": "7ba7b67979700c5a",
   "lastOpenFiles": [
-    "Investing/Equity/Notes.md",
     "Investing/Equity/Screener.md",
+    "Investing/Equity/Notes.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
