@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "Investing/Equity/Screener.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "Investing/Equity/Screener.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Investing/Equity/Notes.md",
+                "file": "Investing/Equity/Screener.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Investing/Equity/Notes.md"
+                "file": "Investing/Equity/Screener.md"
               }
             }
           },
@@ -171,6 +171,8 @@
   },
   "active": "0226da03dd030dc0",
   "lastOpenFiles": [
+    "Investing/Equity/Notes.md",
+    "Investing/Equity/Screener.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
@@ -183,7 +185,6 @@
     "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/attachments",
     "AI/Models/Vision Transformers.md",
-    "Investing/Equity/Notes.md",
     "AI/Models/Untitled",
     "AI/Models",
     "AI/Modular/MAX",
