@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19b4f7d494739d0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shortcuts.md"
+                "file": "AI/Modular/Mojo/DSA/Introduction.md"
               }
             }
           },
@@ -170,10 +182,15 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "e90590964737f502",
+  "active": "19b4f7d494739d0f",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
+    "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Modular/Mojo/DSA/Algorithms",
     "Shortcuts.md",
+    "AI/Modular/Mojo/DSA/DS",
+    "AI/Modular/Mojo/DSA",
+    "conflict-files-obsidian-git.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
     "Investing/Equity",
@@ -192,7 +209,6 @@
     "AI/Modular/Mojo",
     "AI/Modular",
     "AI/Models/Vision Transformers.md",
-    "AI/Models",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
@@ -203,8 +219,6 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240706140336.png",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
-    "AI/Courses/AK/NNHero",
-    "AI/Courses/AK",
     "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/Efficient ML.md",
@@ -216,7 +230,6 @@
     "Untitled 2.md",
     "Untitled 4.md",
     "Untitled 3.md",
-    "Untitled 1.md",
     "Untitled.canvas"
   ]
 }
