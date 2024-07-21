@@ -50,7 +50,6 @@ Obsidian uses Markdown for formatting, and here are some essential shortcuts to 
 ***
 - W<sub>subscript</sub> , W<sup>superscript</sup>, match symbols - $\lambda$  
 -  $$Anything\ in\ block$$
-
 These shortcuts will help you quickly format and structure your notes in Obsidian.
 
 ### Best Jekyll themes

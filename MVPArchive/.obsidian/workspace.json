@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e90590964737f502",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Shortcuts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,34 +170,46 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "6f1b43561ce5eb24",
+  "active": "e90590964737f502",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Shortcuts.md",
+    "Investing/Equity/Screener.md",
+    "Investing/Equity/Notes.md",
+    "Investing/Equity",
+    "Investing",
+    "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
+    "AI/Modular/Mojo/benchmarks/Untitled.md",
+    "AI/Modular/Mojo/benchmarks/Resize.md",
+    "AI/Modular/Mojo/benchmarks/MatMul.md",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "AI/Modular/Mojo/benchmarks/attachments",
+    "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
+    "AI/Modular/Mojo/SIMD.md",
+    "AI/Modular/Mojo/Intro.md",
+    "AI/Modular/Mojo/benchmarks",
+    "AI/Modular/Mojo/attachments",
+    "AI/Modular/Mojo",
+    "AI/Modular",
+    "AI/Models/Vision Transformers.md",
+    "AI/Models",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706154604.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706154519.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706154437.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706153144.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706140336.png",
+    "AI/Courses/EfficientML/NAS.md",
+    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Courses/AK/NNHero",
+    "AI/Courses/AK",
     "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/Quantization.md",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705193321.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705192348.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705192324.png",
-    "output/attachment",
-    "output",
-    "AI/Courses/EfficientML/Quantization.docx",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705181909.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240705181844.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240703185030.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704095840.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704105958.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704110036.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704110201.png",
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/DP.md",
-    "AI/Courses/EfficientML/attachments",
-    "AI/Courses/EfficientML/files",
-    "AI/Courses/EfficientML/att_distributed_training",
-    "AI/Courses/EfficientML/Attachments",
-    "Attachments",
-    "Shortcuts.md",
-    "AI/Courses/EfficientML",
-    "AI/Courses",
     "mvpavan.github.io/README.md",
     "Untitled.md",
     "Untitled 5.md",

@@ -73,5 +73,5 @@ AMC: Auto ML for model compression:
 Iterative pruning:
 - Prune pre trained model.
 - finetune pruned model for 1-5 epochs.
-- Iterate pruning and finetuning as requirement.
+- Iterate pruning and finetuning as required.
 
