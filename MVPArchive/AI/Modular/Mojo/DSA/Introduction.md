@@ -36,6 +36,7 @@ Following are collection of data structures and algorithms planned to be impleme
 
 
 ## To Do:
+[LeetCode was HARD until I Learned these 15 Patterns (algomaster.io)](https://blog.algomaster.io/p/15-leetcode-patterns)
 
 1. Heap - Heapsort, Dijkstra, Median of a Stream
 2. Binary Tree - Traversals(Pre-Order, Post-Order, In-Order, Level Order) - Lowest Common Ancestor, Left View of a Binary Tree, Maximum Path Sum 

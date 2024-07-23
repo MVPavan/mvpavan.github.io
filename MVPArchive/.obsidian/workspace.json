@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Results.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Results.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Results.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Results.md"
+                "file": "AI/Modular/Mojo/DSA/Introduction.md"
               }
             }
           },
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,8 +171,8 @@
   },
   "active": "66f7dfb815d92bd2",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Results.md",
+    "AI/Modular/Mojo/benchmarks/MatMul.md",
     "conflict-files-obsidian-git.md",
     "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/DSA",
