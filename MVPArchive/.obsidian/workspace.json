@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
+                "file": "AI/Modular/Mojo/benchmarks/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
+                "file": "AI/Modular/Mojo/benchmarks/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Resize.md",
+                "file": "AI/Modular/Mojo/benchmarks/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/benchmarks/Resize.md"
+                "file": "AI/Modular/Mojo/benchmarks/Untitled.md"
               }
             }
           },
@@ -196,10 +196,10 @@
   },
   "active": "73f0b87044cd90df",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/Untitled.md",
     "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
     "AI/Modular/Mojo/benchmarks/attachments",
-    "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "Investing/Equity/Screener.md",
