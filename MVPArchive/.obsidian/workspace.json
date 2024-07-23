@@ -23,11 +23,9 @@
             "id": "66f7dfb815d92bd2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
-                "mode": "source",
-                "source": false
+                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md"
+                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png"
               }
             }
           },
@@ -169,12 +167,14 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "66f7dfb815d92bd2",
+  "active": "5425c8d10821d8cf",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/Notes/Intro.md",
+    "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Modular/Mojo/Notes",
     "AI/Modular/Mojo/benchmarks/Results.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "conflict-files-obsidian-git.md",
-    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/DSA",
     "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
@@ -182,19 +182,17 @@
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
-    "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/benchmarks",
-    "AI/Modular/Mojo/SIMD.md",
+    "AI/Modular/Mojo/Notes/SIMD.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Courses/AK/NNHero",
     "AI/Courses/AK",
-    "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
-    "AI/Modular/Mojo/attachments",
+    "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
+    "AI/Modular/Mojo/Notes/attachments",
     "AI/Models/Vision Transformers.md",
     "AI/Models/Untitled",
     "AI/Models",
     "AI/Modular/MAX",
-    "AI/Modular/Mojo",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
@@ -216,7 +214,6 @@
     "Untitled 2.md",
     "Untitled 4.md",
     "Untitled 3.md",
-    "Untitled 1.md",
     "Untitled.canvas"
   ]
 }
