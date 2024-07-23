@@ -23,9 +23,11 @@
             "id": "66f7dfb815d92bd2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png"
+                "file": "Investing/Equity/Gold & Silver.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
+                "file": "Investing/Equity/Gold & Silver.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
+                "file": "Investing/Equity/Gold & Silver.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png"
+                "file": "Investing/Equity/Gold & Silver.md"
               }
             }
           },
@@ -167,8 +169,13 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "66f7dfb815d92bd2",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
+    "Investing/Equity/Gold & Silver.md",
+    "Investing/Untitled",
+    "Investing/Commodity/Untitled",
+    "Investing/Commodity",
     "AI/Modular/Mojo/Notes/Intro.md",
     "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/Notes",
@@ -187,12 +194,8 @@
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Courses/AK/NNHero",
     "AI/Courses/AK",
-    "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/Notes/attachments",
     "AI/Models/Vision Transformers.md",
-    "AI/Models/Untitled",
-    "AI/Models",
-    "AI/Modular/MAX",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
@@ -213,7 +216,6 @@
     "Untitled 5.md",
     "Untitled 2.md",
     "Untitled 4.md",
-    "Untitled 3.md",
     "Untitled.canvas"
   ]
 }
