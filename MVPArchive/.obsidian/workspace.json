@@ -42,19 +42,9 @@
                 "hash": "04426230877ad9a6be16fbe6d2da23196b17ceef"
               }
             }
-          },
-          {
-            "id": "6a4cae78f947323e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,7 +181,7 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "6a4cae78f947323e",
+  "active": "19b4f7d494739d0f",
   "lastOpenFiles": [
     "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
