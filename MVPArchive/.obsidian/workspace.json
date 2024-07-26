@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a03911ebcacb09be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/Notes/Traits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/Decorators.md",
+                "file": "AI/Modular/Mojo/Notes/Traits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/Decorators.md",
+                "file": "AI/Modular/Mojo/Notes/Traits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/Notes/Decorators.md"
+                "file": "AI/Modular/Mojo/Notes/Traits.md"
               }
             }
           },
@@ -170,10 +182,11 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "e90590964737f502",
+  "active": "a03911ebcacb09be",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/Notes/Decorators.md",
+    "AI/Modular/Mojo/Notes/Traits.md",
+    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/Notes/Untitled",
     "conflict-files-obsidian-git.md",
     "Investing/Equity/Gold & Silver.md",
@@ -217,7 +230,6 @@
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Courses/EfficientML/DP.md",
-    "mvpavan.github.io/README.md",
     "Untitled.canvas"
   ]
 }

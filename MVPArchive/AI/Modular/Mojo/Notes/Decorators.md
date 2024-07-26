@@ -3,7 +3,7 @@
 
 Mojo compiler copies the body of this function to body of the function where its being called. This avoids performance costs associated with function calls, but it increases binary size.
 ### `@always_inline('nodebug')`
-Same as above and
+Same as above but without debug info, debugger cannot step into this function when debugging, should be used with low level code.
 
 ## @value
 
