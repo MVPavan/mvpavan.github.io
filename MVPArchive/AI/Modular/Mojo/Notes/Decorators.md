@@ -1,4 +1,10 @@
 
+## @always_inline
+
+Mojo compiler copies the body of this function to body of the function where its being called. This avoids performance costs associated with function calls, but it increases binary size.
+### `@always_inline('nodebug')`
+Same as above and
+
 ## @value
 
 Generates boilerplate lifecycle methods. `__init__`, `__copyinit__`, `__moveinit__`,`__del__`
@@ -15,3 +21,18 @@ Types:
 	- Arithmetic types such as `Int`, `Bool`, `Float64` etc.
 	- Pointers (the address value is trivial, not the data being pointed to).
 	- Arrays of other trivial types, including SIMD.
+
+
+## @parameter
+
+1. Over If condition - will be evaluated at compile time. If condition should be valid parameter expression
+2. Over for loop -  will be evaluated at compile time, loop sequence and induction values must be valid parameter expressions.
+3. Closure function - over nested function
+	1. Closure function can capture variables or parameter from outer scope
+	2. Use the closure function as a parameter.
+> Though closure function contains dynamic values from outer loop, it can still be accessed as parameter.
+	
+### `@__copy_capture(variable_name)`
+
+Passed on top of parameter closure to capture register passable values by copy. This copies the mentioned variable in to closure function by value rather capturing it by reference. This avoids any lifetime concerns regarding that variable.
+
