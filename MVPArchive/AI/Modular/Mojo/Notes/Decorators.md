@@ -1,4 +1,7 @@
 
+## @value
+
+Generates boilerplate lifecycle methods. `__init__`, `__copyinit__`, `__moveinit__`,`__del__`
 
 ## @register_passable
 
@@ -8,7 +11,7 @@ Types:
 - @register_passable
 	- should implement `__init__`, `__copyinit__`, `__del__` and no move.
 - @register_passable("trivial")
-	- 
-- @value
-
-@register_passable
+	- can only define `__init__` not mandatory, other are only defined by compiler.
+	- Arithmetic types such as `Int`, `Bool`, `Float64` etc.
+	- Pointers (the address value is trivial, not the data being pointed to).
+	- Arrays of other trivial types, including SIMD.
