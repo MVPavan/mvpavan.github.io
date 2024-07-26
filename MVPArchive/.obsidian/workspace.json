@@ -35,16 +35,26 @@
             "id": "19b4f7d494739d0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
-                "mode": "source",
-                "source": false
+                "file": "MVPArchive/AI/Modular/Mojo/DSA/Introduction.md",
+                "staged": false,
+                "hash": "04426230877ad9a6be16fbe6d2da23196b17ceef"
+              }
+            }
+          },
+          {
+            "id": "6a4cae78f947323e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "Shortcuts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "Shortcuts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md"
+                "file": "Shortcuts.md"
               }
             }
           },
@@ -163,12 +173,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,10 +191,10 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "19b4f7d494739d0f",
+  "active": "6a4cae78f947323e",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
     "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
     "AI/Modular/Mojo/DSA/Algorithms",
     "Shortcuts.md",
     "AI/Modular/Mojo/DSA/DS",
