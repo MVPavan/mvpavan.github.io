@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "e7d09725c9d94be4",
+        "id": "e61a8a09ec4229fc",
         "type": "tabs",
         "children": [
           {
-            "id": "a03911ebcacb09be",
+            "id": "7ba7b67979700c5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66f7dfb815d92bd2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "insert",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,8 +150,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,40 +169,36 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "a03911ebcacb09be",
+  "active": "66f7dfb815d92bd2",
   "lastOpenFiles": [
+    "Investing/Equity/Gold & Silver.md",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/Decorators.md",
-    "AI/Modular/Mojo/DSA/Introduction.md",
-    "AI/Modular/Mojo/Notes/Untitled",
-    "conflict-files-obsidian-git.md",
-    "Investing/Equity/Gold & Silver.md",
-    "AI/Modular/Mojo/benchmarks/Results.md",
     "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
-    "AI/Modular/Mojo/Notes/SIMD.md",
+    "Investing/Untitled",
+    "Investing/Commodity/Untitled",
+    "Investing/Commodity",
     "AI/Modular/Mojo/Notes/Intro.md",
-    "AI/Modular/Mojo/Notes/attachments",
+    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/Notes",
-    "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
-    "AI/Modular/Mojo/DSA/Algorithms",
-    "Shortcuts.md",
-    "AI/Modular/Mojo/DSA/DS",
+    "AI/Modular/Mojo/benchmarks/Results.md",
+    "AI/Modular/Mojo/benchmarks/MatMul.md",
+    "conflict-files-obsidian-git.md",
     "AI/Modular/Mojo/DSA",
+    "AI/Modular/Mojo/benchmarks/Resize.md",
+    "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
+    "AI/Modular/Mojo/benchmarks/attachments",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
-    "Investing/Equity",
-    "Investing",
-    "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
-    "AI/Modular/Mojo/benchmarks/Untitled.md",
-    "AI/Modular/Mojo/benchmarks/Resize.md",
-    "AI/Modular/Mojo/benchmarks/MatMul.md",
-    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
-    "AI/Modular/Mojo/benchmarks/attachments",
-    "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
-    "AI/Modular/Mojo/SIMD.md",
-    "AI/Modular/Mojo/Intro.md",
     "AI/Modular/Mojo/benchmarks",
+    "AI/Modular/Mojo/Notes/SIMD.md",
+    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Courses/AK/NNHero",
+    "AI/Courses/AK",
+    "AI/Modular/Mojo/Notes/attachments",
     "AI/Models/Vision Transformers.md",
+    "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
@@ -198,13 +206,17 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154519.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154437.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706153144.png",
-    "AI/Courses/EfficientML/NAS.md",
-    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240706140336.png",
     "AI/Courses/EfficientML/Pruning.md",
+    "Shortcuts.md",
     "AI/Courses/EfficientML/Quantization.md",
-    "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
+    "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/DP.md",
+    "mvpavan.github.io/README.md",
+    "Untitled.md",
+    "Untitled 5.md",
+    "Untitled 2.md",
     "Untitled.canvas"
   ]
 }
