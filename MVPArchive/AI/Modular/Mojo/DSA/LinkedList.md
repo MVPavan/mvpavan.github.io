@@ -70,4 +70,11 @@ Freeing head:  0x55f7fa166120
 
 ### Observations
 
-1. `self.head = self.Node_Ptr.address_of(Node[T](value))`, here `self.head` is assigned address of `created Node[T]`, however when `Node` gets 
+1. `head = UnsafePointer[Node[T]].address_of(Node[T](value))`, here `head` is assigned address of `created Node[T]`, however `Node` dies with ASAP destructor immediately, making `head` a dangling pointer.
+2. So use `address_of` only to refer to already created variables and should agree to follow variable's lifetime.
+3. Instead use 
+	```
+	head = head.alloc(1)
+	initialize_pointee_move(head, Node[T](value))
+	```
+	This creates buffer and copies the new node to buffer and the lifecycle of head and its value is in our hands now.
