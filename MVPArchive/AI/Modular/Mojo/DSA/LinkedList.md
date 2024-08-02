@@ -78,3 +78,4 @@ Freeing head:  0x55f7fa166120
 	initialize_pointee_move(head, Node[T](value))
 	```
 	This creates buffer and copies the new node to buffer and the lifecycle of head and its value is in our hands now.
+	
