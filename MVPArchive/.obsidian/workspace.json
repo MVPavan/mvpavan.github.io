@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/LinkedList.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/LinkedList.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/LinkedList.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/LinkedList.md"
+                "file": "AI/Modular/Mojo/DSA/Introduction.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "0d8687f3377bf3ff",
   "lastOpenFiles": [
-    "AI/Modular/Mojo/Notes/Intro.md",
     "AI/Modular/Mojo/DSA/LinkedList.md",
+    "AI/Modular/Mojo/Notes/Intro.md",
     "AI/Modular/Mojo/DSA/Introduction.md",
     "Investing/Equity/Gold & Silver.md",
     "AI/Modular/Mojo/Notes/Traits.md",
