@@ -83,3 +83,5 @@ Here's a concise explanation of each metric, including value investing perspecti
 57. Chg in FII Hold 3Yr: Change in FII holdings over 3 years.
 58. FII holding: Percentage held by Foreign Institutional Investors.
 59. Avg Vol 1Yr: Average trading volume over 1 year.
+
+
