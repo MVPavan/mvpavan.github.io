@@ -85,3 +85,34 @@ Here's a concise explanation of each metric, including value investing perspecti
 59. Avg Vol 1Yr: Average trading volume over 1 year.
 
 
+### Ratios
+
+ 1. **Debtor Days (Receivable Days)**:
+   - **Meaning**: This measures the average number of days it takes for the company to collect payment from its customers after making a sale. It reflects how efficiently the company is managing its accounts receivable.
+   - **Interpretation**: 
+     - Lower values indicate quicker collection, which is generally positive for cash flow.
+ 2. **Inventory Days**:
+   - **Meaning**: This indicates the average number of days the company holds inventory before selling it. It shows how efficiently the company is managing its stock of goods.
+   - **Interpretation**:
+     - Lower inventory days suggest that the company is selling its inventory quickly, which is typically positive. Higher numbers may indicate overstocking or slow sales.
+ 3. **Days Payable (Creditor Days)**:
+   - **Meaning**: This measures the average number of days the company takes to pay its suppliers. It shows how the company manages its outgoing payments.
+   - **Interpretation**:
+     - Higher values indicate the company is taking longer to pay its suppliers, which could be a strategy to manage cash flow, but might strain supplier relationships.
+     - Lower values indicate quicker payments, which could strengthen supplier relationships but might strain cash flow.
+ 4. **Cash Conversion Cycle (CCC)**:
+   - **Meaning**: This metric calculates the time it takes for the company to convert its investments in inventory and other resources into cash flows from sales. It is calculated as:
+     `CCC = Debtor Days + Inventory Days - Days Payable`
+   - **Interpretation**:
+     - A shorter or negative CCC is generally positive, indicating that the company quickly turns its investments into cash. A negative CCC suggests the company receives payment before paying its suppliers. Longer CCC values may indicate inefficiencies in working capital management.
+ 5. **Working Capital Days**:
+   - **Meaning**: This measures how long it takes to convert working capital into revenue. It’s the average number of days between the outlay of cash for raw material and the inflow of cash from sales.
+   - **Interpretation**:
+     - Fewer working capital days mean more efficient use of the company’s working capital.
+     - Extremely high or fluctuating values could indicate potential issues with managing working capital.
+ 6. **Return on Capital Employed (ROCE)**:
+   - **Meaning**: This is a profitability ratio that measures how efficiently a company is using its capital to generate profits. It’s calculated as:
+     `ROCE = Earnings Before Interest and Tax (EBIT)/Capital Employed`
+   - **Interpretation**:
+     - A higher ROCE indicates more efficient use of capital in generating profits.
+     - Negative ROCE (as seen in March 2020) indicates that the company’s operations were unprofitable compared to the capital invested.
