@@ -38,6 +38,28 @@ Following are collection of data structures and algorithms planned to be impleme
 ## To Do:
 [LeetCode was HARD until I Learned these 15 Patterns (algomaster.io)](https://blog.algomaster.io/p/15-leetcode-patterns)
 
+LeetCode was HARD until I Learned these 15 Patterns:  
+  
+1. Prefix Sum  
+2. Two Pointers  
+3. Sliding Window  
+4. Fast & Slow Pointers  
+5. LinkedList In-place Reversal  
+6. Monotonic Stack  
+7. Top ‘K’ Elements  
+8. Overlapping Intervals  
+9. Modified Binary Search  
+10. Binary Tree Traversal  
+11. Depth-First Search (DFS)  
+12. Breadth-First Search (BFS)  
+13. Matrix Traversal  
+14. Backtracking  
+15. Dynamic Programming Patterns  
+  
+I wrote a detailed article on these patterns and provide links to leetcode problems you can practice to learn them better.  
+  
+Check it out here: [https://lnkd.in/gPEcjyxW](https://lnkd.in/gPEcjyxW)
+
 1. Heap - Heapsort, Dijkstra, Median of a Stream
 2. Binary Tree - Traversals(Pre-Order, Post-Order, In-Order, Level Order) - Lowest Common Ancestor, Left View of a Binary Tree, Maximum Path Sum 
 3. HashMap - Whenever a quick lookup is needed
