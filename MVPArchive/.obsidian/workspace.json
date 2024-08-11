@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md"
+                "file": "AI/Courses/Intro.md"
               }
             }
           },
@@ -158,10 +158,11 @@
   },
   "active": "0d8687f3377bf3ff",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Courses/Intro.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
-    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/DSA/LinkedList.md",
     "AI/Modular/Mojo/Notes/Intro.md",
     "Investing/Equity/Gold & Silver.md",
@@ -203,7 +204,6 @@
     "AI/Courses/EfficientML/DP.md",
     "mvpavan.github.io/README.md",
     "Untitled.md",
-    "Untitled 5.md",
     "Untitled.canvas"
   ]
 }
