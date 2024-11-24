@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Intro.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Courses/Intro.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Courses/Intro.md",
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Courses/Intro.md"
+                "file": "AI/Modular/Mojo/DSA/Introduction.md"
               }
             }
           },
@@ -156,12 +156,12 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "5425c8d10821d8cf",
+  "active": "0d8687f3377bf3ff",
   "lastOpenFiles": [
-    "AI/Courses/Untitled/desktop.ini",
-    "AI/Courses/LLM",
-    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Courses/Intro.md",
+    "AI/Courses/Untitled/desktop.ini",
+    "AI/Courses/GenAI",
+    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
@@ -186,7 +186,6 @@
     "AI/Modular/Mojo/benchmarks",
     "AI/Modular/Mojo/Notes/SIMD.md",
     "AI/Courses/AK/NNHero",
-    "AI/Courses/AK",
     "AI/Models/Vision Transformers.md",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
