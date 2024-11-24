@@ -156,8 +156,9 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "0d8687f3377bf3ff",
+  "active": "5425c8d10821d8cf",
   "lastOpenFiles": [
+    "AI/Courses/Untitled",
     "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Courses/Intro.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
@@ -203,7 +204,6 @@
     "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/DP.md",
     "mvpavan.github.io/README.md",
-    "Untitled.md",
     "Untitled.canvas"
   ]
 }
