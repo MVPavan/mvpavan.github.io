@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/GenAI/Mixture of Experts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
-            }
-          },
-          {
-            "id": "82b94998b0c7e110",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.7"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.7"
+              "title": "Mixture of Experts"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/GenAI/Mixture of Experts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Introduction"
+              "title": "Backlinks for Mixture of Experts"
             }
           },
           {
@@ -125,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Courses/GenAI/Mixture of Experts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Introduction"
+              "title": "Outgoing links from Mixture of Experts"
             }
           },
           {
@@ -152,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md"
+                "file": "AI/Courses/GenAI/Mixture of Experts.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction"
+              "title": "Outline of Mixture of Experts"
             }
           },
           {
@@ -187,13 +174,20 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "82b94998b0c7e110",
+  "active": "0d8687f3377bf3ff",
   "lastOpenFiles": [
+    "AI/Courses/GenAI/attachments/desktop.ini",
+    "AI/Courses/GenAI/attachments/Pasted image 20250108161018.png",
+    "AI/Courses/GenAI/attachments",
+    "AI/Courses/EfficientML/Pruning.md",
+    "AI/Courses/EfficientML/NAS.md",
+    "AI/Courses/EfficientML/Efficient ML.md",
+    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Courses/GenAI/Mixture of Experts.md",
+    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Untitled/desktop.ini",
     "AI/Courses/GenAI",
-    "AI/Modular/Mojo/DSA/Introduction.md",
-    "AI/Courses/AK/NNHero/MicroGrad.md",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
     "AI/Modular/Mojo/DSA/LinkedList.md",
@@ -216,9 +210,7 @@
     "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "AI/Modular/Mojo/benchmarks",
     "AI/Modular/Mojo/Notes/SIMD.md",
-    "AI/Courses/AK/NNHero",
     "AI/Models/Vision Transformers.md",
-    "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
@@ -226,14 +218,10 @@
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154519.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154437.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706153144.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240706140336.png",
-    "AI/Courses/EfficientML/Pruning.md",
     "Shortcuts.md",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/Distributed Training.md",
-    "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/DP.md",
-    "mvpavan.github.io/README.md",
     "Untitled.canvas"
   ]
 }
