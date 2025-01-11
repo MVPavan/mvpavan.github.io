@@ -100,6 +100,9 @@ def function_name():
 > _dereference_ : retrieve or update pointee using `ptr[]`
 
 #### Lifecycle
+
+> Check [LinkedList](../DSA/LinkedList.md) for Memory lifecycle example.
+
 - Uninitialized: `var ptr: UnsafePointer[Int]`
 - Null/invalid pointer -> address 0 : `var ptr: UnsafePointer[Int]()`
 - alloc -> allocates n dtype contiguous blocks of memory: `var ptr = UnsafePointer[dtype].alloc(n)`
