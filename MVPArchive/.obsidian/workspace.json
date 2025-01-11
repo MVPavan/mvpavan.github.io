@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Books/LLM-Scratch/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Books/LLM-Scratch/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "file": "AI/Books/LLM-Scratch/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Modular/Mojo/DSA/Introduction.md"
+                "file": "AI/Books/LLM-Scratch/Untitled.md"
               }
             }
           },
@@ -158,6 +158,10 @@
   },
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
+    "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Books/LLM-Scratch/Untitled.md",
+    "AI/Books/LLM-Scratch",
+    "AI/Books",
     "AI/Modular/Mojo/DSA/LinkedList.md",
     "AI/Courses/Intro.md",
     "AI/Courses/GenAI/attachments/Pasted image 20250108161018.png",
@@ -166,7 +170,6 @@
     "AI/Courses/GenAI",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/Decorators.md",
-    "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Modular/Mojo/Notes/Untitled",
     "conflict-files-obsidian-git.md",
     "Investing/Equity/Gold & Silver.md",
@@ -183,8 +186,6 @@
     "AI/Modular/Mojo/DSA",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
-    "Investing/Equity",
-    "Investing",
     "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
     "AI/Modular/Mojo/benchmarks/Untitled.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
@@ -203,7 +204,6 @@
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Courses/EfficientML/Pruning.md",
-    "AI/Courses/EfficientML/Quantization.md",
     "Untitled.canvas"
   ]
 }
