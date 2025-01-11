@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Books/LLM-Scratch/Untitled.md",
+                "file": "AI/Books/LLM-Scratch/Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Books/LLM-Scratch/Untitled.md",
+                "file": "AI/Books/LLM-Scratch/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Books/LLM-Scratch/Untitled.md",
+                "file": "AI/Books/LLM-Scratch/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Books/LLM-Scratch/Untitled.md"
+                "file": "AI/Books/LLM-Scratch/Introduction.md"
               }
             }
           },
@@ -159,7 +159,7 @@
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
     "AI/Modular/Mojo/DSA/Introduction.md",
-    "AI/Books/LLM-Scratch/Untitled.md",
+    "AI/Books/LLM-Scratch/Introduction.md",
     "AI/Books/LLM-Scratch",
     "AI/Books",
     "AI/Modular/Mojo/DSA/LinkedList.md",
