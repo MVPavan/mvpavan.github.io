@@ -176,6 +176,8 @@
   },
   "active": "0d8687f3377bf3ff",
   "lastOpenFiles": [
+    "AI/Books/LLM-Scratch/desktop.ini",
+    "AI/Books/desktop.ini",
     "AI/Books/LLM-Scratch/Introduction.md",
     "AI/Books/LLM-Scratch",
     "AI/Books",
@@ -202,7 +204,6 @@
     "Investing/Untitled",
     "Investing/Commodity/Untitled",
     "Investing/Commodity",
-    "AI/Modular/Mojo/Notes",
     "AI/Modular/Mojo/benchmarks/Results.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
     "conflict-files-obsidian-git.md",
@@ -221,7 +222,6 @@
     "Shortcuts.md",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/EfficientML/Distributed Training.md",
-    "AI/Courses/EfficientML/DP.md",
     "Untitled.canvas"
   ]
 }
