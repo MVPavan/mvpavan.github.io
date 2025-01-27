@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Smol/Smol Course.md",
+                "file": "AI/Models/Vision/ViT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Smol Course"
+              "title": "ViT"
             }
           }
         ]
@@ -176,8 +176,13 @@
   },
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
-    "AI/Courses/Intro.md",
+    "AI/Models/Vision/attachments/desktop.ini",
+    "AI/Models/Vision/attachments/Pasted image 20250127162012.png",
+    "AI/Models/Vision/attachments",
+    "AI/Models/Vision/desktop.ini",
+    "AI/Models/Vision",
     "AI/Courses/Smol/Smol Course.md",
+    "AI/Courses/Intro.md",
     "Shortcuts.md",
     "AI/Courses/Untitled/desktop.ini",
     "AI/Courses/Smol",
@@ -199,10 +204,7 @@
     "AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/Notes/SIMD.md",
     "AI/Modular/Mojo/Notes/Intro.md",
-    "AI/Modular/Mojo/Notes/attachments",
-    "AI/Modular/Mojo/Notes",
     "AI/Modular/Mojo/DSA/Algorithms/Introduction.md",
-    "AI/Modular/Mojo/DSA/Algorithms",
     "Investing/Equity/Screener.md",
     "Investing/Equity/Notes.md",
     "AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
@@ -213,15 +215,13 @@
     "AI/Modular/Mojo/attachments/Pasted image 20240713130310.png",
     "AI/Modular/Mojo/SIMD.md",
     "AI/Modular/Mojo/Intro.md",
-    "AI/Models/Vision Transformers.md",
+    "AI/Models/Vision/ViT.md",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155412.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155217.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706155023.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154604.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240706154519.png",
-    "AI/Courses/EfficientML/attachments/Pasted image 20240706154437.png",
     "AI/Courses/EfficientML/NAS.md",
-    "AI/Courses/AK/NNHero/MicroGrad.md",
     "Untitled.canvas"
   ]
 }
