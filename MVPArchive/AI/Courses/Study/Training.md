@@ -25,12 +25,23 @@
 	Using a specific structured chat template (conversation/instructions/QA) text dataset, model is supervised finetuned to align to answer in that structure. Data can be domain specific.
 
 # Preference Alignment:
-## DPO: Direct preference optimization
 
 ## RLHF: Reinforcement Learning from Human Feedback
 
+![](attachments/Pasted%20image%2020250131092813.png)
+
+![](attachments/Pasted%20image%2020250131092822.png)
+
+![](attachments/Pasted%20image%2020250131093144.png)
 
 
+## DPO: Direct preference optimization
+
+![](attachments/Pasted%20image%2020250131094907.png)
+
+![](attachments/Pasted%20image%2020250131094918.png)
+
+![](attachments/Pasted%20image%2020250131094934.png)
 
 
 
