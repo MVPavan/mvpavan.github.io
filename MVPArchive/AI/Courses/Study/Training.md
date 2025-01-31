@@ -5,6 +5,10 @@
 
 ![](attachments/Pasted%20image%2020250131085440.png)
 
+![](attachments/Pasted%20image%2020250131095705.png)
+
+![](attachments/Pasted%20image%2020250131095717.png)
+
 ## DORA
 
 ![](attachments/Pasted%20image%2020250131085638.png)
