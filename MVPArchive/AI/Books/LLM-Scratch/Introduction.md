@@ -1,1 +1,0 @@
-Regression model: A **regression model** is a type of statistical or machine learning model used to predict a continuous target variable (dependent variable) based on one or more predictor variables (independent variables). It aims to model the relationship between the inputs and the output so that the target variable can be accurately estimated for new or unseen data.
