@@ -47,9 +47,9 @@
 
 ![](attachments/Pasted%20image%2020250131094934.png)
 
+## ORPO: Odds Ratio Preference Optimization
 
-
-
+![](attachments/Pasted%20image%2020250204203001.png)
 
 
 
