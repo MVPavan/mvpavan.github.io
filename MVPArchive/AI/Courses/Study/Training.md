@@ -52,6 +52,38 @@
 ![](attachments/Pasted%20image%2020250204203001.png)
 
 
+![](attachments/Pasted%20image%2020250205092824.png)
+
+![](attachments/Pasted%20image%2020250205092846.png)
+
+![](attachments/Pasted%20image%2020250205092907.png)
+
+odds(p) = p/(1-p) -> prob of event happening / prob of not happening
+OR(a,b) = odds(a)/odds(b)
+yw -> desired response
+yl -> undesired response
+Aim OR(yw,yl) to be high
+
+Lor -> is low if OR(yw,yl) is high and vice verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # end
