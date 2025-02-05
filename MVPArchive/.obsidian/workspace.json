@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Loss Functions.md",
+                "file": "AI/Models/Vision/ViT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Loss Functions"
+              "title": "ViT"
             }
           },
           {
@@ -191,9 +191,12 @@
   },
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
-    "Shortcuts.md",
-    "AI/Courses/Study/Loss Functions.md",
+    "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
+    "AI/Courses/EfficientML/NAS.md",
+    "AI/Courses/EfficientML/Quantization.md",
+    "AI/Courses/Study/Loss Functions.md",
+    "Shortcuts.md",
     "AI/Courses/Study/attachments/Pasted image 20250205120542.png",
     "AI/Courses/Study/attachments/Pasted image 20250205092907.png",
     "AI/Courses/Study/attachments/Pasted image 20250205092846.png",
@@ -206,7 +209,6 @@
     "AI/Courses/Study/attachments/Pasted image 20250131094907.png",
     "AI/Courses/Smol/Smol Course.md",
     "AI/Courses/Study/Mixture of Experts.md",
-    "AI/Courses/Intro.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Books/LLM-Scratch/Introduction.md",
     "AI/Models/Vision/ViT.md",
@@ -235,7 +237,6 @@
     "AI/Modular/Mojo/benchmarks/Untitled.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
     "AI/Modular/Mojo/benchmarks/MatMul.md",
-    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
     "Untitled.canvas"
   ]
 }
