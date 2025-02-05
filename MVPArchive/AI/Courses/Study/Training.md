@@ -73,8 +73,10 @@ h(d) -> increase as yw increases and decreases as yw decreases
 h(d) -> decreases (negative) as yl increases and increases as yl decreases
 
 so gradient boosts yw increase and yl increase
+Implementation in HF library, probabilities we get are logsoftmax so applying exp will give actual probs. 
 
 
+![](attachments/Pasted%20image%2020250205120542.png)
 
 
 
