@@ -64,7 +64,15 @@ yw -> desired response
 yl -> undesired response
 Aim OR(yw,yl) to be high
 
-Lor -> is low if OR(yw,yl) is high and vice verse
+Lor -> is low if OR(yw,yl) is high and vice versa
+
+Delta(Lor) = delta(d).h(d)
+Aim to decrease Delta(Lor) as yw increases, yl decreases and vice versa
+delta(d) -> odds(yl)/(odds(yw)+odds(yl)) --> decreases as yl decreases and yw increases
+h(d) -> increase as yw increases and decreases as yw decreases
+h(d) -> decreases (negative) as yl increases and increases as yl decreases
+
+so gradient boosts yw increase and yl increase
 
 
 
