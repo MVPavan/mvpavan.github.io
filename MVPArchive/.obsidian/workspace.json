@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Training.md",
+                "file": "AI/Courses/Study/Loss Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Training"
+              "title": "Loss Functions"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Training.md",
+                "file": "Shortcuts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Training"
+              "title": "Shortcuts"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,21 +189,21 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "2093763160ba6d47",
+  "active": "a03911ebcacb09be",
   "lastOpenFiles": [
+    "Shortcuts.md",
+    "AI/Courses/Study/Loss Functions.md",
+    "AI/Courses/Study/Training.md",
     "AI/Courses/Study/attachments/Pasted image 20250205120542.png",
     "AI/Courses/Study/attachments/Pasted image 20250205092907.png",
     "AI/Courses/Study/attachments/Pasted image 20250205092846.png",
     "AI/Courses/Study/attachments/Pasted image 20250205092824.png",
-    "AI/Courses/Study/Loss Functions.md",
-    "AI/Courses/Study/Training.md",
     "AI/Courses/Study/attachments/Pasted image 20250204203001.png",
     "AI/Courses/Study/attachments/Pasted image 20250131095717.png",
     "AI/Courses/Study/attachments/Pasted image 20250131095705.png",
     "AI/Courses/Study/attachments/Pasted image 20250131094934.png",
     "AI/Courses/Study/attachments/Pasted image 20250131094918.png",
     "AI/Courses/Study/attachments/Pasted image 20250131094907.png",
-    "AI/Courses/Study/attachments/Pasted image 20250131093144.png",
     "AI/Courses/Smol/Smol Course.md",
     "AI/Courses/Study/Mixture of Experts.md",
     "AI/Courses/Intro.md",
@@ -215,7 +214,6 @@
     "AI/Models/Vision/attachments",
     "AI/Models/Vision/desktop.ini",
     "AI/Models/Vision",
-    "Shortcuts.md",
     "AI/Courses/Untitled/desktop.ini",
     "AI/Courses/Smol",
     "conflict-files-obsidian-git.md",
