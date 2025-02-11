@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Untitled.md",
+                "file": "AI/Courses/Study/Reasoning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Reasoning"
             }
           },
           {
@@ -192,7 +192,7 @@
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
     "AI/Models/Vision/ViT.md",
-    "AI/Courses/Study/Untitled.md",
+    "AI/Courses/Study/Reasoning.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
     "AI/Courses/EfficientML/NAS.md",
