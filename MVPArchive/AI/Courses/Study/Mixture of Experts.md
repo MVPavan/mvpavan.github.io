@@ -1,5 +1,7 @@
 [Model Merging, Mixtures of Experts, and Towards Smaller LLMs](https://magazine.sebastianraschka.com/p/research-papers-in-january-2024?open=false#%C2%A7mixtral-of-experts)
 
+[Home | Substack](https://substack.com/home/post/p-148217245)
+
 ![](attachments/Pasted%20image%2020250108161018.png)
 
 

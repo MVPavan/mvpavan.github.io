@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Reasoning.md",
+                "file": "AI/Courses/Study/Mixture of Experts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reasoning"
+              "title": "Mixture of Experts"
             }
           },
           {
@@ -191,6 +191,7 @@
   },
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
+    "AI/Courses/Study/Reasoning.md",
     "AI/Courses/Study/attachments/Pasted image 20250211103744.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103737.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103617.png",
@@ -202,14 +203,12 @@
     "AI/Courses/Study/attachments/Pasted image 20250211101501.png",
     "AI/Courses/Study/attachments/Pasted image 20250211101350.png",
     "AI/Models/Vision/ViT.md",
-    "AI/Courses/Study/Reasoning.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/Study/Loss Functions.md",
     "Shortcuts.md",
-    "AI/Courses/Study/attachments/Pasted image 20250205120542.png",
     "AI/Courses/Smol/Smol Course.md",
     "AI/Courses/Study/Mixture of Experts.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
