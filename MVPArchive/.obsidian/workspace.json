@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Models/Vision/ViT.md",
+                "file": "AI/Courses/Study/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ViT"
+              "title": "Untitled"
             }
           },
           {
@@ -191,6 +191,8 @@
   },
   "active": "a03911ebcacb09be",
   "lastOpenFiles": [
+    "AI/Models/Vision/ViT.md",
+    "AI/Courses/Study/Untitled.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
     "AI/Courses/EfficientML/NAS.md",
@@ -211,7 +213,6 @@
     "AI/Courses/Study/Mixture of Experts.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Books/LLM-Scratch/Introduction.md",
-    "AI/Models/Vision/ViT.md",
     "AI/Models/Vision/attachments/desktop.ini",
     "AI/Models/Vision/attachments",
     "AI/Models/Vision/desktop.ini",
@@ -236,7 +237,6 @@
     "Investing/Equity/Notes.md",
     "AI/Modular/Mojo/benchmarks/Untitled.md",
     "AI/Modular/Mojo/benchmarks/Resize.md",
-    "AI/Modular/Mojo/benchmarks/MatMul.md",
     "Untitled.canvas"
   ]
 }
