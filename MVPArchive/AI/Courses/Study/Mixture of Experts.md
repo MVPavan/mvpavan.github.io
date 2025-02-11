@@ -9,18 +9,22 @@
 
 ![](attachments/Pasted%20image%2020250131084509.png)
 
+![](attachments/Pasted%20image%2020250211114836.png)
+
 ![](attachments/Pasted%20image%2020250131084526.png)
 
 ![](attachments/Pasted%20image%2020250131084538.png)
 
 
+![](attachments/Pasted%20image%2020250211114937.png)
 
 
 
+### Load Balancing:
 
+ to prevent overfitting on the same experts
 
-
-
+![](attachments/Pasted%20image%2020250211115226.png)
 
 
 
