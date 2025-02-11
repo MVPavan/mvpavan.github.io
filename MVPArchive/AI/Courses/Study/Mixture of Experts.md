@@ -27,7 +27,9 @@
 ![](attachments/Pasted%20image%2020250211115226.png)
 
 
+## Auxiliary Loss
 
+![](attachments/Pasted%20image%2020250211135634.png)
 
 
 
