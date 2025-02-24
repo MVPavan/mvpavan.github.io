@@ -116,3 +116,6 @@ Here's a concise explanation of each metric, including value investing perspecti
    - **Interpretation**:
      - A higher ROCE indicates more efficient use of capital in generating profits.
      - Negative ROCE (as seen in March 2020) indicates that the company’s operations were unprofitable compared to the capital invested.
+
+
+Scrr
