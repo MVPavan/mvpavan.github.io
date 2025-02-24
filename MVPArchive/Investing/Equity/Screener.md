@@ -118,4 +118,6 @@ Here's a concise explanation of each metric, including value investing perspecti
      - Negative ROCE (as seen in March 2020) indicates that the company’s operations were unprofitable compared to the capital invested.
 
 
-Scrr
+Screens:
+
+[Shashank Profile - Screener](https://www.screener.in/user/78906/)
