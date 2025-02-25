@@ -36,17 +36,15 @@
             }
           },
           {
-            "id": "2093763160ba6d47",
+            "id": "cc106fde93cefd18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Shortcuts.md",
-                "mode": "source",
-                "source": false
+                "file": "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png"
               },
-              "icon": "lucide-file",
-              "title": "Shortcuts"
+              "icon": "lucide-image",
+              "title": "Pasted image 20240704185237"
             }
           }
         ],
@@ -107,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 576.5
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -206,6 +204,9 @@
   },
   "active": "2ea2cccd0199b960",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png",
+    "AI/Courses/EfficientML/Quantization.md",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704184804.png",
     "Investing/Equity/Screener.md",
     "AI/Courses/Study/attachments/Pasted image 20250211135634.png",
     "AI/Courses/Study/attachments/Pasted image 20250211115226.png",
@@ -217,12 +218,10 @@
     "AI/Courses/Study/attachments/Pasted image 20250211103617.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103112.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103014.png",
-    "AI/Courses/Study/attachments/Pasted image 20250211102318.png",
     "AI/Models/Vision/ViT.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
     "AI/Courses/EfficientML/NAS.md",
-    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/Study/Loss Functions.md",
     "Shortcuts.md",
     "AI/Courses/Smol/Smol Course.md",
