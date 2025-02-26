@@ -36,19 +36,19 @@
             }
           },
           {
-            "id": "cc106fde93cefd18",
+            "id": "6677d7b9ce136f08",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png"
+                "file": "AI/Courses/EfficientML/attachments/Pasted image 20240705175717.png"
               },
               "icon": "lucide-image",
-              "title": "Pasted image 20240704185237"
+              "title": "Pasted image 20240705175717"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,10 +202,11 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "2ea2cccd0199b960",
+  "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
-    "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png",
     "AI/Courses/EfficientML/Quantization.md",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240704185237.png",
+    "AI/Courses/EfficientML/attachments/Pasted image 20240705175717.png",
     "AI/Courses/EfficientML/attachments/Pasted image 20240704184804.png",
     "Investing/Equity/Screener.md",
     "AI/Courses/Study/attachments/Pasted image 20250211135634.png",
@@ -216,8 +217,6 @@
     "AI/Courses/Study/attachments/Pasted image 20250211103744.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103737.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103617.png",
-    "AI/Courses/Study/attachments/Pasted image 20250211103112.png",
-    "AI/Courses/Study/attachments/Pasted image 20250211103014.png",
     "AI/Models/Vision/ViT.md",
     "AI/Courses/Intro.md",
     "AI/Courses/Study/Training.md",
