@@ -77,3 +77,10 @@ Cross-entropy is equivalent to the **negative log-likelihood (NLL)** when using 
 $$
 \text{Cross-Entropy Loss} = \text{Negative Log-Likelihood}
 $$
+
+## 6. Perplexity
+exponentiation of the average negative log-likelihood of a sequence. For a given sequence of words w<sub>1</sub>,w<sub>2</sub>,....,w<sub>N</sub> the perplexity is calculated as
+
+$$
+\text{PPL} = 2^{-\frac{1}{N} \sum_{i=1}^N \log_2 P(w_i \mid w_1, w_2, \ldots, w_{i-1})}
+$$
