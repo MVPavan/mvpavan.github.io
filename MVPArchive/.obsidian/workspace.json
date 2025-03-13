@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UPSC answer correction.md",
+                "file": "AI/Courses/Agents/Smol Course.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UPSC answer correction"
+              "title": "Smol Course"
             }
           },
           {
@@ -191,11 +191,11 @@
   },
   "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
-    "AI/Courses/Study/Evaluation.md",
     "UPSC answer correction.md",
+    "AI/Courses/Study/Evaluation.md",
     "AI/Courses/Study/Loss - Metrics.md",
     "Shortcuts.md",
-    "AI/Courses/Smol/Smol Course.md",
+    "AI/Courses/Agents/Smol Course.md",
     "Investing/Equity/Potential.md",
     "Investing/Equity/Notes.md",
     "Investing/Equity/Screener.md",
@@ -223,7 +223,7 @@
     "AI/Models/Vision/desktop.ini",
     "AI/Models/Vision",
     "AI/Courses/Untitled/desktop.ini",
-    "AI/Courses/Smol",
+    "AI/Courses/Agents",
     "conflict-files-obsidian-git.md",
     "AI/Modular/Mojo/DSA/Introduction.md",
     "AI/Books/LLM-Scratch",
