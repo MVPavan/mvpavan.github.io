@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Agents/Smol Course.md",
+                "file": "Investing/Equity/Potential.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Smol Course"
+              "title": "Potential"
             }
           },
           {
@@ -191,13 +191,14 @@
   },
   "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
+    "Investing/Equity/Notes.md",
+    "Investing/Equity/Potential.md",
+    "Investing/Equity/Gold & Silver.md",
+    "AI/Courses/Agents/Smol Course.md",
     "UPSC answer correction.md",
     "AI/Courses/Study/Evaluation.md",
     "AI/Courses/Study/Loss - Metrics.md",
     "Shortcuts.md",
-    "AI/Courses/Agents/Smol Course.md",
-    "Investing/Equity/Potential.md",
-    "Investing/Equity/Notes.md",
     "Investing/Equity/Screener.md",
     "AI/Courses/Study/Training.md",
     "AI/Courses/EfficientML/Quantization.md",
@@ -233,7 +234,6 @@
     "AI/Courses/Study",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/Decorators.md",
-    "Investing/Equity/Gold & Silver.md",
     "AI/Modular/Mojo/benchmarks/Results.md",
     "AI/Modular/Mojo/Notes/SIMD.md",
     "AI/Modular/Mojo/Notes/Intro.md",
