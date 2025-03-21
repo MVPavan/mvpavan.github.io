@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "fe3546ecc0d33282",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
-            }
-          },
-          {
             "id": "3aeebf23b10033f9",
             "type": "leaf",
             "state": {
@@ -47,8 +35,7 @@
               "title": "Shortcuts"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,7 +189,7 @@
       "janitor:Janitor: scan vault": false
     }
   },
-  "active": "fe3546ecc0d33282",
+  "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
     "UPSC answer correction.md",
     "AI/Courses/Study/Evaluation.md",
