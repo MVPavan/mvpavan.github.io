@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Investing/Equity/Potential.md",
+                "file": "AI/Models/Vision/Vision Transformer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Potential"
+              "title": "Vision Transformer"
             }
           },
           {
@@ -191,8 +191,8 @@
   },
   "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
-    "Investing/Equity/Notes.md",
     "Investing/Equity/Potential.md",
+    "Investing/Equity/Notes.md",
     "Investing/Equity/Gold & Silver.md",
     "AI/Courses/Agents/Smol Course.md",
     "UPSC answer correction.md",
@@ -213,7 +213,7 @@
     "AI/Courses/Study/attachments/Pasted image 20250211103744.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103737.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103617.png",
-    "AI/Models/Vision/ViT.md",
+    "AI/Models/Vision/Vision Transformer.md",
     "AI/Courses/Intro.md",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/Study/Mixture of Experts.md",
