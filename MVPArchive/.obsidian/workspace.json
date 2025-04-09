@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/Study/Loss - Metrics.md",
+                "file": "AI/Models/Vision/Vision Transformer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Loss - Metrics"
+              "title": "Vision Transformer"
             }
           },
           {
@@ -191,6 +191,8 @@
   },
   "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
+    "AI/Models/Vision/attachments/Pasted image 20250409150743.png",
+    "AI/Courses/Study/Loss - Metrics.md",
     "AI/Models/Vision/Vision Transformer.md",
     "Investing/Equity/Potential.md",
     "Investing/Equity/Notes.md",
@@ -198,7 +200,6 @@
     "AI/Courses/Agents/Smol Course.md",
     "UPSC answer correction.md",
     "AI/Courses/Study/Evaluation.md",
-    "AI/Courses/Study/Loss - Metrics.md",
     "Shortcuts.md",
     "Investing/Equity/Screener.md",
     "AI/Courses/Study/Training.md",
@@ -236,7 +237,6 @@
     "AI/Modular/Mojo/Notes/Decorators.md",
     "AI/Modular/Mojo/benchmarks/Results.md",
     "AI/Modular/Mojo/Notes/SIMD.md",
-    "AI/Modular/Mojo/Notes/Intro.md",
     "Untitled.canvas"
   ]
 }
