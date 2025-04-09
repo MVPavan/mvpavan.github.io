@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Models/Vision/Vision Transformer.md",
+                "file": "AI/Courses/Study/Loss - Metrics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vision Transformer"
+              "title": "Loss - Metrics"
             }
           },
           {
@@ -191,6 +191,7 @@
   },
   "active": "6677d7b9ce136f08",
   "lastOpenFiles": [
+    "AI/Models/Vision/Vision Transformer.md",
     "Investing/Equity/Potential.md",
     "Investing/Equity/Notes.md",
     "Investing/Equity/Gold & Silver.md",
@@ -213,7 +214,6 @@
     "AI/Courses/Study/attachments/Pasted image 20250211103744.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103737.png",
     "AI/Courses/Study/attachments/Pasted image 20250211103617.png",
-    "AI/Models/Vision/Vision Transformer.md",
     "AI/Courses/Intro.md",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/Study/Mixture of Experts.md",
