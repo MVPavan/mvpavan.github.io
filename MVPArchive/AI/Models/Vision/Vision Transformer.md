@@ -42,7 +42,8 @@ DINO introduces a unique approach to knowledge distillation.
 ![](attachments/Pasted%20image%2020250410102412.png)
 
 
+![](attachments/Pasted%20image%2020250410103553.png)
 
+![](attachments/Pasted%20image%2020250410104305.png)
 
-
-
+![](attachments/Pasted%20image%2020250410104324.png)
