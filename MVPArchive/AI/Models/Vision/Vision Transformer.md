@@ -6,8 +6,10 @@
 
 ## DETR
 
+- Has fixed 100 object queries
 
-
+![](attachments/Pasted%20image%2020250410090245.png)
+![](attachments/Pasted%20image%2020250410090241.png)
 ## DINO
 
 [Emerging Properties in Self-Supervised Vision Transformers (DINO) — Paper Summary | by Anuj Dutt | Medium](https://medium.com/@anuj.dutt9/emerging-properties-in-self-supervised-vision-transformers-dino-paper-summary-4c7a6ed68161)
@@ -26,3 +28,21 @@ DINO introduces a unique approach to knowledge distillation.
 3. **Loss Minimization:** The goal is to minimize a loss function measuring the similarity of representations from the student and teacher for different views of the same image, without using labeled data.
 
 ![](attachments/Pasted%20image%2020250409150743.png)
+
+
+
+## Deformable DETR
+
+##### Deformable Convolution
+![](attachments/Pasted%20image%2020250410090157.png)
+
+![](attachments/Pasted%20image%2020250410091610.png)
+
+
+
+
+
+
+
+
+
