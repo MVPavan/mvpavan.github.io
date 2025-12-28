@@ -1,4 +1,0 @@
-install ruby using nvm
-
-bundle install
-bundle exec jekyll serve

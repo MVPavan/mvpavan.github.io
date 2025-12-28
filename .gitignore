@@ -1,4 +1,19 @@
-*.lock
-**/_site# pixi environments
+# Quartz build output
+public/
+.quartz-cache/
+
+# Node
+node_modules/
+package-lock.json
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# Jekyll (deprecated)
+_site/
+Gemfile.lock
+# pixi environments
 .pixi/*
 !.pixi/config.toml
