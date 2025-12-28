@@ -18,7 +18,7 @@ Types:
   - should implement `__init__`, `__copyinit__`, `__del__` and no move.
 - @register_passable("trivial")
   - can only define `__init__` not mandatory, other are only defined by compiler.
-  - Arithmetic types such as `Int`, `Bool`, `Float64` etc.
+  - Arithmetic types such as `Int`, `Bool`, `Float64` etc.
   - Pointers (the address value is trivial, not the data being pointed to).
   - Arrays of other trivial types, including SIMD.
 

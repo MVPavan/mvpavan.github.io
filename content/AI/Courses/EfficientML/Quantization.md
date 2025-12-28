@@ -151,7 +151,7 @@ Algorithm:
 
 1. **Collect Activation Statistics**: During this calibration phase, a subset of the data is used to collect statistics on the activations produced by the model. This involves running the model on this data and recording the range of values and the distribution of activations.
 2. **Search Weight Quantization Parameters**: Weights are quantized by taking the activation statistics into account (scale). Concretely, we perform a space search for quantization parameters (e.g., scales and zero points), to minimize the distortions incurred by quantization on output activations. As a result, the quantized weights can be accurately represented with fewer bits.
-3. **Quantize** : With the quantization parameters in place, the model weights are quantized using a reduced number of bits.
+3. **Quantize** : With the quantization parameters in place, the model weights are quantized using a reduced number of bits.
 
 ![[Pasted-image-20240705192348.png]]
 - Just keeping 1% of salient weight improves PPL(perplexity) from 43.2 to 13.0

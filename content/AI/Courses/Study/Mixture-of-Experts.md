@@ -22,7 +22,7 @@
 
 ### Load Balancing:
 
- to prevent overfitting on the same experts
+ to prevent overfitting on the same experts
 
 ![[Pasted-image-20250211115226.png]]
 

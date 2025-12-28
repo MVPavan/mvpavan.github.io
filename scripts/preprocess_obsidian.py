@@ -10,7 +10,8 @@ Transformations:
 2. Convert markdown image links → WikiLinks: ![](attachments/file.png) → ![[file.png]]
 3. Fix nested heading links: [[#Parent#Child|Text]] → [[#Child|Text]]
 4. Convert tab indentation → spaces in lists
-5. Update internal links to use dashed filenames
+5. Replace non-breaking spaces → regular spaces
+6. Update internal links to use dashed filenames
 
 Usage:
     python preprocess_obsidian.py [content_dir]
@@ -130,6 +131,15 @@ def transform_tab_indentation(content: str) -> str:
     return '\n'.join(result)
 
 
+def transform_non_breaking_spaces(content: str) -> str:
+    """
+    Convert non-breaking spaces (\xa0) to regular spaces.
+    
+    Idempotent: Already regular spaces are not affected.
+    """
+    return content.replace('\xa0', ' ')
+
+
 def update_internal_links(content: str, renames: dict[str, str]) -> str:
     """
     Update WikiLinks to use new (dashed) filenames.
@@ -161,6 +171,7 @@ def process_markdown_file(file_path: Path, renames: dict[str, str]) -> bool:
     original = content
     
     # Apply transformations in order
+    content = transform_non_breaking_spaces(content)
     content = transform_image_links(content)
     content = transform_nested_heading_links(content)
     content = transform_tab_indentation(content)
@@ -211,6 +222,7 @@ def main(content_dir: str = "./content"):
     print("  • Image links: ![](attachments/...) → ![[...]]")
     print("  • Heading links: [[#Parent#Child]] → [[#Child]]")
     print("  • List indentation: tabs → spaces")
+    print("  • Non-breaking spaces: \\xa0 → space")
 
 
 if __name__ == "__main__":
