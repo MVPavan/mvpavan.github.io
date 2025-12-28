@@ -11,7 +11,7 @@ Transformations:
 3. Fix nested heading links: [[#Parent#Child|Text]] → [[#Child|Text]]
 4. Convert tab indentation → spaces in lists
 5. Replace non-breaking spaces → regular spaces
-6. Update internal links to use dashed filenames
+6. Update all WikiLinks to use dashed filenames
 
 Usage:
     python preprocess_obsidian.py [content_dir]
@@ -140,6 +140,37 @@ def transform_non_breaking_spaces(content: str) -> str:
     return content.replace('\xa0', ' ')
 
 
+def transform_all_wikilinks(content: str) -> str:
+    """
+    Update ALL WikiLinks to use dashed filenames.
+    Transforms:
+        [[Note Name]] → [[Note-Name]]
+        ![[Image Name.png]] → ![[Image-Name.png]]
+        [[Note Name|Alias]] → [[Note-Name|Alias]]
+    
+    Idempotent: Links already using dashes are not affected.
+    """
+    # Pattern matches [[Target]] or [[Target|Alias]]
+    # Group 1: Optional ! (for images)
+    # Group 2: Target filename (before | or ])
+    # Group 3: Optional alias (from | to ])
+    pattern = r'(!?)\[\[([^\]|]+)(\|[^\]]+)?\]\]'
+    
+    def replace_match(match):
+        is_image = match.group(1)
+        target = match.group(2)
+        alias = match.group(3) if match.group(3) else ""
+        
+        # Only replace spaces in the target filename
+        if " " in target:
+            new_target = target.replace(" ", "-")
+            return f"{is_image}[[{new_target}{alias}]]"
+        
+        return match.group(0)
+    
+    return re.sub(pattern, replace_match, content)
+
+
 def update_internal_links(content: str, renames: dict[str, str]) -> str:
     """
     Update WikiLinks to use new (dashed) filenames.
@@ -173,6 +204,7 @@ def process_markdown_file(file_path: Path, renames: dict[str, str]) -> bool:
     # Apply transformations in order
     content = transform_non_breaking_spaces(content)
     content = transform_image_links(content)
+    content = transform_all_wikilinks(content) # Sanitize generic WikiLinks
     content = transform_nested_heading_links(content)
     content = transform_tab_indentation(content)
     content = update_internal_links(content, renames)
@@ -222,6 +254,7 @@ def main(content_dir: str = "./content"):
     print("  • Image links: ![](attachments/...) → ![[...]]")
     print("  • Heading links: [[#Parent#Child]] → [[#Child]]")
     print("  • List indentation: tabs → spaces")
+    print("  • WikiLinks: [[With Spaces]] → [[With-Dashes]]")
     print("  • Non-breaking spaces: \\xa0 → space")
 
 

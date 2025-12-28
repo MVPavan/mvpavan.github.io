@@ -1,9 +1,9 @@
 - [[#Resources|Resources]]
-- [[#Data Parallel|Data Parallel]]
-- [[#Deepspeed ZeRO Data Parallel|Deepspeed ZeRO Data Parallel]]
-- [[#Pipeline Parallel (Model Parallel)|Pipeline Parallel (Model Parallel)]]
-- [[#Tensor Parallel|Tensor Parallel]]
-- [[#2D & 3D Parallelism|2D & 3D Parallelism]]
+- [[#Data-Parallel|Data Parallel]]
+- [[#Deepspeed-ZeRO-Data-Parallel|Deepspeed ZeRO Data Parallel]]
+- [[#Pipeline-Parallel-(Model-Parallel)|Pipeline Parallel (Model Parallel)]]
+- [[#Tensor-Parallel|Tensor Parallel]]
+- [[#2D-&-3D-Parallelism|2D & 3D Parallelism]]
 
 ## Resources
 - https://hanlab.mit.edu/courses/2023-fall-65940 lectures 17,18.
@@ -18,7 +18,7 @@ Types of distributed training:
 - [Tensor Parallel:](#Tensor-Parallel)
 - [2D & 3D Parallelism:](#2D-&-3D-Parallelism)
 
-![[Pasted image 20240703184727.png]]
+![[Pasted-image-20240703184727.png]]
 
 ## Data Parallel
 
@@ -33,11 +33,11 @@ Types of distributed training:
 | **Synchronization**      | Implicit, handled by the framework          | Explicit, requires setting up distributed process groups                               |
 | **Code Example**         | `model = nn.DataParallel(model).cuda()`     | `dist.init_process_group(backend='nccl'); model = DDP(model, device_ids=[local_rank])` |
 
-![[Pasted image 20240703173906.png]]
+![[Pasted-image-20240703173906.png]]
 
-![[Pasted image 20240703171020.png]]
+![[Pasted-image-20240703171020.png]]
 
-![[Pasted image 20240703174204.png]]
+![[Pasted-image-20240703174204.png]]
 
 Conclusion:
 - The only communication DDP performs per batch is sending gradients, whereas DP does 5 different data exchanges per batch.
@@ -60,7 +60,7 @@ Thus Deepspeed zero is divided into three stages:
 - Stage 2 - Add Gradient Partitioning (Pos+g), sharding Gradients across gpus.
 - Stage 3 - Add Parameter Partitioning (Pos+g+p), sharding Parameters across gpus.
 
-![[Pasted image 20240703171554.png]]
+![[Pasted-image-20240703171554.png]]
 
 Speed vs Memory:
 - speed - Zero 1 >  Zero 2  >  Zero 3
@@ -73,9 +73,9 @@ Speed vs Memory:
 
 Splits the model across gpus, useful if model size larger than single gpu memory.
 
-![[Pasted image 20240703183650.png]]
+![[Pasted-image-20240703183650.png]]
 
-![[Pasted image 20240703183721.png]]
+![[Pasted-image-20240703183721.png]]
 
 - Good for loading very large models
 - Higher GPU idle time, it can be reduced using micro batches as shown above, still GPU utilization is poor compared to other techniques.
@@ -84,14 +84,14 @@ Splits the model across gpus, useful if model size larger than single gpu memory
 
 Split a weight tensor into N chunks, parallelize computation and aggregate results via all reduce.
 
-![[Pasted image 20240703184517.png]]
+![[Pasted-image-20240703184517.png]]
 
 
 ## 2D & 3D Parallelism
 
-![[Pasted image 20240703184944.png]]
-![[Pasted image 20240703185009.png]]
-![[Pasted image 20240703185030.png]]
+![[Pasted-image-20240703184944.png]]
+![[Pasted-image-20240703185009.png]]
+![[Pasted-image-20240703185030.png]]
 
 There are libraries which support 3D parallelism out of the box, below are a few.
 - Deepspeed
