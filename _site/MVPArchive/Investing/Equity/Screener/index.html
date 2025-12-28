@@ -1,0 +1,455 @@
+<!doctype html>
+
+
+
+
+<html
+    dir="ltr"
+    lang="en"
+    
+>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link
+        rel="shortcut icon"
+        type="image/png"
+        
+            href="/favicon.png"
+        
+    >
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>MVPavan’s Notes | Welcome to my GitHub Pages site.</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="MVPavan’s Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to my GitHub Pages site." />
+<meta property="og:description" content="Welcome to my GitHub Pages site." />
+<link rel="canonical" href="http://localhost:4000/MVPArchive/Investing/Equity/Screener/" />
+<meta property="og:url" content="http://localhost:4000/MVPArchive/Investing/Equity/Screener/" />
+<meta property="og:site_name" content="MVPavan’s Notes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MVPavan’s Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Welcome to my GitHub Pages site.","headline":"MVPavan’s Notes","url":"http://localhost:4000/MVPArchive/Investing/Equity/Screener/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts -->
+</head>
+
+    <body>
+        
+            <div class="">
+    <script
+        src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"
+    ></script>
+
+    <div class="container py-6 px-4" id="cookieBanner">
+        <div class="columns">
+            <div class="column is-fullwidth ">
+                <div class="content">
+                    <p>We use cookies on this site to enhance your user experience</p>
+                    <p>
+                        By clicking the Accept button, you agree to us doing so.
+                        <a href="/cookie-policy/">More info on our cookie policy</a>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="button is-primary" onclick="acceptCookies()">Accept all cookies</button>
+                    <button class="button is-primary" onclick="rejectCookies()">Reject all cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            
+            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            toggleCookieBanner();
+        }
+
+        function rejectCookies() {
+            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            toggleCookieBanner();
+        }
+
+        function toggleCookieBanner() {
+            var showBanner = Cookies.get('showCookieBanner');
+            var banner = document.getElementById('cookieBanner');
+
+            if (showBanner === 'false') {
+                banner.setAttribute('style', 'display: none;');
+            } else {
+                banner.setAttribute('style', 'display: block;');
+            }
+        }
+
+        toggleCookieBanner();
+    </script>
+</div>
+
+        
+        <nav
+    class="navbar is-primary "
+    x-data="{ openNav: false }"
+>
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                MVPavan's Notes
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                    
+                        
+                            <a
+                                href="/docs/"
+                                class="navbar-item "
+                            >Docs</a>
+                        
+                    
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+            <section
+    class="hero  is-medium  is-bold is-primary"
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2"></h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+
+        
+        
+
+        <section class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    
+                    <div class="column is-8">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+<div class="content">
+    <table>
+  <thead>
+    <tr>
+      <th>Market Cap</th>
+      <th>Current Price</th>
+      <th>High / Low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stock P/E</td>
+      <td>Book Value</td>
+      <td>Dividend Yield</td>
+    </tr>
+    <tr>
+      <td>ROCE</td>
+      <td>ROE</td>
+      <td>Face Value</td>
+    </tr>
+    <tr>
+      <td>Industry PE</td>
+      <td>Price to book value</td>
+      <td>Industry PBV</td>
+    </tr>
+    <tr>
+      <td>Price to Sales</td>
+      <td>EPS</td>
+      <td>Dividend Payout</td>
+    </tr>
+    <tr>
+      <td>EPS preceding year</td>
+      <td>EPS growth 3Years</td>
+      <td>Exp Qtr EPS</td>
+    </tr>
+    <tr>
+      <td>PEG Ratio</td>
+      <td>Graham</td>
+      <td>Intrinsic Value</td>
+    </tr>
+    <tr>
+      <td>3Yrs PE</td>
+      <td>5Yrs PE</td>
+      <td>Sales</td>
+    </tr>
+    <tr>
+      <td>OPM</td>
+      <td>NPM last year</td>
+      <td>Profit after tax</td>
+    </tr>
+    <tr>
+      <td>Sales growth</td>
+      <td>QoQ Sales</td>
+      <td>Qtr Sales Var</td>
+    </tr>
+    <tr>
+      <td>Profit growth</td>
+      <td>QoQ Profits</td>
+      <td>Qtr Profit Var</td>
+    </tr>
+    <tr>
+      <td>Sales growth 3Years</td>
+      <td>Profit Var 3Yrs</td>
+      <td>EBIT</td>
+    </tr>
+    <tr>
+      <td>Sales growth 5Years</td>
+      <td>Profit Var 5Yrs</td>
+      <td>EVEBITDA</td>
+    </tr>
+    <tr>
+      <td>Debt to equity</td>
+      <td>Return on assets</td>
+      <td>Asset Turnover</td>
+    </tr>
+    <tr>
+      <td>Current ratio</td>
+      <td>Days Receivable</td>
+      <td>CMP / FCF</td>
+    </tr>
+    <tr>
+      <td>Free Cash Flow</td>
+      <td>FCF Prev Ann</td>
+      <td>MV Quoted Inv</td>
+    </tr>
+    <tr>
+      <td>No. Eq. Shares</td>
+      <td>Cont Liab</td>
+      <td>Interest Coverage</td>
+    </tr>
+    <tr>
+      <td>Promoter holding</td>
+      <td>Pledged percentage</td>
+      <td>Change in Prom Hold</td>
+    </tr>
+    <tr>
+      <td>Chg in DII Hold</td>
+      <td>Chg in FII Hold</td>
+      <td>Chg in FII Hold 3Yr</td>
+    </tr>
+    <tr>
+      <td>FII holding</td>
+      <td>Avg Vol 1Yr</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="metrics">Metrics</h2>
+
+<p>Here’s a concise explanation of each metric, including value investing perspectives where applicable:</p>
+
+<ol>
+  <li>Market Cap: Total market value of a company’s outstanding shares.</li>
+  <li>Current Price: Current trading price of the stock.</li>
+  <li>High / Low: Highest and lowest stock prices in a given period.</li>
+  <li>Stock P/E: Price-to-Earnings ratio. Lower is better for value investing. Good: &lt;15.</li>
+  <li>Book Value: Company’s total assets minus liabilities per share.</li>
+  <li>Dividend Yield: Annual dividends relative to share price. Higher is better for income investors.</li>
+  <li>ROCE: Return on Capital Employed. Higher is better. Good: &gt;15%.</li>
+  <li>ROE: Return on Equity. Higher is better. Good: &gt;15%.</li>
+  <li>Face Value: Nominal value of a share.</li>
+  <li>Industry PE: Average P/E ratio for the industry.</li>
+  <li>Price to book value: Stock price relative to book value. Lower is better for value. Good: &lt;1.</li>
+  <li>Industry PBV: Average Price-to-Book Value for the industry.</li>
+  <li>Price to Sales: Stock price relative to revenue per share. Lower is better for value.</li>
+  <li>EPS: Earnings Per Share. Higher is better.</li>
+  <li>Dividend Payout: Percentage of earnings paid as dividends.</li>
+  <li>EPS preceding year: Previous year’s EPS for comparison.</li>
+  <li>EPS growth 3Years: EPS growth rate over 3 years. Higher is better.</li>
+  <li>Exp Qtr EPS: Expected EPS for the upcoming quarter.</li>
+  <li>PEG Ratio: P/E ratio divided by earnings growth rate. Lower is better. Good: &lt;1.</li>
+  <li>Graham: Benjamin Graham’s intrinsic value formula result <code class="language-plaintext highlighter-rouge">sqrt(15*EPS*1.5*BVPS)</code>.</li>
+  <li>Intrinsic Value: Estimated real value of the stock based on cash flows.</li>
+  <li>3Yrs PE: Average P/E over 3  years.</li>
+  <li>5Yrs PE: Average P/E over 5 years.</li>
+  <li>Sales: Total revenue.</li>
+  <li>OPM: Operating Profit Margin. Higher is better.</li>
+  <li>NPM last year: Net Profit Margin from previous year. Higher is better.</li>
+  <li>Profit after tax: Net income.</li>
+  <li>Sales growth: Year-over-year sales growth. Higher is better.</li>
+  <li>QoQ Sales: Quarter-over-quarter sales growth.</li>
+  <li>Qtr Sales Var: Quarterly sales variation.</li>
+  <li>Profit growth: Year-over-year profit growth. Higher is better.</li>
+  <li>QoQ Profits: Quarter-over-quarter profit growth.</li>
+  <li>Qtr Profit Var: Quarterly profit variation.</li>
+  <li>Sales growth 3Years: Sales growth over 3 years. Higher is better</li>
+  <li>Sales growth 5Years: Sales growth over 5 years. Higher is better</li>
+  <li>Profit Var 3Yrs: Profit variation over 3 years.</li>
+  <li>Profit Var 5Yrs: Profit variation over 5 years.</li>
+  <li>EBIT: Earnings Before Interest and Taxes.</li>
+  <li>EVEBITDA: Enterprise Value to EBITDA ratio. Lower is better for value. Good: &lt;10.</li>
+  <li>Debt to equity: Leverage ratio. Lower is generally better. Good: &lt;1.</li>
+  <li>Return on assets: Profitability relative to assets. Higher is better.</li>
+  <li>Asset Turnover: Efficiency of asset use. Higher is better.</li>
+  <li>Current ratio: Short-term liquidity, assets/liabilities. Higher is better. Good: &gt;1.5.</li>
+  <li>Days Receivable: Average collection period. Lower is generally better.</li>
+  <li>CMP / FCF: Current Market Price to Free Cash Flow ratio. Lower is better for value.</li>
+  <li>Free Cash Flow: Cash generated after capital expenditures.</li>
+  <li>FCF Prev Ann: Previous year’s Free Cash Flow.</li>
+  <li>MV Quoted Inv: Market Value of Quoted Investments.</li>
+  <li>No. Eq. Shares: Number of outstanding equity shares.</li>
+  <li>Cont Liab: Contingent Liabilities.</li>
+  <li>Interest Coverage: Ability to meet interest payments. Higher is better. Good: &gt;3.</li>
+  <li>Promoter holding: Percentage owned by company promoters.</li>
+  <li>Pledged percentage: Promoter shares pledged as collateral. Lower is better.</li>
+  <li>Change in Prom Hold: Change in promoter holdings.</li>
+  <li>Chg in DII Hold: Change in Domestic Institutional Investors’ holdings.</li>
+  <li>Chg in FII Hold: Change in Foreign Institutional Investors’ holdings.</li>
+  <li>Chg in FII Hold 3Yr: Change in FII holdings over 3 years.</li>
+  <li>FII holding: Percentage held by Foreign Institutional Investors.</li>
+  <li>Avg Vol 1Yr: Average trading volume over 1 year.</li>
+</ol>
+
+<h3 id="ratios">Ratios</h3>
+
+<ol>
+  <li><strong>Debtor Days (Receivable Days)</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This measures the average number of days it takes for the company to collect payment from its customers after making a sale. It reflects how efficiently the company is managing its accounts receivable.</li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>Lower values indicate quicker collection, which is generally positive for cash flow.</li>
+    </ul>
+  </li>
+  <li><strong>Inventory Days</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This indicates the average number of days the company holds inventory before selling it. It shows how efficiently the company is managing its stock of goods.</li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>Lower inventory days suggest that the company is selling its inventory quickly, which is typically positive. Higher numbers may indicate overstocking or slow sales.</li>
+    </ul>
+  </li>
+  <li><strong>Days Payable (Creditor Days)</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This measures the average number of days the company takes to pay its suppliers. It shows how the company manages its outgoing payments.</li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>Higher values indicate the company is taking longer to pay its suppliers, which could be a strategy to manage cash flow, but might strain supplier relationships.</li>
+      <li>Lower values indicate quicker payments, which could strengthen supplier relationships but might strain cash flow.</li>
+    </ul>
+  </li>
+  <li><strong>Cash Conversion Cycle (CCC)</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This metric calculates the time it takes for the company to convert its investments in inventory and other resources into cash flows from sales. It is calculated as:
+ <code class="language-plaintext highlighter-rouge">CCC = Debtor Days + Inventory Days - Days Payable</code></li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>A shorter or negative CCC is generally positive, indicating that the company quickly turns its investments into cash. A negative CCC suggests the company receives payment before paying its suppliers. Longer CCC values may indicate inefficiencies in working capital management.</li>
+    </ul>
+  </li>
+  <li><strong>Working Capital Days</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This measures how long it takes to convert working capital into revenue. It’s the average number of days between the outlay of cash for raw material and the inflow of cash from sales.</li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>Fewer working capital days mean more efficient use of the company’s working capital.</li>
+      <li>Extremely high or fluctuating values could indicate potential issues with managing working capital.</li>
+    </ul>
+  </li>
+  <li><strong>Return on Capital Employed (ROCE)</strong>:
+    <ul>
+      <li><strong>Meaning</strong>: This is a profitability ratio that measures how efficiently a company is using its capital to generate profits. It’s calculated as:
+ <code class="language-plaintext highlighter-rouge">ROCE = Earnings Before Interest and Tax (EBIT)/Capital Employed</code></li>
+      <li><strong>Interpretation</strong>:</li>
+    </ul>
+    <ul>
+      <li>A higher ROCE indicates more efficient use of capital in generating profits.</li>
+      <li>Negative ROCE (as seen in March 2020) indicates that the company’s operations were unprofitable compared to the capital invested.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Screens:</p>
+
+<p><a href="https://www.screener.in/user/78906/">Shashank Profile - Screener</a></p>
+
+</div>
+
+                    </div>
+                    
+                        <div class="column is-4-desktop is-4-tablet">
+                            <p class="title is-4">Latest Posts</p>
+
+<div class="columns is-multiline">
+    
+</div>
+
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+            <footer class="footer">
+    <div class="container">
+        
+            <div class="columns is-multiline">
+                
+            </div>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
+
+        
+        <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
+</body>
+</html>

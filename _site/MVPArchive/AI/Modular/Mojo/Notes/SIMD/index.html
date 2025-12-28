@@ -1,0 +1,389 @@
+<!doctype html>
+
+
+
+
+<html
+    dir="ltr"
+    lang="en"
+    
+>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link
+        rel="shortcut icon"
+        type="image/png"
+        
+            href="/favicon.png"
+        
+    >
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>MVPavan’s Notes | Welcome to my GitHub Pages site.</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="MVPavan’s Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to my GitHub Pages site." />
+<meta property="og:description" content="Welcome to my GitHub Pages site." />
+<link rel="canonical" href="http://localhost:4000/MVPArchive/AI/Modular/Mojo/Notes/SIMD/" />
+<meta property="og:url" content="http://localhost:4000/MVPArchive/AI/Modular/Mojo/Notes/SIMD/" />
+<meta property="og:site_name" content="MVPavan’s Notes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MVPavan’s Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Welcome to my GitHub Pages site.","headline":"MVPavan’s Notes","url":"http://localhost:4000/MVPArchive/AI/Modular/Mojo/Notes/SIMD/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts -->
+</head>
+
+    <body>
+        
+            <div class="">
+    <script
+        src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"
+    ></script>
+
+    <div class="container py-6 px-4" id="cookieBanner">
+        <div class="columns">
+            <div class="column is-fullwidth ">
+                <div class="content">
+                    <p>We use cookies on this site to enhance your user experience</p>
+                    <p>
+                        By clicking the Accept button, you agree to us doing so.
+                        <a href="/cookie-policy/">More info on our cookie policy</a>
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="button is-primary" onclick="acceptCookies()">Accept all cookies</button>
+                    <button class="button is-primary" onclick="rejectCookies()">Reject all cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            
+            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            toggleCookieBanner();
+        }
+
+        function rejectCookies() {
+            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            toggleCookieBanner();
+        }
+
+        function toggleCookieBanner() {
+            var showBanner = Cookies.get('showCookieBanner');
+            var banner = document.getElementById('cookieBanner');
+
+            if (showBanner === 'false') {
+                banner.setAttribute('style', 'display: none;');
+            } else {
+                banner.setAttribute('style', 'display: block;');
+            }
+        }
+
+        toggleCookieBanner();
+    </script>
+</div>
+
+        
+        <nav
+    class="navbar is-primary "
+    x-data="{ openNav: false }"
+>
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                MVPavan's Notes
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                    
+                        
+                            <a
+                                href="/docs/"
+                                class="navbar-item "
+                            >Docs</a>
+                        
+                    
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+            <section
+    class="hero  is-medium  is-bold is-primary"
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2"></h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+
+        
+        
+
+        <section class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    
+                    <div class="column is-8">
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+<div class="content">
+    <p><a href="https://github.com/rd4com/mojo-learning/blob/main/tutorials/simd-is-a-type-with-methods-and-operators.md">SIMD reference</a></p>
+
+<ul>
+  <li>Single Instruction multiple data, stores.</li>
+  <li>SIMD allows a single instruction to be executed across the multiple data elements of the vector.</li>
+  <li><code class="language-plaintext highlighter-rouge">SIMD[dtype, size]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dtype = Dtype.int/ Dtype.float64 ....</code></li>
+  <li>size = The size of the SIMD vector to be positive and a power of 2.</li>
+  <li>For example, <code class="language-plaintext highlighter-rouge">Int64</code> is a <code class="language-plaintext highlighter-rouge">SIMD</code> vector of size 1.</li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">SIMD</code> type has <code class="language-plaintext highlighter-rouge">Methods</code> and <code class="language-plaintext highlighter-rouge">operators</code>.</p>
+
+<h4 id="examples">Examples:</h4>
+
+<pre><code class="language-mojo">print(
+    4 * SIMD[DType.int8,4](1,2,3,4)
+)
+</code></pre>
+<blockquote>
+  <p>[4, 8, 12, 16]</p>
+</blockquote>
+
+<pre><code class="language-mojo">print(
+    SIMD[DType.int32,4](1,1,2,2).reduce_add()
+)
+</code></pre>
+<blockquote>
+  <p>6</p>
+</blockquote>
+
+<pre><code class="language-mojo">print(
+    SIMD[DType.bool,4](True,False,True,False).reduce_and()
+)
+</code></pre>
+<blockquote>
+  <p>false</p>
+</blockquote>
+
+<p>The multiply <code class="language-plaintext highlighter-rouge">operator</code> (<code class="language-plaintext highlighter-rouge">*</code>) works in an unifying manner, with both <code class="language-plaintext highlighter-rouge">SIMD</code> vectors of size <code class="language-plaintext highlighter-rouge">1</code> and size <code class="language-plaintext highlighter-rouge">32</code>.</p>
+
+<blockquote>
+  <p>It has the <code class="language-plaintext highlighter-rouge">__add__</code> dunder, <code class="language-plaintext highlighter-rouge">__init__</code> and many more <code class="language-plaintext highlighter-rouge">methods</code>.</p>
+</blockquote>
+
+<h4 id="simd-on-the-stack"><code class="language-plaintext highlighter-rouge">SIMD</code> on the <code class="language-plaintext highlighter-rouge">Stack</code></h4>
+
+<pre><code class="language-mojo">var x = SIMD[DType.float64,2](1.5, 2.5)
+var y = x.reduce_add()
+print(y)
+</code></pre>
+<p><code class="language-plaintext highlighter-rouge">y</code> is a <code class="language-plaintext highlighter-rouge">Float64</code>.</p>
+<h4 id="simd-on-the-heap"><code class="language-plaintext highlighter-rouge">SIMD</code> on the <code class="language-plaintext highlighter-rouge">Heap</code></h4>
+
+<p>Let’s take for example a pointer to <code class="language-plaintext highlighter-rouge">10</code> * <code class="language-plaintext highlighter-rouge">Int64</code>. Instead of iterating each elements to add them together, It is also possible to do a fast addition with <code class="language-plaintext highlighter-rouge">SIMD</code> !</p>
+<h5 id="preparing-a-dtypepointer">Preparing a <code class="language-plaintext highlighter-rouge">DTypePointer</code></h5>
+<p>It is like a pointer, but is more specialized for <code class="language-plaintext highlighter-rouge">SIMD</code>.
+We’ll use <code class="language-plaintext highlighter-rouge">alloc</code>, we’ll have to <code class="language-plaintext highlighter-rouge">free</code>.</p>
+
+<pre><code class="language-mojo">def main():
+    alias amount_of_bytes = 256
+    var mem = DTypePointer[DType.uint8].alloc(amount_of_bytes)
+    for i in range(amount_of_bytes):
+        mem[i] = i #slower but good first step !
+</code></pre>
+<h5 id="second-step-simd-vector">Second step: <code class="language-plaintext highlighter-rouge">SIMD</code> vector</h5>
+<p>Let’s load the first 8 elements</p>
+<pre><code class="language-mojo">var bunch_of_bytes = SIMD[type=DType.uint8, size=8].load(mem)
+print(bunch_of_bytes)
+</code></pre>
+<blockquote>
+  <p>[0, 1, 2, 3, 4, 5, 6, 7]</p>
+</blockquote>
+
+<p>The data is now in a <code class="language-plaintext highlighter-rouge">SIMD</code> vector.</p>
+<h5 id="stride-and-width">Stride and width</h5>
+<p>width is the size of the <code class="language-plaintext highlighter-rouge">SIMD</code> vector, <code class="language-plaintext highlighter-rouge">stride</code> can be used with <code class="language-plaintext highlighter-rouge">offset</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0◄─────┐               
+1      │               
+2◄─────┤               
+3      │  Stride: 2    
+4◄─────┤  Width: 4     
+5      │               
+6◄─────┤               
+7      │               
+       │                  
+       ▼               
+[0,2,4,6] SIMD[Width:4]  ###### A. The concept ```mojo var stride_like = 2 for i in range(0,8,stride_like):
+print(i)    ``` &gt; 0, 2, 4, 6 ###### B. The SIMD stride
+</code></pre></div></div>
+
+<pre><code class="language-mojo">var separated_by_2 = mem.simd_strided_load[width = 8](
+    stride = 2
+)
+print(separated_by_2)
+</code></pre>
+<blockquote>
+  <p>[0, 2, 4, 6, 8, 10, 12, 14]</p>
+</blockquote>
+
+<h6 id="gather"><code class="language-plaintext highlighter-rouge">gather</code></h6>
+
+<p>It gathers the values stored at various positions into a <code class="language-plaintext highlighter-rouge">SIMD</code> vector.</p>
+
+<pre><code class="language-mojo">for i in range(16):
+    mem[i] = i*i
+
+print(
+    mem.gather(
+        SIMD[DType.int64,4](1, 2, 5, 6)
+    )
+)
+</code></pre>
+<blockquote>
+  <p>[1, 4, 25, 36]</p>
+</blockquote>
+
+<p>Here is the <code class="language-plaintext highlighter-rouge">gather</code> <code class="language-plaintext highlighter-rouge">method</code> of <code class="language-plaintext highlighter-rouge">DTypePointer</code> in a visual form:
+    Memory: 0 10 20 30 40 50      <br />
+            │       │  │  │   <br />
+            └─────┬─┴──┴──┘   <br />
+     Gather 0     │ 3  4  5   <br />
+                  ▼           <br />
+            [0,30,40,50]</p>
+
+<h6 id="scatter"><code class="language-plaintext highlighter-rouge">scatter</code></h6>
+<p>It assign new values to various positions. The positions(<code class="language-plaintext highlighter-rouge">int64</code>) and values are provided in a <code class="language-plaintext highlighter-rouge">SIMD</code> vector.</p>
+
+<pre><code class="language-mojo">mem.scatter(
+    offset = SIMD[DType.int64, 2](1,10),
+    val = SIMD[DType.uint8, 2](0, 0)
+)
+print(mem[1])
+print(mem[10])
+</code></pre>
+<blockquote>
+  <p>0
+0</p>
+</blockquote>
+
+<p>Here is the <code class="language-plaintext highlighter-rouge">scatter</code> <code class="language-plaintext highlighter-rouge">method</code> of <code class="language-plaintext highlighter-rouge">DTypePointer</code> in a visual form:
+    Memory: 0 10 20 30 40 50  <br />
+            ▲     ▲           <br />
+            │     │           <br />
+            │     │           <br />
+         ┌──┴─────┘           <br />
+         │  0     2   Indexes <br />
+         │  100   200 Values  <br />
+    scatter</p>
+<blockquote>
+  <p>Memory: 100, 10, 200, 30, 40, 50</p>
+</blockquote>
+
+<h6 id="free"><code class="language-plaintext highlighter-rouge">free</code></h6>
+<p><code class="language-plaintext highlighter-rouge">alloc</code> gave us some <code class="language-plaintext highlighter-rouge">RAM</code> for the program, <code class="language-plaintext highlighter-rouge">free</code> gives it back:</p>
+<pre><code class="language-mojo">mem.free()
+</code></pre>
+
+<p>Very easy to use:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ┌──────────────────────┐                         
+    │            RAM       │                         
+    ├──┐                   │                         
+    └┼─┴───────────────────┘                         
+     │                                                
+     │                                               
+     ▼                                               
+alloc                                              
+    ┌──┐                                             
+    └──┘                                             
+our program has to give the small amount of ram back
+because another program might need it !             
+</code></pre></div></div>
+
+</div>
+
+                    </div>
+                    
+                        <div class="column is-4-desktop is-4-tablet">
+                            <p class="title is-4">Latest Posts</p>
+
+<div class="columns is-multiline">
+    
+</div>
+
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+            <footer class="footer">
+    <div class="container">
+        
+            <div class="columns is-multiline">
+                
+            </div>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
+
+        
+        <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
+</body>
+</html>
