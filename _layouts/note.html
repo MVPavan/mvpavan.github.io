@@ -1,0 +1,136 @@
+---
+layout: page
+---
+
+<article class="content">
+  <header class="post-header">
+    <h1 class="title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  {% if page.toc %}
+  <nav class="toc" id="toc">
+    <h4>Table of Contents</h4>
+    {{ content | toc_only }}
+  </nav>
+  {% endif %}
+
+  <div class="note-content">
+    {{ content }}
+  </div>
+
+  {% if page.tags %}
+  <footer class="note-footer">
+    <div class="tags">
+      {% for tag in page.tags %}
+      <span class="tag is-info is-light">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </footer>
+  {% endif %}
+</article>
+
+<style>
+.note-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.note-content h2,
+.note-content h3,
+.note-content h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.note-content p {
+  margin-bottom: 1.25rem;
+}
+
+.note-content code {
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.note-content pre {
+  background-color: #282c34;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.note-content pre code {
+  background: none;
+  padding: 0;
+  color: #abb2bf;
+}
+
+.note-content blockquote {
+  border-left: 4px solid #3273dc;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #555;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.note-content a {
+  color: #3273dc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.note-content a:hover {
+  border-bottom-color: #3273dc;
+}
+
+.toc {
+  background-color: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.toc h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #363636;
+}
+
+.toc ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #3273dc;
+}
+
+.note-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+</style>

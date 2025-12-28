@@ -41,6 +41,16 @@ exclude:
 
 cookie_policy: /cookie-policy/
 
+collections:
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  notes:
+    output: true
+    permalink: /notes/:name/
+
 defaults:
   -
     scope:
@@ -57,10 +67,11 @@ defaults:
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
-
-collections:
-  products: 
-    output: true
-    layout: product
-    image: https://via.placeholder.com/800x600
-    show_sidebar: false
+  -
+    scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: note
+      show_sidebar: false
+      toc: true
