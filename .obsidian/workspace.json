@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "bf91f8732ea69ef9",
+    "type": "split",
+    "children": [
+      {
+        "id": "83b22cbdb8cf1316",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4175be9356cd4f36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MVPArchive/AI/Courses/Agents/Smol Course.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Smol Course"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8bb4ae7344fddb29",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9c2a603b4dec2af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92e64ae10a32032e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "471b7dbd521ccb43",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "56c4ab02615cc8e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cd0024d656206643",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a848363468321ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a485f869431d81d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MVPArchive/AI/Courses/Agents/Smol Course.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Smol Course"
+            }
+          },
+          {
+            "id": "905efbc3cb99ffbf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MVPArchive/AI/Courses/Agents/Smol Course.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Smol Course"
+            }
+          },
+          {
+            "id": "bbce8f990f7c5954",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9930a4ec97caf94c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "50a81ef2c537de84",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MVPArchive/AI/Courses/Agents/Smol Course.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Smol Course"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "4175be9356cd4f36",
+  "lastOpenFiles": [
+    "scripts/sync_notes.py",
+    "scripts",
+    "publish_config.yaml",
+    "pixi.toml",
+    "notes.md",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/MatMul/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Decorators/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/DSA/Introduction/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Traits/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/attachments/Pasted image 20240713130310.png",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/SIMD/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Intro/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/DSA/LinkedList/index.html",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/attachments/Pasted image 20240719173859.png",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Traits.md",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/SIMD.md",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Intro.md",
+    "_site/MVPArchive/AI/Modular/Mojo/Notes/Decorators.md",
+    "_site/MVPArchive/AI/Modular/Mojo/DSA/LinkedList.md",
+    "_site/MVPArchive/AI/Modular/Mojo/DSA/Introduction.md",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/Results.md",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/Resize.md",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/MatMul.md",
+    "_site/MVPArchive/AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410104324.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410104305.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410103553.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410102425.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410090157.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410091610.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410102412.png",
+    "_site/MVPArchive/AI/Models/Vision/attachments/Pasted image 20250410090241.png",
+    "_site/MVPArchive/AI/Models/Vision/Vision Transformer.md",
+    "_site/MVPArchive/AI/Courses/Study/Mixture of Experts.md",
+    "_site/MVPArchive/AI/Courses/Study/Training.md",
+    "_site/MVPArchive/AI/Courses/Study/Reasoning.md",
+    "_site/MVPArchive/AI/Courses/Study/Loss - Metrics.md",
+    "_site/MVPArchive/AI/Courses/Study/Evaluation.md",
+    "_site/MVPArchive/AI/Courses/Agents/Smol Course.md",
+    "_site/MVPArchive/AI/Courses/EfficientML/Quantization.md",
+    "_site/MVPArchive/AI/Courses/EfficientML/Pruning.md",
+    "_site/MVPArchive/AI/Courses/EfficientML/NAS.md",
+    "_site/MVPArchive/AI/Courses/EfficientML/Efficient ML.md",
+    "_site/MVPArchive/AI/Courses/EfficientML/Distributed Training.md",
+    "_site/MVPArchive/Investing/Equity/Screener.md",
+    "_site/MVPArchive/Investing/Equity/Potential.md"
+  ]
+}
