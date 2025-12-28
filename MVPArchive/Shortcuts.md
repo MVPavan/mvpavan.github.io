@@ -2,8 +2,7 @@
 layout: page
 title: Obsidian
 subtitle: Getting Started
-# menubar: docs_menu
-show_sidebar: false
+show_sidebar: true
 toc: true
 ---
 
@@ -49,7 +48,12 @@ Obsidian uses Markdown for formatting, and here are some essential shortcuts to 
 - **Horizontal Line**: `---` or `***` 
 ---
 ***
+- W<sub>subscript</sub> , W<sup>superscript</sup>, match symbols - $\lambda$  
+-  $$Anything\ in\ block$$
 
+✅ **Use `$ ... $` for inline math** (e.g., `$e^{\ln x} = x$`).  
+✅ **Use `$$ ... $$` for block equations** (e.g., `$$e^{\ln x} = x$$`).  
+✅ **Use Obsidian's Preview Mode** to see LaTeX-rendered math
 
 These shortcuts will help you quickly format and structure your notes in Obsidian.
 

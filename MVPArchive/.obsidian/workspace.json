@@ -4,11 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "459eb07e91486f8e",
+        "id": "e7d09725c9d94be4",
         "type": "tabs",
         "children": [
           {
-            "id": "c9a58f862d52a51a",
+            "id": "6677d7b9ce136f08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Modular/Mojo/DSA/Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction"
+            }
+          },
+          {
+            "id": "97549e796e982e83",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
+          },
+          {
+            "id": "3aeebf23b10033f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,10 +42,13 @@
                 "file": "Shortcuts.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Shortcuts"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,8 +67,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +86,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,14 +96,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 408.5
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -93,7 +129,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Shortcuts"
             }
           },
           {
@@ -105,7 +143,9 @@
                 "file": "Shortcuts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Shortcuts"
             }
           },
           {
@@ -116,7 +156,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,7 +168,9 @@
               "type": "outline",
               "state": {
                 "file": "Shortcuts.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Shortcuts"
             }
           },
           {
@@ -134,7 +178,9 @@
             "type": "leaf",
             "state": {
               "type": "git-history-view",
-              "state": {}
+              "state": {},
+              "icon": "history",
+              "title": "History"
             }
           }
         ],
@@ -142,38 +188,68 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "janitor:Janitor: scan vault": false
     }
   },
-  "active": "c9a58f862d52a51a",
+  "active": "97549e796e982e83",
   "lastOpenFiles": [
+    "AI/Models/Vision/Vision Transformer.md",
+    "AI/Models/Vision/attachments/Pasted image 20250410104324.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410104305.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410103553.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410102425.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410102412.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410091610.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410090245.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410090241.png",
+    "AI/Models/Vision/attachments/Pasted image 20250410090157.png",
+    "AI/Models/Vision/attachments/Pasted image 20250409150743.png",
+    "AI/Courses/Study/Loss - Metrics.md",
+    "Investing/Equity/Potential.md",
+    "Investing/Equity/Notes.md",
+    "Investing/Equity/Gold & Silver.md",
+    "AI/Courses/Agents/Smol Course.md",
+    "UPSC answer correction.md",
+    "AI/Courses/Study/Evaluation.md",
     "Shortcuts.md",
-    "mvpavan.github.io/index.html",
-    "mvpavan.github.io/_config.yml",
-    "mvpavan.github.io/README.md",
-    "mvpavan.github.io/LICENSE",
-    "mvpavan.github.io",
-    "Untitled.md",
-    "Untitled 5.md",
-    "Untitled 2.md",
-    "Untitled 4.md",
-    "Untitled 3.md",
-    "Untitled 1.md",
-    "TYCOAI_Architecture.pdf",
-    "with_tcp_2nd_cam_nothing_happens.png",
-    "gen2_commands.txt",
-    "EdgeAI.drawio",
-    "gates_error.png",
-    "Untitled.canvas",
-    "Untitled"
+    "Investing/Equity/Screener.md",
+    "AI/Courses/Study/Training.md",
+    "AI/Courses/EfficientML/Quantization.md",
+    "AI/Courses/Study/Reasoning.md",
+    "AI/Courses/Intro.md",
+    "AI/Courses/EfficientML/NAS.md",
+    "AI/Courses/Study/Mixture of Experts.md",
+    "AI/Courses/AK/NNHero/MicroGrad.md",
+    "AI/Books/LLM-Scratch/Introduction.md",
+    "AI/Models/Vision/attachments/desktop.ini",
+    "AI/Models/Vision/attachments",
+    "AI/Models/Vision/desktop.ini",
+    "AI/Models/Vision",
+    "AI/Courses/Untitled/desktop.ini",
+    "AI/Courses/Agents",
+    "conflict-files-obsidian-git.md",
+    "AI/Modular/Mojo/DSA/Introduction.md",
+    "AI/Books/LLM-Scratch",
+    "AI/Books",
+    "AI/Modular/Mojo/DSA/LinkedList.md",
+    "AI/Courses/Study/attachments",
+    "AI/Courses/Study",
+    "AI/Modular/Mojo/Notes/Traits.md",
+    "AI/Modular/Mojo/Notes/Decorators.md",
+    "AI/Modular/Mojo/benchmarks/Results.md",
+    "AI/Modular/Mojo/Notes/SIMD.md",
+    "Untitled.canvas"
   ]
 }
