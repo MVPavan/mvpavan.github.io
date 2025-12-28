@@ -11,17 +11,17 @@
 - Pruning ratio - Percentage of weights/neurons to be pruned. 60% pruning implies 60% of total neurons are pruned.
 - N:M Sparsity - In each contiguous M elements, N of them are pruned.
 
-![](attachments/Pasted%20image%2020240704110201.png)
+![[Pasted-image-20240704110201.png]]
 
 Two types of pruning: 
 1. Synapses pruning
 2. Neuron pruning
 
-![](attachments/Pasted%20image%2020240704105958.png)
+![[Pasted-image-20240704105958.png]]
 
 
 
-![](attachments/Pasted%20image%2020240704110219.png)
+![[Pasted-image-20240704110219.png]]
 
 Fine grained Pruning:
 - Flexible pruning indices
@@ -32,16 +32,16 @@ Pattern-based pruning:
 - N:M Sparsity, 2:4 sparsity (50% sparsity)
 - supported from Ampere GPU architecture
 - Maintains accuracy
-![](attachments/Pasted%20image%2020240704125201.png)
+![[Pasted-image-20240704125201.png]]
 
-![](attachments/Pasted%20image%2020240704125326.png)
+![[Pasted-image-20240704125326.png]]
 
 Channel Pruning:
 - Smaller compression ratio
 - Direct speed up due to reduced channels in NN.
 
-![](attachments/Pasted%20image%2020240704125646.png)
-![](attachments/Pasted%20image%2020240704125721.png)
+![[Pasted-image-20240704125646.png]]
+![[Pasted-image-20240704125721.png]]
 
 ## Pruning Criteria
 
@@ -53,14 +53,14 @@ Channel Pruning:
 - Used for channel (filter) pruning
 - Trainable scaling factor is multiplied to each output channel and channels with small scaling factor are pruned.
 - Scaling factors can be reused from Batch norm layers.
-![](attachments/Pasted%20image%2020240704130512.png)
+![[Pasted-image-20240704130512.png]]
 
 
 ## Automatic Pruning
 
 Layer wise pruning:
 - Sensitivity analysis for per layer pruning ratio, by observing accuracy degrade with each pruning ratio.
-![](attachments/Pasted%20image%2020240704151409.png)
+![[Pasted-image-20240704151409.png]]
 
 AMC: Auto ML for model compression:
 - Pruning as RL problem
@@ -68,7 +68,7 @@ AMC: Auto ML for model compression:
 
 ## Iterative Pruning
 
-![](attachments/Pasted%20image%2020240704110036.png)
+![[Pasted-image-20240704110036.png]]
 
 Iterative pruning:
 - Prune pre trained model.

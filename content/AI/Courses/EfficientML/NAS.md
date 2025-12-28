@@ -25,45 +25,45 @@ Neural Architecture Search
 	
 
 
-![](attachments/Pasted%20image%2020240706085357.png)
+![[Pasted-image-20240706085357.png]]
 
 
 ## Classical Building Blocks
 
 ### ResNet: Bottleneck block
 
-![](attachments/Pasted%20image%2020240706091811.png)
-![](attachments/Pasted%20image%2020240706091833.png)
+![[Pasted-image-20240706091811.png]]
+![[Pasted-image-20240706091833.png]]
 
 
 ### ResNeXt: Grouped Convolution
 
-![](attachments/Pasted%20image%2020240706094241.png)
+![[Pasted-image-20240706094241.png]]
 
 
 ### MobileNet: Depthwise Convolutions
 
-![](attachments/Pasted%20image%2020240706094933.png)
+![[Pasted-image-20240706094933.png]]
 
 
-![](attachments/Pasted%20image%2020240706095006.png)
+![[Pasted-image-20240706095006.png]]
 
-![](attachments/Pasted%20image%2020240706095024.png)
+![[Pasted-image-20240706095024.png]]
 
-![](attachments/Pasted%20image%2020240706095047.png)
+![[Pasted-image-20240706095047.png]]
 
 ### ShuffleNet: 1x1 Group Conv & Channel shuffle
 
 - Further reduce the cost by replacing 1x1 convolution with 1x1 group convolution.
 - Exchange information across different groups via channel shuffle
 
-![](attachments/Pasted%20image%2020240706095543.png)
+![[Pasted-image-20240706095543.png]]
 
 
 
 ## NAS
 
-![](attachments/Pasted%20image%2020240706140336.png)
+![[Pasted-image-20240706140336.png]]
 
 ### Search Space
 
@@ -78,7 +78,7 @@ For i in range(1, B+1):
 Result:
 - A cell generated after one step
 
-![](attachments/Pasted%20image%2020240706153144.png)
+![[Pasted-image-20240706153144.png]]
 
 Size of search space:
 	Question: Assuming that we have two candidate inputs, M candidate operations to transform the inputs and N potential operations to combine hidden states, what is the size of the search space in NASNet if we have B layers? 
@@ -90,17 +90,17 @@ Size of search space:
 #### Network-level Search Space
 
 - Depth Dimension
-	![](attachments/Pasted%20image%2020240706154437.png)
+	![[Pasted-image-20240706154437.png]]
 - Resolution Dimension
-	![](attachments/Pasted%20image%2020240706154519.png)
+	![[Pasted-image-20240706154519.png]]
 -  Width Dimension
-	![](attachments/Pasted%20image%2020240706154604.png)
+	![[Pasted-image-20240706154604.png]]
 -  Kernel Size Dimension
-	![](attachments/Pasted%20image%2020240706155023.png)
+	![[Pasted-image-20240706155023.png]]
 - Topology Connection
-	![](attachments/Pasted%20image%2020240706155217.png)
+	![[Pasted-image-20240706155217.png]]
 - TinyML
-	![](attachments/Pasted%20image%2020240706155412.png)
+	![[Pasted-image-20240706155412.png]]
 
 
 

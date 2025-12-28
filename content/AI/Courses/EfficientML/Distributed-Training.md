@@ -10,13 +10,13 @@
 - [Fully Sharded Data Parallel (huggingface.co)](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many)
 
 Types of distributed training:
-- [Data Parallel:](#Data%20Parallel): Replicate model across gpu and distribute data across each gpu.
+- [Data Parallel:](#Data-Parallel): Replicate model across gpu and distribute data across each gpu.
 	- DP, DDP: User if model fits in single gpu
-	- [Deepspeed ZeRO Data Parallel:](#Deepspeed%20ZeRO%20Data%20Parallel):
+	- [Deepspeed ZeRO Data Parallel:](#Deepspeed-ZeRO-Data-Parallel):
 		- Zero - 1, 2, 3(=FSDP in pytorch)
-- [Pipeline Parallel (Model Parallel):](#Pipeline%20Parallel%20(Model%20Parallel))
-- [Tensor Parallel:](#Tensor%20Parallel)
-- [2D & 3D Parallelism:](#2D%20&%203D%20Parallelism)
+- [Pipeline Parallel (Model Parallel):](#Pipeline-Parallel-(Model-Parallel))
+- [Tensor Parallel:](#Tensor-Parallel)
+- [2D & 3D Parallelism:](#2D-&-3D-Parallelism)
 
 ![[Pasted image 20240703184727.png]]
 

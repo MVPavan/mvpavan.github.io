@@ -1,19 +1,19 @@
 
 - [[#Introduction|Introduction]]
 - [[#Types of Quantization|Types of Quantization]]
-	- [[#Types of Quantization#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
-	- [[#Types of Quantization#Linear Quantization|Linear Quantization]]
-		- [[#Linear Quantization#Quantization Granularities|Quantization Granularities]]
+	- [[#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
+	- [[#Linear Quantization|Linear Quantization]]
+		- [[#Quantization Granularities|Quantization Granularities]]
 - [[#Quantization in Training|Quantization in Training]]
-	- [[#Quantization in Training#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
+	- [[#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
 - [[#STOA Quantization Techniques|STOA Quantization Techniques]]
-	- [[#STOA Quantization Techniques#LLM.int8|LLM.int8]]
-	- [[#STOA Quantization Techniques#GPTQ|GPTQ]]
-		- [[#GPTQ#Optimal Brain Quantizer (OBQ)|Optimal Brain Quantizer (OBQ)]]
-		- [[#GPTQ#GPTQ Algorithm|GPTQ Algorithm]]
-	- [[#STOA Quantization Techniques#SmoothQuant|SmoothQuant]]
-	- [[#STOA Quantization Techniques#Activation Aware Quantization|Activation Aware Quantization]]
-	- [[#STOA Quantization Techniques#QLoRA NF4|QLoRA NF4]]
+	- [[#LLM.int8|LLM.int8]]
+	- [[#GPTQ|GPTQ]]
+		- [[#Optimal Brain Quantizer (OBQ)|Optimal Brain Quantizer (OBQ)]]
+		- [[#GPTQ Algorithm|GPTQ Algorithm]]
+	- [[#SmoothQuant|SmoothQuant]]
+	- [[#Activation Aware Quantization|Activation Aware Quantization]]
+	- [[#QLoRA NF4|QLoRA NF4]]
 
 
 ## Introduction
@@ -37,7 +37,7 @@
 | **BFloat16** | 16          | 1         | 8        | 7        | Good      | ~10^38 |
 | FP8          | 8           | 1         | 4/5      | 3/2      | Avg       |        |
 | **Int8**     | 8           | 1         | N/A      | N/A      | Avg       | ~2^7   |
-![](attachments/Pasted%20image%2020240705132049.png)
+![[Pasted-image-20240705132049.png]]
 ## Types of Quantization
 
 Quantization can happen in two ways:
@@ -52,7 +52,7 @@ Quantization can happen in two ways:
 		2. GPTQ: GPT Quantized
 		3. BNB: Bits and Bytes Quantized
 
-![](attachments/Pasted%20image%2020240705091622.png)
+![[Pasted-image-20240705091622.png]]
 
 ### K-Means-based Weight Quantization
 
@@ -62,9 +62,9 @@ Quantization can happen in two ways:
 	- Cluster gradients
 	- And apply to centroids as shown below
 
-![](attachments/Pasted%20image%2020240705193321.png)
+![[Pasted-image-20240705193321.png]]
 
-![](attachments/Pasted%20image%2020240704184537.png)
+![[Pasted-image-20240704184537.png]]
 
 ### Linear Quantization
 - Symmetric 
@@ -72,13 +72,13 @@ Quantization can happen in two ways:
 
 An affine mapping of integers to real numbers ==r = S(q-Z)
 
-![](attachments/Pasted%20image%2020240704184804.png)
+![[Pasted-image-20240704184804.png]]
 
 Full Connected Layer and Conv Layer:
-![](attachments/Pasted%20image%2020240704185026.png)
+![[Pasted-image-20240704185026.png]]
 
 Symmetric (SQ) vs Asymmetric (ASQ):
-![](attachments/Pasted%20image%2020240704185237.png)![](attachments/Pasted%20image%2020240704185253.png)
+![[Pasted-image-20240704185237.png]]![[Pasted-image-20240704185253.png]]
 - In practice symmetric Q is used for 8 bit Q and asymmetric for 2,4 etc..
 - Symmetric Q is simple but can have not so tight range which effects the Q precision and Q error.
 
@@ -109,7 +109,7 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 
 ### LLM.int8
 
-![](attachments/Mixed-int8.gif)
+![[Mixed-int8.gif]]
 LLM.int8() seeks to complete the matrix multiplication computation in three steps:
 
 1. From the input hidden states, extract the outliers (i.e. values that are larger than a certain threshold) by column.
@@ -125,7 +125,7 @@ GPTQ is a one-shot weight quantization method based on approximate second-order 
 - **Outlier Handling:** Quantize outlier weights immediately to prevent large quantization errors.
 - **Hessian Matrix Adjustment:** For next iteration update the Hessian matrix by removing the row and column associated with the quantized weight using Gaussian elimination to avoid redundant computations.
 
-![](attachments/Pasted%20image%2020240705172944.png)
+![[Pasted-image-20240705172944.png]]
 
 #### GPTQ Algorithm
 - **Objective:** Reduce the model size while minimizing MSE same as OBQ.
@@ -138,14 +138,14 @@ Algorithm:
 3. For each column in a batch, it quantizes the weights, calculates the error, and updates the weights in the block accordingly.
 4. After processing the batch, it updates all remaining weights based on the block’s errors.
 
-![](attachments/Pasted%20image%2020240705173101.png)
+![[Pasted-image-20240705173101.png]]
 
 ### SmoothQuant
 - Quantizing weights is very easy
 - Quantizing activations is input dependent and is prone to more outliers
 - Migrate the difficulty (outliers) from activations to weights.
 
-![](attachments/Pasted%20image%2020240705175717.png)
+![[Pasted-image-20240705175717.png]]
 
 ### Activation Aware Quantization
 
@@ -153,7 +153,7 @@ Algorithm:
 2. **Search Weight Quantization Parameters**: Weights are quantized by taking the activation statistics into account (scale). Concretely, we perform a space search for quantization parameters (e.g., scales and zero points), to minimize the distortions incurred by quantization on output activations. As a result, the quantized weights can be accurately represented with fewer bits.
 3. **Quantize** : With the quantization parameters in place, the model weights are quantized using a reduced number of bits.
 
-![](attachments/Pasted%20image%2020240705192348.png)
+![[Pasted-image-20240705192348.png]]
 - Just keeping 1% of salient weight improves PPL(perplexity) from 43.2 to 13.0
 - (c) Weights are scales based on activation statistics before Quantization.
 ### QLoRA NF4

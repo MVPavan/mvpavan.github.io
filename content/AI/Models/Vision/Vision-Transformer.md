@@ -1,15 +1,15 @@
 
 ## VIT
 
-![](attachments/Pasted%20image%2020250127162012.png)
+![[Pasted-image-20250127162012.png]]
 
 
 ## DETR
 
 - Has fixed 100 object queries
 
-![](attachments/Pasted%20image%2020250410090245.png)
-![](attachments/Pasted%20image%2020250410090241.png)
+![[Pasted-image-20250410090245.png]]
+![[Pasted-image-20250410090241.png]]
 ## DINO
 
 [Emerging Properties in Self-Supervised Vision Transformers (DINO) — Paper Summary | by Anuj Dutt | Medium](https://medium.com/@anuj.dutt9/emerging-properties-in-self-supervised-vision-transformers-dino-paper-summary-4c7a6ed68161)
@@ -27,23 +27,23 @@ DINO introduces a unique approach to knowledge distillation.
 2. **Local-to-Global Learning:** All crops are passed through the student model, but only global views are processed by the teacher model. This teaches the student to relate local image patches with the global context from the teacher.
 3. **Loss Minimization:** The goal is to minimize a loss function measuring the similarity of representations from the student and teacher for different views of the same image, without using labeled data.
 
-![](attachments/Pasted%20image%2020250409150743.png)
+![[Pasted-image-20250409150743.png]]
 
 
 
 ## Deformable DETR
 
 ##### Deformable Convolution
-![](attachments/Pasted%20image%2020250410090157.png)
+![[Pasted-image-20250410090157.png]]
 
-![](attachments/Pasted%20image%2020250410091610.png)
-
-
-![](attachments/Pasted%20image%2020250410102412.png)
+![[Pasted-image-20250410091610.png]]
 
 
-![](attachments/Pasted%20image%2020250410103553.png)
+![[Pasted-image-20250410102412.png]]
 
-![](attachments/Pasted%20image%2020250410104305.png)
 
-![](attachments/Pasted%20image%2020250410104324.png)
+![[Pasted-image-20250410103553.png]]
+
+![[Pasted-image-20250410104305.png]]
+
+![[Pasted-image-20250410104324.png]]

@@ -9,24 +9,24 @@ R1 Training process:
 
 start from base model and follow below steps
 
-![](attachments/Pasted%20image%2020250211101350.png)
+![[Pasted-image-20250211101350.png]]
 
 -  Long chains of reasoning SFT Data: 600,000
 
-![](attachments/Pasted%20image%2020250211101501.png)
+![[Pasted-image-20250211101501.png]]
 
 - An interim high-quality reasoning LLM (but worse at non-reasoning tasks).
-![](attachments/Pasted%20image%2020250211101649.png)
+![[Pasted-image-20250211101649.png]]
 
 - Creating reasoning models with large-scale reinforcement learning (RL)
 	- Large-Scale Reasoning-Oriented Reinforcement Learning (R1-Zero)
 	-  Creating SFT reasoning data with the interim reasoning model
 
-![](attachments/Pasted%20image%2020250211101822.png)
+![[Pasted-image-20250211101822.png]]
 
 ## Large-Scale Reasoning-Oriented Reinforcement Learning (R1-Zero)
 
-![](attachments/Pasted%20image%2020250211102318.png)
+![[Pasted-image-20250211102318.png]]
 Although DeepSeek-R1-Zero exhibits strong reasoning capabilities and autonomously develops unexpected and powerful reasoning behaviors, it faces several issues. For instance, DeepSeek-R1-Zero struggles with challenges like poor readability, and language mixing.
 
 It is used in two places:
@@ -37,7 +37,7 @@ It is used in two places:
 
 ## Creating SFT reasoning data with the interim reasoning model
 
-![](attachments/Pasted%20image%2020250211103014.png)
+![[Pasted-image-20250211103014.png]]
 
 To prevent unstable cold start phase of RL training, CoT data is collected for SFT phase
 Cold Start CoT Data:
@@ -47,15 +47,15 @@ Cold Start CoT Data:
 -  refining the results through post-processing by human annotators
 
 
-![](attachments/Pasted%20image%2020250211103112.png)
+![[Pasted-image-20250211103112.png]]
 
 ## General RL training phase
 
-![](attachments/Pasted%20image%2020250211103617.png)
+![[Pasted-image-20250211103617.png]]
 
 # DeepSeek R1 Architecture
 
 
-![](attachments/Pasted%20image%2020250211103737.png)
-![](attachments/Pasted%20image%2020250211103744.png)
+![[Pasted-image-20250211103737.png]]
+![[Pasted-image-20250211103744.png]]
 

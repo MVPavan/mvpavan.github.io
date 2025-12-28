@@ -4,4 +4,4 @@ ML Perf Key techniques:
 - Distillation
 - Quantization
 
-![](Pasted%20image%2020240704095840.png)
+![](Pasted-image-20240704095840.png)

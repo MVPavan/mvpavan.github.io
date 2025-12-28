@@ -120,7 +120,7 @@ def function_name():
 	- addr still points to previous location, but that memory is no longer allocated to this pointer.
 	- dereferencing causes undefined behavior
 
-![](attachments/Pasted%20image%2020240713130310.png)
+![[Pasted-image-20240713130310.png]]
 
 #### Methods
 - [​`destroy_pointee`](https://docs.modular.com/mojo/stdlib/memory/unsafe_pointer/destroy_pointee): Destroy the pointed-to value.

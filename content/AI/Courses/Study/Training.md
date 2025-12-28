@@ -3,15 +3,15 @@
 
 ## LORA
 
-![](attachments/Pasted%20image%2020250131085440.png)
+![[Pasted-image-20250131085440.png]]
 
-![](attachments/Pasted%20image%2020250131095705.png)
+![[Pasted-image-20250131095705.png]]
 
-![](attachments/Pasted%20image%2020250131095717.png)
+![[Pasted-image-20250131095717.png]]
 
 ## DORA
 
-![](attachments/Pasted%20image%2020250131085638.png)
+![[Pasted-image-20250131085638.png]]
 
 
 
@@ -32,31 +32,31 @@
 
 ## RLHF: Reinforcement Learning from Human Feedback
 
-![](attachments/Pasted%20image%2020250131092813.png)
+![[Pasted-image-20250131092813.png]]
 
-![](attachments/Pasted%20image%2020250131092822.png)
+![[Pasted-image-20250131092822.png]]
 
-![](attachments/Pasted%20image%2020250131093144.png)
+![[Pasted-image-20250131093144.png]]
 
 
 ## DPO: Direct preference optimization
 
-![](attachments/Pasted%20image%2020250131094907.png)
+![[Pasted-image-20250131094907.png]]
 
-![](attachments/Pasted%20image%2020250131094918.png)
+![[Pasted-image-20250131094918.png]]
 
-![](attachments/Pasted%20image%2020250131094934.png)
+![[Pasted-image-20250131094934.png]]
 
 ## ORPO: Odds Ratio Preference Optimization
 
-![](attachments/Pasted%20image%2020250204203001.png)
+![[Pasted-image-20250204203001.png]]
 
 
-![](attachments/Pasted%20image%2020250205092824.png)
+![[Pasted-image-20250205092824.png]]
 
-![](attachments/Pasted%20image%2020250205092846.png)
+![[Pasted-image-20250205092846.png]]
 
-![](attachments/Pasted%20image%2020250205092907.png)
+![[Pasted-image-20250205092907.png]]
 
 odds(p) = p/(1-p) -> prob of event happening / prob of not happening
 OR(a,b) = odds(a)/odds(b)
@@ -76,7 +76,7 @@ so gradient boosts yw increase and yl increase
 Implementation in HF library, probabilities we get are logsoftmax so applying exp will give actual probs. 
 
 
-![](attachments/Pasted%20image%2020250205120542.png)
+![[Pasted-image-20250205120542.png]]
 
 
 
