@@ -1,0 +1,24 @@
+# Obsidian to GitHub Pages - Publish Configuration
+# This file controls which files from your Obsidian vault are published to the website.
+
+# Path to your Obsidian vault (relative to repository root)
+vault_path: "MVPArchive"
+
+# Files and folders to include (glob patterns supported)
+# Use relative paths from the vault root
+include:
+  - "**/*.md"  # Include all markdown files by default
+
+# Files and folders to exclude (glob patterns supported)
+# These take precedence over includes
+exclude:
+  - ".obsidian/**"       # Obsidian config folder
+  - "**/private/**"      # Any folder named 'private'
+  - "**/_*.md"           # Files starting with underscore
+  - "**/templates/**"    # Template files
+
+# Default frontmatter values for notes that don't have them
+defaults:
+  layout: "note"
+  show_sidebar: false
+  toc: true
