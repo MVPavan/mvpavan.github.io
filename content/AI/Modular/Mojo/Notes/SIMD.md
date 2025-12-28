@@ -71,6 +71,7 @@ The data is now in a `SIMD` vector.
 ##### Stride and width
 width is the size of the `SIMD` vector, `stride` can be used with `offset`.
 
+```text
     0◄─────┐               
     1      │               
     2◄─────┤               
@@ -82,6 +83,7 @@ width is the size of the `SIMD` vector, `stride` can be used with `offset`.
            │                  
            ▼               
     [0,2,4,6] SIMD[Width:4] 
+```
 ###### A. The concept
 ```mojo
 var stride_like = 2
@@ -117,12 +119,14 @@ print(
 
 
 Here is the `gather` `method` of `DTypePointer` in a visual form:
+```text
     Memory: 0 10 20 30 40 50        
             │       │  │  │     
             └─────┬─┴──┴──┘     
      Gather 0     │ 3  4  5     
                   ▼             
             [0,30,40,50]        
+```
                             
 ###### `scatter`
 It assign new values to various positions. The positions(`int64`) and values are provided in a `SIMD` vector.
@@ -139,6 +143,7 @@ print(mem[10])
 > 0
 
 Here is the `scatter` `method` of `DTypePointer` in a visual form:
+```text
     Memory: 0 10 20 30 40 50    
             ▲     ▲             
             │     │             
@@ -148,6 +153,7 @@ Here is the `scatter` `method` of `DTypePointer` in a visual form:
          │  100   200 Values    
     scatter                        
 > Memory: 100, 10, 200, 30, 40, 50         
+```
 
 ###### `free`
 `alloc` gave us some `RAM` for the program, `free` gives it back:
@@ -157,6 +163,7 @@ mem.free()
 
 Very easy to use:
 
+```text
         ┌──────────────────────┐                         
         │            RAM       │                         
         ├──┐                   │                         
@@ -168,4 +175,5 @@ Very easy to use:
         ┌──┐                                             
         └──┘                                             
     our program has to give the small amount of ram back
-    because another program might need it !             
+    because another program might need it !
+```             
