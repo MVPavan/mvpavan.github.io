@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Distributed Training.md",
+                "file": "AI/Courses/EfficientML/Quantization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Distributed Training"
+              "title": "Quantization"
             }
           },
           {
@@ -207,6 +207,7 @@
   },
   "active": "97549e796e982e83",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/Distributed Training.md",
     "AI/Models/Vision/Vision Transformer.md",
     "AI/Models/Vision/attachments/Pasted image 20250410104324.png",
     "AI/Models/Vision/attachments/Pasted image 20250410104305.png",
