@@ -11,9 +11,9 @@
 
 Types of distributed training:
 - [Data Parallel:](#Data-Parallel): Replicate model across gpu and distribute data across each gpu.
-	- DP, DDP: User if model fits in single gpu
-	- [Deepspeed ZeRO Data Parallel:](#Deepspeed-ZeRO-Data-Parallel):
-		- Zero - 1, 2, 3(=FSDP in pytorch)
+  - DP, DDP: User if model fits in single gpu
+  - [Deepspeed ZeRO Data Parallel:](#Deepspeed-ZeRO-Data-Parallel):
+    - Zero - 1, 2, 3(=FSDP in pytorch)
 - [Pipeline Parallel (Model Parallel):](#Pipeline-Parallel-(Model-Parallel))
 - [Tensor Parallel:](#Tensor-Parallel)
 - [2D & 3D Parallelism:](#2D-&-3D-Parallelism)

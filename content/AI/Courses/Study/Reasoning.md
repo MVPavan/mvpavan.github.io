@@ -19,8 +19,8 @@ start from base model and follow below steps
 ![[Pasted-image-20250211101649.png]]
 
 - Creating reasoning models with large-scale reinforcement learning (RL)
-	- Large-Scale Reasoning-Oriented Reinforcement Learning (R1-Zero)
-	-  Creating SFT reasoning data with the interim reasoning model
+  - Large-Scale Reasoning-Oriented Reinforcement Learning (R1-Zero)
+  -  Creating SFT reasoning data with the interim reasoning model
 
 ![[Pasted-image-20250211101822.png]]
 

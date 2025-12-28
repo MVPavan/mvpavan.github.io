@@ -4,7 +4,7 @@ https://github.com/MVPavan/mojos/blob/master/learn/dsa/my_linked_list.mojo
 
 Follow code for understanding, below data represents deleting a linked list from memory.
 ```
-		Node Ptr       Data Ptr        next Ptr       prev Ptr
+    Node Ptr       Data Ptr        next Ptr       prev Ptr
 node:  0x55f7fa166120 0x55f7fa164048 0x55f7fa166100 0x0             (Head)
 node:  0x55f7fa166100 0x55f7fa164040 0x55f7fa1660e0 0x55f7fa166120
 node:  0x55f7fa1660e0 0x55f7fa164038 0x55f7fa1660c0 0x55f7fa166100
@@ -73,9 +73,9 @@ Freeing head:  0x55f7fa166120
 1. `head = UnsafePointer[Node[T]].address_of(Node[T](value))`, here `head` is assigned address of `created Node[T]`, however `Node` dies with ASAP destructor immediately, making `head` a dangling pointer.
 2. So use `address_of` only to refer to already created variables and should agree to follow variable's lifetime.
 3. Instead use 
-	```
-	head = head.alloc(1)
-	initialize_pointee_move(head, Node[T](value))
-	```
-	This creates buffer and copies the new node to buffer and the lifecycle of head and its value is in our hands now.
-	
+  ```
+  head = head.alloc(1)
+  initialize_pointee_move(head, Node[T](value))
+  ```
+  This creates buffer and copies the new node to buffer and the lifecycle of head and its value is in our hands now.
+  

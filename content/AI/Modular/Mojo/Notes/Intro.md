@@ -38,15 +38,15 @@ Basic numerical types defined in Mojo are actually SMID's of size 1.
 [Ownership | Modular Docs](https://docs.modular.com/mojo/manual/values/ownership)
 - **`^` transfer operator**: to move the value, unless the value is a trivial type (like `Int`) or a newly-constructed, "owned" value.
 - owned - has unique mutable access to this variable
-	- Technically, the `owned` keyword does not guarantee that the received value is _the original value_—it guarantees only that the function gets unique ownership of a value (enforcing [value semantics](https://docs.modular.com/mojo/manual/values/value-semantics)). This happens in one of three ways:
-	- The caller passes the argument with the **`^` transfer operator**, which ends the lifetime of that variable (the variable becomes uninitialized) and ownership is transferred into the function without making a copy of any heap-allocated data.
-	- The caller **does not** use the `^` transfer operator, in which case, the value is copied into the function argument and the original variable remains valid. (If the original value is not used again, the compiler may optimize away the copy and transfer the value).
-	- The caller passes in a newly-created "owned" value, such as a value returned from a function. In this case, no variable owns the value and it can be transferred directly to the callee.
+  - Technically, the `owned` keyword does not guarantee that the received value is _the original value_—it guarantees only that the function gets unique ownership of a value (enforcing [value semantics](https://docs.modular.com/mojo/manual/values/value-semantics)). This happens in one of three ways:
+  - The caller passes the argument with the **`^` transfer operator**, which ends the lifetime of that variable (the variable becomes uninitialized) and ownership is transferred into the function without making a copy of any heap-allocated data.
+  - The caller **does not** use the `^` transfer operator, in which case, the value is copied into the function argument and the original variable remains valid. (If the original value is not used again, the compiler may optimize away the copy and transfer the value).
+  - The caller passes in a newly-created "owned" value, such as a value returned from a function. In this case, no variable owns the value and it can be transferred directly to the callee.
 - inout - shared ownership, modifications reflect across scope.
-	- no default values for inout
-	- in subsequent fn no inout on borrowed variables
+  - no default values for inout
+  - in subsequent fn no inout on borrowed variables
 - borrowed - no modifications allowed
-	- Small values like `Int`, `Float`, and `SIMD` are passed directly in machine registers instead of through an extra indirection.
+  - Small values like `Int`, `Float`, and `SIMD` are passed directly in machine registers instead of through an extra indirection.
 
 
 ### Alias
@@ -62,19 +62,19 @@ compile time temporary value that cant change at runtime
 #### fn
 ```
 fn function_name[p:dtype #parameter](k:dtype #argument) -> dtype:
-	
+  
 ```
 - default ownership - borrowed, read-only
 - default only supports declared variables.
 - inputs and outputs are also strongly typed
 - parameter is compile time variable, and argument is runtime variable.
-	- parameter should be available by compile time 
+  - parameter should be available by compile time 
 
 
 #### def
 ```
 def function_name():
-	
+  
 ```
 - default ownership - borrowed, but if the function mutates the argument, it makes a mutable copy
 - default supports declared and undeclared variables.
@@ -106,19 +106,19 @@ def function_name():
 - Uninitialized: `var ptr: UnsafePointer[Int]`
 - Null/invalid pointer -> address 0 : `var ptr: UnsafePointer[Int]()`
 - alloc -> allocates n dtype contiguous blocks of memory: `var ptr = UnsafePointer[dtype].alloc(n)`
-	- after allocation memory is still uninitialized, dereferencing causes undefined behavior
+  - after allocation memory is still uninitialized, dereferencing causes undefined behavior
 - Initialization:
-	```
-	initialize_pointee_copy(ptr, value)  -- copy
-	or  
-	initalize_pointee_move(ptr, value^)  -- move
-	or  
-	ptr = UnsafePointer[Int].address_of(value) -- assign
-	```
-	- once initialized we can dereference it
+  ```
+  initialize_pointee_copy(ptr, value)  -- copy
+  or  
+  initalize_pointee_move(ptr, value^)  -- move
+  or  
+  ptr = UnsafePointer[Int].address_of(value) -- assign
+  ```
+  - once initialized we can dereference it
 - Dangling pointer -> pointer after freeing the allocated memory `ptr.free()`
-	- addr still points to previous location, but that memory is no longer allocated to this pointer.
-	- dereferencing causes undefined behavior
+  - addr still points to previous location, but that memory is no longer allocated to this pointer.
+  - dereferencing causes undefined behavior
 
 ![[Pasted-image-20240713130310.png]]
 

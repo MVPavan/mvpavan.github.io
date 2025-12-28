@@ -1,7 +1,7 @@
 - [[#Introduction:|Introduction:]]
 - [[#Pruning Criteria:|Pruning Criteria:]]
-		- [[#Magnitude based:|Magnitude based:]]
-		- [[#Scaling-based:|Scaling-based:]]
+    - [[#Magnitude based:|Magnitude based:]]
+    - [[#Scaling-based:|Scaling-based:]]
 - [[#Automatic Pruning:|Automatic Pruning:]]
 - [[#Iterative Pruning:|Iterative Pruning:]]
 

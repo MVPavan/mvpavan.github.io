@@ -63,7 +63,7 @@ Total time: 1.8795693259999999
 3. Move from mojo lists to Tensor object
    `Total time:  7.3664000000000005e-05 -> 68300x over python`
    1. interestingly if I don't have any return, its crazy fast:
-	```
+  ```
         Total time:  2.7599999999999998e-07
         speedup over python:  26002109.322386485
         ---------------------
@@ -93,7 +93,7 @@ Total time: 1.8795693259999999
         Warmup Iters: 2
         Fastest Mean: 0.0047023332451456307
         Slowest Mean: 0.0047023332451456307
-	```
+  ```
 4. Vectorize
    1. If I return tensor with simd width of int64:
         ```

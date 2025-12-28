@@ -1,19 +1,19 @@
 
 - [[#Introduction|Introduction]]
 - [[#Types of Quantization|Types of Quantization]]
-	- [[#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
-	- [[#Linear Quantization|Linear Quantization]]
-		- [[#Quantization Granularities|Quantization Granularities]]
+  - [[#K-Means-based Weight Quantization|K-Means-based Weight Quantization]]
+  - [[#Linear Quantization|Linear Quantization]]
+    - [[#Quantization Granularities|Quantization Granularities]]
 - [[#Quantization in Training|Quantization in Training]]
-	- [[#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
+  - [[#Quantization aware Training (QAT)|Quantization aware Training (QAT)]]
 - [[#STOA Quantization Techniques|STOA Quantization Techniques]]
-	- [[#LLM.int8|LLM.int8]]
-	- [[#GPTQ|GPTQ]]
-		- [[#Optimal Brain Quantizer (OBQ)|Optimal Brain Quantizer (OBQ)]]
-		- [[#GPTQ Algorithm|GPTQ Algorithm]]
-	- [[#SmoothQuant|SmoothQuant]]
-	- [[#Activation Aware Quantization|Activation Aware Quantization]]
-	- [[#QLoRA NF4|QLoRA NF4]]
+  - [[#LLM.int8|LLM.int8]]
+  - [[#GPTQ|GPTQ]]
+    - [[#Optimal Brain Quantizer (OBQ)|Optimal Brain Quantizer (OBQ)]]
+    - [[#GPTQ Algorithm|GPTQ Algorithm]]
+  - [[#SmoothQuant|SmoothQuant]]
+  - [[#Activation Aware Quantization|Activation Aware Quantization]]
+  - [[#QLoRA NF4|QLoRA NF4]]
 
 
 ## Introduction
@@ -42,15 +42,15 @@
 
 Quantization can happen in two ways:
 - Activation Quantization (Calibration)
-	- Range of activations varies with input
-	- Use sample input, infer and calculate range of activations for linear quantization. 
+  - Range of activations varies with input
+  - Use sample input, infer and calculate range of activations for linear quantization. 
 
 - Weight Quantization
-	1. K-Means-based Weight Quantization
-	2. Linear Quantization
-		1. AWQ: Activation aware weight quantization
-		2. GPTQ: GPT Quantized
-		3. BNB: Bits and Bytes Quantized
+  1. K-Means-based Weight Quantization
+  2. Linear Quantization
+    1. AWQ: Activation aware weight quantization
+    2. GPTQ: GPT Quantized
+    3. BNB: Bits and Bytes Quantized
 
 ![[Pasted-image-20240705091622.png]]
 
@@ -58,9 +58,9 @@ Quantization can happen in two ways:
 
 - Cluster weights into M clusters using any clustering algorithm.
 - QAT:
-	- Obtain gradients
-	- Cluster gradients
-	- And apply to centroids as shown below
+  - Obtain gradients
+  - Cluster gradients
+  - And apply to centroids as shown below
 
 ![[Pasted-image-20240705193321.png]]
 
@@ -86,8 +86,8 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 - Tensor - S,Z are calculated per tensor
 - Channel/Vector - S,Z are calculated per channel
 - Group - S,Z are calculated per group, group size are usually n=32,64,128.. elements
-	- Lets say n=32 and using 4-bit SQ, resulting tensor is actually Qed to 4.5 bit
-	- 4-bit (every element is stored in 4 bit) + 0.5 bit (scale in 16 bits for every 32 bits (group size n), 16/32)
+  - Lets say n=32 and using 4-bit SQ, resulting tensor is actually Qed to 4.5 bit
+  - 4-bit (every element is stored in 4 bit) + 0.5 bit (scale in 16 bits for every 32 bits (group size n), 16/32)
 
 ## Quantization in Training
 - Post Training Quantization (PTQ) - All methods above
@@ -95,11 +95,11 @@ Symmetric (SQ) vs Asymmetric (ASQ):
 
 ### Quantization aware Training (QAT)
 - Quantize:
-	- Quantize weight and hold both quantized (BF16) and unquantized (FP32) weights. 
+  - Quantize weight and hold both quantized (BF16) and unquantized (FP32) weights. 
 - Forward Pass:
-	- Use Quantized version of model for inference (BF16)
+  - Use Quantized version of model for inference (BF16)
 - Back Prop:
-	- Use original unquantized version of model weights (FP32)
+  - Use original unquantized version of model weights (FP32)
 
 ## STOA Quantization Techniques
 - LLM.int8
