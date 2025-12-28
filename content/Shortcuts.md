@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Obsidian
+title: Obsidian-Shortcuts
 subtitle: Getting Started
 show_sidebar: true
 toc: true
