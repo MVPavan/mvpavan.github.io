@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Courses/EfficientML/Quantization.md",
+                "file": "AI/Courses/EfficientML/Pruning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantization"
+              "title": "Pruning"
             }
           },
           {
@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5
+    "width": 329.5
   },
   "right": {
     "id": "aca3c13a69f566e2",
@@ -190,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,7 +208,12 @@
   },
   "active": "97549e796e982e83",
   "lastOpenFiles": [
+    "AI/Courses/EfficientML/NAS.md",
+    "AI/Courses/EfficientML/Efficient ML.md",
     "AI/Courses/EfficientML/Distributed Training.md",
+    "AI/Courses/Agents/Smol Course.md",
+    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "AI/Courses/EfficientML/Quantization.md",
     "AI/Models/Vision/Vision Transformer.md",
     "AI/Models/Vision/attachments/Pasted image 20250410104324.png",
     "AI/Models/Vision/attachments/Pasted image 20250410104305.png",
@@ -223,16 +229,13 @@
     "Investing/Equity/Potential.md",
     "Investing/Equity/Notes.md",
     "Investing/Equity/Gold & Silver.md",
-    "AI/Courses/Agents/Smol Course.md",
     "UPSC answer correction.md",
     "AI/Courses/Study/Evaluation.md",
     "Shortcuts.md",
     "Investing/Equity/Screener.md",
     "AI/Courses/Study/Training.md",
-    "AI/Courses/EfficientML/Quantization.md",
     "AI/Courses/Study/Reasoning.md",
     "AI/Courses/Intro.md",
-    "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/Study/Mixture of Experts.md",
     "AI/Courses/AK/NNHero/MicroGrad.md",
     "AI/Books/LLM-Scratch/Introduction.md",
@@ -251,8 +254,6 @@
     "AI/Courses/Study",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/Decorators.md",
-    "AI/Modular/Mojo/benchmarks/Results.md",
-    "AI/Modular/Mojo/Notes/SIMD.md",
     "Untitled.canvas"
   ]
 }
