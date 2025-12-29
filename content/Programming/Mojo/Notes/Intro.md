@@ -30,3 +30,11 @@ Usually in languages like python there is counter which keeps count of number of
 | **Destruction**       | End of Scope / `d           | Last Use (ASAP)                |
 | **Runtime Overhead**  | High (updating count        | Zero (Static analysis)         |
 | **Garbage Collector**                               | No                             |
+
+## Compile-time Metaprogramming
+During compile, based on compile time parameters unique function / type is generated, similar to C++ templates
+
+## Hardware Portability
+Mojo supports heterogeneous hardware, mojo compiler doesn't make any assumptions about hardware, instead hardware is handled in mojo libraries for both cpus and gpus.
+
+
