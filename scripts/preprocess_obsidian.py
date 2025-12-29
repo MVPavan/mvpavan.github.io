@@ -12,6 +12,7 @@ Transformations:
 4. Convert tab indentation → spaces in lists
 5. Replace non-breaking spaces → regular spaces
 6. Update all WikiLinks to use dashed filenames
+7. Fix broken asset links → move assets to correct section's attachments folder
 
 Usage:
     python preprocess_obsidian.py [content_dir]
@@ -21,6 +22,7 @@ Usage:
 
 import os
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -188,6 +190,107 @@ def update_internal_links(content: str, renames: dict[str, str]) -> str:
     return content
 
 
+def find_and_fix_broken_assets(content_dir: Path) -> tuple[int, int]:
+    """
+    Find broken asset links in markdown files and attempt to fix them.
+    
+    For each markdown file:
+    1. Find all WikiLink image references: ![[filename.ext]]
+    2. Check if the asset exists in the section's attachments folder
+    3. If not found locally, search all other attachment folders
+    4. If found elsewhere, move it to the correct attachments folder
+    5. If not found anywhere, print the missing asset and page name
+    
+    Returns: (fixed_count, missing_count)
+    """
+    # Build index of all attachment folders and their contents
+    attachment_dirs = list(content_dir.rglob("attachments"))
+    asset_index: dict[str, Path] = {}  # filename -> full path
+    
+    for attach_dir in attachment_dirs:
+        if attach_dir.is_dir():
+            for asset_file in attach_dir.iterdir():
+                if asset_file.is_file():
+                    # Store with lowercase key for case-insensitive matching
+                    asset_index[asset_file.name.lower()] = asset_file
+    
+    fixed_count = 0
+    missing_assets: list[tuple[str, str]] = []  # (asset_name, page_path)
+    
+    # Process all markdown files
+    md_files = list(content_dir.rglob("*.md"))
+    
+    for md_file in md_files:
+        try:
+            content = md_file.read_text(encoding='utf-8')
+        except UnicodeDecodeError:
+            continue
+        
+        # Find all WikiLink image references: ![[filename.ext]]
+        pattern = r'!\[\[([^\]]+)\]\]'
+        matches = re.findall(pattern, content)
+        
+        if not matches:
+            continue
+        
+        # Determine the expected attachments folder for this file
+        section_dir = md_file.parent
+        expected_attach_dir = section_dir / "attachments"
+        
+        for asset_name in matches:
+            # Normalize the asset name (replace spaces with dashes as per transform)
+            normalized_name = asset_name.replace(" ", "-")
+            expected_asset_path = expected_attach_dir / normalized_name
+            
+            # Check if asset exists in the expected location
+            if expected_asset_path.exists():
+                continue
+            
+            # Also check without normalization
+            if (expected_attach_dir / asset_name).exists():
+                continue
+            
+            # Asset not found locally - search in the global index
+            lookup_key = normalized_name.lower()
+            alt_lookup_key = asset_name.lower()
+            
+            found_path = asset_index.get(lookup_key) or asset_index.get(alt_lookup_key)
+            
+            if found_path and found_path.exists():
+                # Found the asset elsewhere - move it to the correct location
+                expected_attach_dir.mkdir(parents=True, exist_ok=True)
+                dest_path = expected_attach_dir / found_path.name
+                
+                if not dest_path.exists():
+                    shutil.move(str(found_path), str(dest_path))
+                    print(f"  ✅ Moved: {found_path.name}")
+                    print(f"     From: {found_path.parent.relative_to(content_dir)}")
+                    print(f"     To:   {expected_attach_dir.relative_to(content_dir)}")
+                    
+                    # Update the index
+                    del asset_index[found_path.name.lower()]
+                    asset_index[dest_path.name.lower()] = dest_path
+                    fixed_count += 1
+                else:
+                    # Asset already exists at destination (duplicate?)
+                    pass
+            else:
+                # Asset not found anywhere
+                rel_page = md_file.relative_to(content_dir)
+                missing_assets.append((asset_name, str(rel_page)))
+    
+    # Print missing assets
+    if missing_assets:
+        print()
+        print("  ⚠️  Missing assets (not found anywhere):")
+        for asset_name, page_path in missing_assets:
+            print(f"     Asset: {asset_name}")
+            print(f"     Page:  {page_path}")
+            print()
+    
+    return fixed_count, len(missing_assets)
+
+
 def process_markdown_file(file_path: Path, renames: dict[str, str]) -> bool:
     """
     Apply all transformations to a single markdown file.
@@ -247,6 +350,14 @@ def main(content_dir: str = "./content"):
     print(f"   Modified {modified_count} of {len(md_files)} files")
     print()
     
+    # Step 3: Find and fix broken asset links
+    print("🔗 Step 3: Finding and fixing broken asset links...")
+    fixed_count, missing_count = find_and_fix_broken_assets(content_path)
+    print(f"   Fixed {fixed_count} broken asset links")
+    if missing_count > 0:
+        print(f"   ⚠️  {missing_count} assets could not be found")
+    print()
+    
     print("✅ Preprocessing complete!")
     print()
     print("Transformations applied:")
@@ -256,6 +367,7 @@ def main(content_dir: str = "./content"):
     print("  • List indentation: tabs → spaces")
     print("  • WikiLinks: [[With Spaces]] → [[With-Dashes]]")
     print("  • Non-breaking spaces: \\xa0 → space")
+    print("  • Broken asset links: moved to correct section")
 
 
 if __name__ == "__main__":
