@@ -189,6 +189,8 @@
   },
   "active": "4b3268847b706549",
   "lastOpenFiles": [
+    "AI/Courses/Agents/Smol-Course.md",
+    "Shortcuts.md",
     "index.md",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/SIMD.md",
@@ -212,8 +214,6 @@
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/Efficient-ML.md",
     "AI/Courses/EfficientML/Distributed-Training.md",
-    "AI/Courses/Agents/Smol-Course.md",
-    "Shortcuts.md",
     "UPSC-answer-correction.md"
   ]
 }
