@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Shortcuts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Shortcuts"
             }
           }
         ]
@@ -189,8 +189,8 @@
   },
   "active": "056d60223c097458",
   "lastOpenFiles": [
-    "Shortcuts.md",
     "index.md",
+    "Shortcuts.md",
     "AI/Intro.md",
     "AI/Models/Vision/Vision-Transformer.md",
     "AI/Models/Vision/Untitled.md",
