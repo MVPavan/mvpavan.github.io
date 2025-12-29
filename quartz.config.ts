@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "mvpavan.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian", "Shortcuts", "Investing"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Investing"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

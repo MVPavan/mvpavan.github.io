@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: page
 title: Obsidian-Shortcuts
 subtitle: Getting Started
