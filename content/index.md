@@ -6,8 +6,7 @@ title: "MVPavan's Notes"
 
 Senior AI Engineer exploring the intersection of **deep learning**, **efficient ML**, and **systems programming**.
 
-:luc_linkedin: - [MVPavan | LinkedIn](https://www.linkedin.com/in/pavanmv/)
-:luc_github: - [MVPavan | GitHub](https://github.com/MVPavan)
+💼 [LinkedIn](https://www.linkedin.com/in/pavanmv/) · 🐙 [GitHub](https://github.com/MVPavan)
 
 
 ## What You'll Find Here
