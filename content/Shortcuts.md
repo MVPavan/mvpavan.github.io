@@ -62,3 +62,61 @@ These shortcuts will help you quickly format and structure your notes in Obsidia
 - [Bulma – A clean, modern Jekyll theme – Jekyll Themes](https://jekyllthemes.io/theme/bulma)
 - [Hyde – A brazen two-column theme – Jekyll Themes](https://jekyllthemes.io/theme/hyde)
 - [Forty – Landing page and portfolio theme – Jekyll Themes](https://jekyllthemes.io/theme/forty-jekyll-theme)
+
+---
+
+### Useful Emojis for Technical Notes
+
+#### Status & Progress
+| Emoji | Name | Use Case |
+|-------|------|----------|
+| ✅ | Check | Done/Complete |
+| ❌ | Cross | Failed/Wrong |
+| ⚠️ | Warning | Caution |
+| 🚧 | Construction | Work in progress |
+| 🔄 | Arrows | In progress/Sync |
+| ⏳ | Hourglass | Pending/Waiting |
+| 🎯 | Target | Goal/Objective |
+
+#### Categories & Topics
+| Emoji | Name | Use Case |
+|-------|------|----------|
+| 🧠 | Brain | AI/ML |
+| 🔥 | Fire | Hot/Popular |
+| 📚 | Books | Study/Learning |
+| 💡 | Lightbulb | Ideas/Tips |
+| 🛠️ | Tools | Development |
+| ⚡ | Lightning | Performance |
+| 🔧 | Wrench | Configuration |
+| 🐛 | Bug | Debugging |
+
+#### Tech & Code
+| Emoji | Name | Use Case |
+|-------|------|----------|
+| 💻 | Laptop | Code/Dev |
+| 🐍 | Snake | Python |
+| 🦀 | Crab | Rust |
+| 🔥 | Fire | Mojo |
+| 🐙 | Octopus | GitHub |
+| 🐳 | Whale | Docker |
+| ☁️ | Cloud | Cloud/AWS |
+| 🗄️ | Cabinet | Database |
+
+#### Social & Links
+| Emoji | Name | Use Case |
+|-------|------|----------|
+| 💼 | Briefcase | LinkedIn |
+| 🐙 | Octopus | GitHub |
+| 🔗 | Link | External link |
+| 📧 | Email | Contact |
+| 🌐 | Globe | Website |
+
+#### Notes & Organization
+| Emoji | Name | Use Case |
+|-------|------|----------|
+| 📝 | Memo | Notes |
+| 📌 | Pin | Important |
+| 🏷️ | Tag | Labels |
+| 📂 | Folder | Category |
+| 🔖 | Bookmark | Reference |
+| 📊 | Chart | Data/Stats |
