@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9782db4216a5b663",
+        "id": "addc29d35a23ff77",
         "type": "tabs",
         "children": [
           {
-            "id": "056d60223c097458",
+            "id": "81b7223a95b0b103",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -187,8 +187,9 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "056d60223c097458",
+  "active": "81b7223a95b0b103",
   "lastOpenFiles": [
+    "AI/Study/Distributed-Training.md",
     "Programming/Mojo/Notes/Intro 1.md",
     "Shortcuts.md",
     "Programming/Mojo/Notes/Intro.md",
@@ -214,7 +215,6 @@
     "Programming/Mojo/benchmarks/Mandelbrot.md",
     "AI/Study/Training.md",
     "AI/Study/Reasoning.md",
-    "AI/Study/Mixture-of-Experts.md",
-    "AI/Study/Loss---Metrics.md"
+    "AI/Study/Mixture-of-Experts.md"
   ]
 }
