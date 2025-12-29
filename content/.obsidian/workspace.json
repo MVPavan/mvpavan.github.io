@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shortcuts.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shortcuts"
+              "title": "index"
             }
           }
         ]
@@ -189,8 +189,8 @@
   },
   "active": "4b3268847b706549",
   "lastOpenFiles": [
-    "AI/Courses/Agents/Smol-Course.md",
     "Shortcuts.md",
+    "AI/Courses/Agents/Smol-Course.md",
     "index.md",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/SIMD.md",
