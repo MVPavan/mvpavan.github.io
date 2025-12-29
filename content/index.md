@@ -2,7 +2,7 @@
 title: "MVPavan's Notes"
 ---
 
-Welcome to my digital garden — a collection of notes on AI, Machine Learning, and more.
+Welcome to my digital garden — a collection of notes on AI, Mojo, and more.
 
 ## Browse by Topic
 
