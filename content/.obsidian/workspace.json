@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b8afaf417ce40d4",
+        "id": "9782db4216a5b663",
         "type": "tabs",
         "children": [
           {
-            "id": "ee3a9aa52653dacc",
+            "id": "056d60223c097458",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -187,33 +187,34 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "ee3a9aa52653dacc",
+  "active": "056d60223c097458",
   "lastOpenFiles": [
-    "Untitled.base",
-    "index.md",
     "Shortcuts.md",
-    "AI/Courses/Agents/Smol-Course.md",
-    "AI/Modular/Mojo/Notes/Traits.md",
-    "AI/Modular/Mojo/Notes/SIMD.md",
-    "AI/Modular/Mojo/Notes/Intro.md",
-    "AI/Modular/Mojo/Notes/Decorators.md",
-    "AI/Modular/Mojo/DSA/LinkedList.md",
-    "AI/Modular/Mojo/DSA/Introduction.md",
-    "AI/Modular/Mojo/benchmarks/Results.md",
-    "AI/Modular/Mojo/benchmarks/Resize.md",
-    "AI/Modular/Mojo/benchmarks/MatMul.md",
-    "AI/Modular/Mojo/benchmarks/Mandelbrot.md",
+    "index.md",
+    "AI/Intro.md",
     "AI/Models/Vision/Vision-Transformer.md",
-    "AI/Courses/Intro.md",
-    "AI/Courses/Study/Training.md",
-    "AI/Courses/Study/Reasoning.md",
-    "AI/Courses/Study/Mixture-of-Experts.md",
-    "AI/Courses/Study/Loss---Metrics.md",
-    "AI/Courses/Study/Evaluation.md",
-    "AI/Courses/EfficientML/Quantization.md",
-    "AI/Courses/EfficientML/Pruning.md",
-    "AI/Courses/EfficientML/NAS.md",
-    "AI/Courses/EfficientML/Efficient-ML.md",
-    "AI/Courses/EfficientML/Distributed-Training.md"
+    "AI/Models/Vision/Untitled.md",
+    "Investing/Equity/Screener.md",
+    "Investing/Equity/Potential.md",
+    "Investing/Equity/Notes.md",
+    "Investing/Equity/Gold-&-Silver.md",
+    "AI/EfficientML/Quantization.md",
+    "Untitled.base",
+    "Agents/Smol-Course.md",
+    "Programming/Mojo/Notes/Traits.md",
+    "Programming/Mojo/Notes/SIMD.md",
+    "Programming/Mojo/Notes/Intro.md",
+    "Programming/Mojo/Notes/Decorators.md",
+    "Programming/DSA/LinkedList.md",
+    "Programming/DSA/Introduction.md",
+    "Programming/Mojo/benchmarks/Results.md",
+    "Programming/Mojo/benchmarks/Resize.md",
+    "Programming/Mojo/benchmarks/MatMul.md",
+    "Programming/Mojo/benchmarks/Mandelbrot.md",
+    "AI/Study/Training.md",
+    "AI/Study/Reasoning.md",
+    "AI/Study/Mixture-of-Experts.md",
+    "AI/Study/Loss---Metrics.md",
+    "AI/Study/Evaluation.md"
   ]
 }

@@ -6,20 +6,24 @@ title: "MVPavan's Notes"
 
 Senior AI Engineer exploring the intersection of **deep learning**, **efficient ML**, and **systems programming**.
 
+:luc_linkedin: - [MVPavan | LinkedIn](https://www.linkedin.com/in/pavanmv/)
+:luc_github: - [MVPavan | GitHub](https://github.com/MVPavan)
+
+
 ## What You'll Find Here
 
 ### 🧠 AI & Machine Learning
-- [[AI/Courses/EfficientML/Quantization|Quantization]] — Making models smaller and faster
-- [[AI/Courses/EfficientML/Pruning|Pruning]] — Neural network compression
-- [[AI/Courses/EfficientML/Distributed-Training|Distributed Training]] — Scaling to multi-GPU/multi-node
+- [[Quantization|Quantization]] — Making models smaller and faster
+- [[Pruning|Pruning]] — Neural network compression
+- [[Distributed-Training|Distributed Training]] — Scaling to multi-GPU/multi-node
 
 ### 🔥 Mojo & Systems
-- [[AI/Modular/Mojo/Notes/SIMD|SIMD]] — Vectorization and low-level optimization
-- [[AI/Modular/Mojo/benchmarks/Mandelbrot|Benchmarks]] — Performance comparisons
+- [[SIMD|SIMD]] — Vectorization and low-level optimization
+- [[Mandelbrot|Benchmarks]] — Performance comparisons
 
 ### 📚 Study Notes
-- [[AI/Courses/Study/Training|Training Deep Networks]]
-- [[AI/Courses/Study/Reasoning|LLM Reasoning]]
+- [[Training|Training Deep Networks]]
+- [[Reasoning|LLM Reasoning]]
 
 ---
 

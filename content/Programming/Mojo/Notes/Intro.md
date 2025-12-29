@@ -101,7 +101,7 @@ def function_name():
 
 #### Lifecycle
 
-> Check [LinkedList](../DSA/LinkedList.md) for Memory lifecycle example.
+> Check [LinkedList](LinkedList.md) for Memory lifecycle example.
 
 - Uninitialized: `var ptr: UnsafePointer[Int]`
 - Null/invalid pointer -> address 0 : `var ptr: UnsafePointer[Int]()`
