@@ -4,7 +4,7 @@ title: "MVPavan's Notes"
 
 # Hi, I'm Pavan 👋
 
-Senior AI Engineer exploring the intersection of **deep learning**, **efficient ML**, and **systems programming**.
+Senior AI Engineer exploring the intersection of AI training, optimization, efficient ML, and systems programming.
 
 💼 [LinkedIn](https://www.linkedin.com/in/pavanmv/) · 🐙 [GitHub](https://github.com/MVPavan)
 
@@ -15,14 +15,13 @@ Senior AI Engineer exploring the intersection of **deep learning**, **efficient 
 - [[Quantization|Quantization]] — Making models smaller and faster
 - [[Pruning|Pruning]] — Neural network compression
 - [[Distributed-Training|Distributed Training]] — Scaling to multi-GPU/multi-node
+- [[Training|Training Deep Networks]]
+- [[Reasoning|LLM Reasoning]]
 
 ### 🔥 Mojo & Systems
 - [[SIMD|SIMD]] — Vectorization and low-level optimization
 - [[Mandelbrot|Benchmarks]] — Performance comparisons
 
-### 📚 Study Notes
-- [[Training|Training Deep Networks]]
-- [[Reasoning|LLM Reasoning]]
 
 ---
 
