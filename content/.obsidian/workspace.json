@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 346.5
   },
   "right": {
     "id": "652257796fa95326",
@@ -187,7 +187,7 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "06a39c1fa12998c9",
+  "active": "056d60223c097458",
   "lastOpenFiles": [
     "Programming/Mojo/Notes/Intro 1.md",
     "Shortcuts.md",
