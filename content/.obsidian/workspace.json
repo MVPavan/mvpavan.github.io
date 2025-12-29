@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "08ca6c17943bb1e0",
+        "id": "0b8afaf417ce40d4",
         "type": "tabs",
         "children": [
           {
-            "id": "4b3268847b706549",
+            "id": "ee3a9aa52653dacc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -187,11 +187,12 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "4b3268847b706549",
+  "active": "ee3a9aa52653dacc",
   "lastOpenFiles": [
+    "Untitled.base",
+    "index.md",
     "Shortcuts.md",
     "AI/Courses/Agents/Smol-Course.md",
-    "index.md",
     "AI/Modular/Mojo/Notes/Traits.md",
     "AI/Modular/Mojo/Notes/SIMD.md",
     "AI/Modular/Mojo/Notes/Intro.md",
@@ -213,7 +214,6 @@
     "AI/Courses/EfficientML/Pruning.md",
     "AI/Courses/EfficientML/NAS.md",
     "AI/Courses/EfficientML/Efficient-ML.md",
-    "AI/Courses/EfficientML/Distributed-Training.md",
-    "UPSC-answer-correction.md"
+    "AI/Courses/EfficientML/Distributed-Training.md"
   ]
 }
