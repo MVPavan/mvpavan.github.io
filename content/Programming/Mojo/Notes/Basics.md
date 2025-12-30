@@ -56,6 +56,10 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 
 **Key Tip:** In Mojo, you should use `StringLiteral`  as much as possible for constants. Only convert to `String` when you actually need to modify the text or receive data from a user/file at runtime.
 
+### Collections
+
+
+
 ## Variables
 
 - Explicit declared `var x:Int or var x:Int = 10 or var x = 10`
