@@ -2,6 +2,15 @@
 ## Types
 
 
+### DType
+
+### SIMD
+Single instruction Multiple data, processor tech that allows you to perform an operation on entire set of operands at once.
+- defined by two parameters - DType, number of elements 
+- `var vec = SIMD[DType.float32, 4](3.0, 2.0, 2.0, 1.0)
+- All numeric types in mojo are just alias for SIMD vectors
+- `comptime FLOAT32 = SIMD[DType.float32, size=1]`
+- Where its single float value or vector of floats, math operations go through exact same code path.
 
 ## Variables
 

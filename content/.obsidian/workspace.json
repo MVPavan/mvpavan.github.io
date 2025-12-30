@@ -189,8 +189,9 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Intro.md",
+    "Programming/Mojo/Notes/SIMD.md",
     "Programming/Mojo/Notes/Basics.md",
+    "Programming/Mojo/Notes/Intro.md",
     "Programming/Mojo/Notes/Intro-1.md",
     "AI/Study/Distributed-Training.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
@@ -217,7 +218,6 @@
     "Untitled.base",
     "Agents/Smol-Course.md",
     "Programming/Mojo/Notes/Traits.md",
-    "Programming/Mojo/Notes/SIMD.md",
     "Programming/Mojo/Notes/Decorators.md",
     "Programming/DSA/LinkedList.md",
     "Programming/DSA/Introduction.md",
