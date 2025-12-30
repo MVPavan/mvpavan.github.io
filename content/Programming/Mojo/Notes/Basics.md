@@ -20,7 +20,7 @@ Bothe implicit and explicit declared variables are statically typed - set in com
 
 ## Trait
 
-```
+``` mojo
 trait SomeTrait:
 	fn required_method(self, x: Int): ...
 
@@ -51,7 +51,7 @@ Metaprogramming refers to a variety of ways a program has knowledge of itself or
 
 Argument - run time value for functions.
 
-```
+```mojo
 def repeat[count: Int](msg: String):
     @parameter # evaluate the following for loop at compile time    
     for i in range(count):
@@ -63,3 +63,40 @@ count wont change during runtime, where as msg can change.
 @paramete decorator mentions compiler to optimize/evaluate for loop during compile time.  This can contribute to runtime performance.
 
 
+## Functions
+
+### def vs fn
+
+- compiler doesn't allow fn to raise error without explicit raises
+
+### Return values
+
+- syntax: `fn  -> type`
+- By default value is returned to called as an owned value
+- value may be implicitly converted to return type
+-  can also return a mutable or immutable reference using a `ref` return value
+
+### Named Results
+
+```mojo
+def get_name_tag(var name: String, out name_tag: NameTag):
+    name_tag = NameTag(name^)
+```
+
+- allow a function to return a value that can't be moved or copied
+- function must initialize the out argument, by default its uninitialized
+- no explicit return required, if valid return is included its returned as usual 
+- A function can declare only one return value, whether it's declared using an `out` argument or using the standard `-> type` syntax
+
+```
+def get_name_tag(var name: String) -> NameTag:    ...
+def get_name_tag(var name: String, out name_tag: NameTag):    ...
+```
+
+In both cases, the call looks like this:
+
+```
+tag = get_name_tag("Judith")
+```
+
+`...` in mojo functions represents its not defined now and should be defined by who ever uses it. 
