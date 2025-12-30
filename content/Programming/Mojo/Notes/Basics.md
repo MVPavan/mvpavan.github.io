@@ -64,6 +64,10 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 - `print(list_a)` will not work, we can only print individual elements of list if they are `stringable` type
 
 #### Dict
+- Dict key must conform to `KeyElement` trait, value must conform to `Copyable` trait
+- Dict iterators all yield references which are copied to declared name by default, we can use `ref` to avoid copy, but its a unmeasurable micro-optimization, but is useful with types that aren't `Copyable`.
+
+
 
 
 ## Variables
