@@ -44,7 +44,7 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 - Mutability: It is mutable. You can append text, change characters, or clear it.
 - Management: It uses Mojo’s ASAP destruction. When a String variable is no longer used, Mojo automatically frees its heap memory.
 
-#### Summary Comparison:
+#### Summary Comparison
 
 | Feature         | ```StringLiteral``` | ```String```                       |
 | --------------- | ------------------- | ---------------------------------- |
