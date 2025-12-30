@@ -3,6 +3,22 @@
 
 
 ### DType
+collection of precise numeric representation of data.
+- In mojo `Int` is not `DType`, `comptime Int32 = SIMD[DType.int32, 1]` based on HW `Int` is either `Int32` or `Int64`
+- So all numeric types in mojo are SIMD vectors of their respective DTypes.
+- we cant use DType as type annotation, Mojo creates types using DType values.
+
+```mojo
+# VALID: Storing a DType value in a variable
+var my_data_spec: DType = DType.float32 
+
+# INVALID: Trying to use a value as a type annotation
+var x: DType.float32 = 1.0  # ERROR: DType.float32 is a value, not a type
+
+# VALID:
+comptime FLOAT32 = SIMD[DType.float32, size=1] # float32 type
+var x: Float32 = 1.0  # valid type annotation
+```
 
 ### SIMD
 Single instruction Multiple data, processor tech that allows you to perform an operation on entire set of operands at once.
@@ -11,6 +27,34 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 - All numeric types in mojo are just alias for SIMD vectors
 - `comptime FLOAT32 = SIMD[DType.float32, size=1]`
 - Where its single float value or vector of floats, math operations go through exact same code path.
+
+### String & StringLiteral
+#### StringLiteral (Compile-Time)
+- A StringLiteral is what you get when you type text directly in quotes, like "Hello World".
+- Storage: The characters are baked directly into the compiled binary file. They never move and are never "deleted" while the program is running.
+- Performance: Creating a StringLiteral costs zero at runtime. There is no memory allocation.
+- Mutability: It is strictly immutable (read-only).
+- Trivial Type: It is a "trivial" type, meaning it can be passed around in CPU registers very efficiently.
+#### String (Run-Time)
+- A String is a more flexible, dynamic container for text.
+- Storage: It stores data in three possible ways:
+	- Inlined (SSO): Small strings (up to 23 bytes) are stored directly inside the String variable itself (on the stack).
+	- Heap-Allocated: Large strings are stored in "Heap" memory.
+	- Reference to Literal: It can also act as a "view" of a StringLiteral to avoid copying.
+- Mutability: It is mutable. You can append text, change characters, or clear it.
+- Management: It uses Mojo’s ASAP destruction. When a String variable is no longer used, Mojo automatically frees its heap memory.
+
+#### Summary Comparison:
+
+| Feature         | ```StringLiteral``` | ```String```                       |
+| --------------- | ------------------- | ---------------------------------- |
+| **Example**     | ```"Hello"```       | ```var s = String("Hello")```      |
+| **Creation**    | Compile-time        | Run-time                           |
+| **Allocation**  | None (Binary data)  | Stack or Heap                      |
+| **Speed**       | Fastest             | Fast (but has management overhead) |
+| **Flexibility** | Fixed               | Can be changed/appended            |
+
+**Key Tip:** In Mojo, you should use `StringLiteral`  as much as possible for constants. Only convert to `String` when you actually need to modify the text or receive data from a user/file at runtime.
 
 ## Variables
 
