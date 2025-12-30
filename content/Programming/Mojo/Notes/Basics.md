@@ -1,4 +1,8 @@
 
+## Types
+
+
+
 ## Variables
 
 - Explicit declared `var x:Int or var x:Int = 10 or var x = 10`
