@@ -58,6 +58,12 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 
 ### Collections
 
+#### List
+- Iterating a list returns an immutable reference to each item
+- To mutate use `ref` while iterating
+- `print(list_a)` will not work, we can only print individual elements of list if they are `stringable` type
+
+#### Dict
 
 
 ## Variables
