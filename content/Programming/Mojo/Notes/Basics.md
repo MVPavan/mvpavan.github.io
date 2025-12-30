@@ -2,9 +2,39 @@
 ## Variables
 
 - Explicit declared `var x:Int or var x:Int = 10 or var x = 10`
-- Implicit declared  `x = 10`
+- Implicit declared  `x = 10 or x:Int = 10 or x:Int`
+- Both implicit and explicit declared variables are strongly typed, either explicitly set with type annotation or implicit with first initialized value.
+- Once initialized variable type cannot be changed (unlike python) except implicit conversion
+- Implicit conversion: Int --> Float, StringLiteral --> String  etc.
+- One scoping difference between `var` and normal variables, is variable shadowing is only possible with `var` declared.
 
-Bothe implicit and explicit declared variables are statically typed - set in compile time, don't change at runtime.
+```mojo
+def function_scopes():
+    num = 1
+    if num == 1:
+        print(num)   # Reads the function-scope "num"
+        num = 2      # Updates the function-scope variable
+        print(num)   # Reads the function-scope "num"
+    print(num)       # Reads the function-scope "num"
+1  
+2  
+2
+
+def lexical_scopes():
+    var num = 1
+    var dig = 1
+    if num == 1:
+        print("num:", num)  # Reads the outer-scope "num"
+        var num = 2         # Creates new inner-scope "num" (Variable shadowing)
+        print("num:", num)  # Reads the inner-scope "num"
+        dig = 2             # Updates the outer-scope "dig"
+    print("num:", num)      # Reads the outer-scope "num"
+    print("dig:", dig)      # Reads the outer-scope "dig"
+num: 1  
+num: 2  
+num: 1  
+dig: 2 
+```
 
 ## Struct
 
@@ -67,7 +97,9 @@ count wont change during runtime, where as msg can change.
 
 ### def vs fn
 
-- compiler doesn't allow fn to raise error without explicit raises
+- `fn` : compiler doesn't allow fn to raise error without explicit raises
+- `def` : is always treated as raising function by default irrespective of the `def` code
+- If a non-raising function calls a raising function, it must handle any possible errors
 
 ### Return values
 
@@ -100,3 +132,34 @@ tag = get_name_tag("Judith")
 ```
 
 `...` in mojo functions represents its not defined now and should be defined by who ever uses it. 
+
+###  Copy Elision
+
+Or RVO - Return Value Optimization
+
+```
+struct ImmovableObject:
+    var name: String    
+    fn __init__(out self, var name: String):
+            self.name = name^
+
+def create_immovable_object(var name: String, out obj: ImmovableObject):    
+	obj = ImmovableObject(name^)    
+	obj.name += "!"    # obj is implicitly returned
+
+def main():    
+	my_obj = create_immovable_object("Blob")
+
+def create_immovable_object2(var name: String) -> ImmovableObject:
+    obj = ImmovableObject(name^)
+    obj.name += "!"
+    return obj^ # Error: ImmovableObject is not copyable or movable
+
+def create_immovable_object3(var name: String) -> ImmovableObject:
+    return ImmovableObject(name^) # OK
+```
+
+- `ImmovableObject` cannot be moved or copied, no `__copy__ or __move__` defined
+- `create_immovable_object2` error because `obj` is created here and is not movable or copyable
+- `create_immovable_object` works because `obj` is `out` object, its created by caller, here its only referenced by memory, once function completes, caller will have the modified `obj`
+- `create_immovable_object3` also works because its an intelligent optimization done by compiler, return object is not created in `create_immovable_object3` scope, rather in caller scope. However for this happen, `return` has to be immediate after obj creation, no modifications can be done on obj.
