@@ -57,8 +57,10 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 **Key Tip:** In Mojo, you should use `StringLiteral`  as much as possible for constants. Only convert to `String` when you actually need to modify the text or receive data from a user/file at runtime.
 
 ### Collections
+List, Dict, Set, Optional
 
 #### List
+- All list elements must conform to `copyable` trait
 - Iterating a list returns an immutable reference to each item
 - To mutate use `ref` while iterating
 - `print(list_a)` will not work, we can only print individual elements of list if they are `stringable` type
@@ -67,8 +69,8 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 - Dict key must conform to `KeyElement` trait, value must conform to `Copyable` trait
 - Dict iterators all yield references which are copied to declared name by default, we can use `ref` to avoid copy, but its a unmeasurable micro-optimization, but is useful with types that aren't `Copyable`.
 
-
-
+#### Set
+- Set element must conform to `KeyElement` trait.
 
 ## Variables
 
