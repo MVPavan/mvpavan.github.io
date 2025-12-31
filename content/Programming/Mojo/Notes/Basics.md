@@ -175,6 +175,7 @@ count wont change during runtime, where as msg can change.
 - `fn` : compiler doesn't allow fn to raise error without explicit raises
 - `def` : is always treated as raising function by default irrespective of the `def` code
 - If a non-raising function calls a raising function, it must handle any possible errors
+- Only non raising `fn` can be used with any `comptime` variables, as `comptime` is evaluated during compilation, compiler cannot handle errors, so we need a 100% guarantee of success
 
 ### Return values
 
