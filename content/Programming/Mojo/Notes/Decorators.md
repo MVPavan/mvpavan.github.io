@@ -13,12 +13,15 @@ Types:
   - Pointers (the address value is trivial, not the data being pointed to).
   - Arrays of other trivial types, including SIMD.
 
-
+## @fieldwise_init
+It tells the compiler to automatically write the constructor `__init__` for your  struct
+### @fieldwise_init("implicit")
+it allows the struct to be implicitly converted from its fields
 
 ## @always_inline
 
 Mojo compiler copies the body of this function to body of the function where its being called. This avoids performance costs associated with function calls, but it increases binary size.
-### `@always_inline('nodebug')`
+### @always_inline('nodebug')
 Same as above but without debug info, debugger cannot step into this function when debugging, should be used with low level code.
 
 ## @value
