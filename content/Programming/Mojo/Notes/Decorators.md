@@ -1,13 +1,4 @@
 
-## @always_inline
-
-Mojo compiler copies the body of this function to body of the function where its being called. This avoids performance costs associated with function calls, but it increases binary size.
-### `@always_inline('nodebug')`
-Same as above but without debug info, debugger cannot step into this function when debugging, should be used with low level code.
-
-## @value
-
-Generates boilerplate lifecycle methods. `__init__`, `__copyinit__`, `__moveinit__`,`__del__`
 
 ## @register_passable
 
@@ -21,6 +12,18 @@ Types:
   - Arithmetic types such as `Int`, `Bool`, `Float64` etc.
   - Pointers (the address value is trivial, not the data being pointed to).
   - Arrays of other trivial types, including SIMD.
+
+
+
+## @always_inline
+
+Mojo compiler copies the body of this function to body of the function where its being called. This avoids performance costs associated with function calls, but it increases binary size.
+### `@always_inline('nodebug')`
+Same as above but without debug info, debugger cannot step into this function when debugging, should be used with low level code.
+
+## @value
+
+Generates boilerplate lifecycle methods. `__init__`, `__copyinit__`, `__moveinit__`,`__del__`
 
 
 ## @parameter
