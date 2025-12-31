@@ -4,14 +4,14 @@ title: "MVPavan's Notes"
 
 # Hi, I'm Pavan 👋
 
-Senior AI Engineer exploring the intersection of AI training, optimization, efficient ML, and systems programming.
+Senior AI Engineer exploring the intersection of AI and systems programming.
 
 💼 [LinkedIn](https://www.linkedin.com/in/pavanmv/) · 🐙 [GitHub](https://github.com/MVPavan)
 
 
 ## What You'll Find Here
 
-### 🧠 AI & Machine Learning
+### 🧠 AI
 - [[Quantization|Quantization]] — Making models smaller and faster
 - [[Pruning|Pruning]] — Neural network compression
 - [[Distributed-Training|Distributed Training]] — Scaling to multi-GPU/multi-node
