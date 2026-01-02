@@ -115,6 +115,8 @@ dig: 2
 
 - Fixed memory: Compared to python class once declared you cannot add new variables at run time, once mojo struct is declared its memory is fixed and static
 - Though the variable inside struct can be a pointer with dynamic memory in heap, struct which holds these variables is always fixed.
+- All variables (Fields) must be declared with `var` or `comptime`.
+- `comptime` are compile time constants,  not fields, can be initialized at declaration, where as fields can only be initialized with constructor.
 - Comparison Table
 
 |Property|Struct Memory|Heap Memory (Data)|
