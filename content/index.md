@@ -4,7 +4,7 @@ title: "MVPavan's Notes"
 
 # Hi, I'm Pavan 👋
 
-Senior AI Engineer exploring the intersection of AI and systems programming.
+Senior AI Engineer exploring the intersection of AI and systems programming using Mojo.
 
 💼 [LinkedIn](https://www.linkedin.com/in/pavanmv/) · 🐙 [GitHub](https://github.com/MVPavan)
 

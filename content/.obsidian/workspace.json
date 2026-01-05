@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Mojo/Notes/Value Ownership.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Value Ownership"
+              "title": "index"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Mojo/Notes/Value Ownership.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Value Ownership"
+              "title": "Outline of index"
             }
           }
         ],
@@ -170,7 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 288.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,8 +189,8 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Basics.md",
     "Programming/Mojo/Notes/Value Ownership.md",
+    "Programming/Mojo/Notes/Basics.md",
     "index.md",
     "Programming/Mojo/Notes/Decorators.md",
     "Programming/Mojo/Notes/SIMD.md",
