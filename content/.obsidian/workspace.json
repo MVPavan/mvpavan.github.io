@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Mojo/Notes/Decorators.md",
+                "file": "Programming/Mojo/Notes/Ownership & Lifecycle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Decorators"
+              "title": "Ownership & Lifecycle"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Mojo/Notes/Decorators.md",
+                "file": "Programming/Mojo/Notes/Ownership & Lifecycle.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Decorators"
+              "title": "Outline of Ownership & Lifecycle"
             }
           }
         ],
@@ -189,10 +189,10 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Ownership & Lifecycle.md",
-    "index.md",
     "Programming/Mojo/Notes/Basics.md",
     "Programming/Mojo/Notes/Decorators.md",
+    "Programming/Mojo/Notes/Ownership & Lifecycle.md",
+    "index.md",
     "Programming/Mojo/Notes/SIMD.md",
     "Programming/Mojo/Notes/Intro.md",
     "Programming/Mojo/Notes/Intro-1.md",
