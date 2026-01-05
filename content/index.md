@@ -8,7 +8,6 @@ Senior AI Engineer exploring the intersection of AI and systems programming usin
 
 💼 [LinkedIn](https://www.linkedin.com/in/pavanmv/) · 🐙 [GitHub](https://github.com/MVPavan)
 
-
 ## What You'll Find Here
 
 ### 🧠 AI

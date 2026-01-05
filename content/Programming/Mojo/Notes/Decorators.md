@@ -15,6 +15,21 @@ Types:
 
 ## @fieldwise_init
 It tells the compiler to automatically write the constructor `__init__` for your  struct
+
+## @implicit
+Mojo implicitly converts type if this decorator is used.
+```mojo
+struct Target:  
+  
+@implicit  
+fn __init__(out self, s: Source): ...
+```
+Mojo implicitly converts from source to target if needed.
+```mojo
+b:Source = ...
+a:Target = b # is valid, due to implicit conversion
+```
+
 ### @fieldwise_init("implicit")
 it allows the struct to be implicitly converted from its fields
 

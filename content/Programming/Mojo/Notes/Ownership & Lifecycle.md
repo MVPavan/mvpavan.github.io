@@ -1,5 +1,5 @@
 
-Here value is usually referred to argument values in functions.
+In Value ownership and value lifecycle, value is usually referred to argument values in functions.
 
 - read - immutable reference (this is default, if you don't mention any)
 - mut - mutable reference
