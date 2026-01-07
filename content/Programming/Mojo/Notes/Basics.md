@@ -169,9 +169,10 @@ def repeat[count: Int](msg: String):
             print(msg)
 ```
 
-count - parameter, msg - argument
-count wont change during runtime, where as msg can change.
-@paramete decorator mentions compiler to optimize/evaluate for loop during compile time.  This can contribute to runtime performance.
+- count - parameter, msg - argument
+- count wont change during runtime, where as msg can change.
+- `@parameter` decorator mentions compiler to optimize/evaluate for loop during compile time. This can contribute to runtime performance.
+- parameter always require type annotations
 
 
 ## Functions
