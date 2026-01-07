@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Mojo/Notes/Traits & Parameters.md",
+                "file": "Programming/Mojo/Notes/Pointers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Traits & Parameters"
+              "title": "Pointers"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Mojo/Notes/Traits & Parameters.md",
+                "file": "Programming/Mojo/Notes/Pointers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Traits & Parameters"
+              "title": "Outline of Pointers"
             }
           }
         ],
@@ -203,8 +203,9 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Basics.md",
     "Programming/Mojo/Notes/Traits & Parameters.md",
+    "Programming/Mojo/Notes/Pointers.md",
+    "Programming/Mojo/Notes/Basics.md",
     "AI/Study/Distributed-Training.md",
     "AI/EfficientML/NAS.md",
     "AI/EfficientML/Efficient-ML.md",
@@ -238,7 +239,6 @@
     "Agents/Smol-Course.md",
     "Programming/DSA/LinkedList.md",
     "Programming/DSA/Introduction.md",
-    "Programming/Mojo/benchmarks/Results.md",
-    "Programming/Mojo/benchmarks/Resize.md"
+    "Programming/Mojo/benchmarks/Results.md"
   ]
 }
