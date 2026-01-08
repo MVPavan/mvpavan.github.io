@@ -22,10 +22,14 @@ Pointer dereferencing: `ptr[]`
 
 ### Types
 
-- `pointer`: Safer pointer to a single value that is not owned
+- `pointer`: Safer pointer to a single initialized value that is not owned
 - `OwnedPointer`: Smart pointer to a single value, has exclusive ownership of the value
 - `ArcPointer`: Reference counted smart pointer shared with other instances of `ArcPointer`
-- `UnsafePointer`: points to one or more consecutive memory locations (can be uninitialized memory) 
+- `UnsafePointer`: points to one or more consecutive memory locations (can be uninitialized memory)
+
+Note:
+- Except `UnsafePointer` all other can only point to single value, not anything like array.
+- except `OwnedPointer` all other are implicitly copyable.
 
 
 
