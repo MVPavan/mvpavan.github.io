@@ -31,7 +31,9 @@ Note:
 - Except `UnsafePointer` all other can only point to single value, not anything like array.
 - except `OwnedPointer` all other are implicitly copyable.
 
+### UnsafePointer
 
+![[Pasted-image-20260108221717.png]]
 
 
 

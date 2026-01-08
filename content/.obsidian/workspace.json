@@ -201,8 +201,9 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "968473dfe17adfd1",
+  "active": "06a39c1fa12998c9",
   "lastOpenFiles": [
+    "Programming/Mojo/Notes/attachments/Pasted-image-20260108221717.png",
     "Programming/Mojo/Notes/Intro-old.md",
     "Programming/DSA/LinkedList.md",
     "Programming/Mojo/Notes/Pointers.md",
@@ -238,7 +239,6 @@
     "AI/EfficientML/Quantization.md",
     "Untitled.base",
     "Agents/Smol-Course.md",
-    "Programming/DSA/Introduction.md",
-    "Programming/Mojo/benchmarks/Results.md"
+    "Programming/DSA/Introduction.md"
   ]
 }
