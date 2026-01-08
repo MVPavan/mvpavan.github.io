@@ -35,13 +35,18 @@ Note:
 
 ![[Pasted-image-20260108221717.png]]
 
-
+- `init_pointee_move`: Move a value to pointer memory location
+- `init_pointee_copy`: Copy a value to pointer memory location
+- `UnsafePointer(to=value)`: Constructor to point to an existing value
+- `take_pointee`: Moves a pointee from memory location pointed by `ptr`. Its consuming move, using `__moveinit__`
+- `destroy_pointee`: Calls destructor on pointee, leaves `ptr` uninitialized
+- `free`: Frees the memory allocated by `ptr`, results in `dangling pointer`
 
 
 ## Origin
 
 - Every variable that lives in memory has a unique Origin. The Mojo compiler uses this to track the **Identity** and **Lifetime** of that memory.
-- If you have a `String`  (which owns its memory), it has a specific origin. If you create a `StringSlice` (which is just a "window" into that string), the slice **carries the same Origin** as the original string. This tells the compiler: _"This slice is only valid as long as the original string is still alive."_
+- If you have a `String`  (which owns its memory), it has a specific origin. If you create a `StringSlice` (which is just a "window" into that string), the slice **carries the same Origin** as the original string. This tells the compiler: This slice is only valid as long as the original string is still alive.
 - `origin_of()`: You can get the Origin of any variable using this built-in operator. This happens entirely during compilation.
 
 ### Types
