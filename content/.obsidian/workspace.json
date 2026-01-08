@@ -203,8 +203,10 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Traits & Parameters.md",
+    "Programming/Mojo/Notes/Intro-old.md",
+    "Programming/DSA/LinkedList.md",
     "Programming/Mojo/Notes/Pointers.md",
+    "Programming/Mojo/Notes/Traits & Parameters.md",
     "Programming/Mojo/Notes/Basics.md",
     "AI/Study/Distributed-Training.md",
     "AI/EfficientML/NAS.md",
@@ -215,7 +217,6 @@
     "index.md",
     "Programming/Mojo/Notes/SIMD.md",
     "Programming/Mojo/Notes/Intro.md",
-    "Programming/Mojo/Notes/Intro-1.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
@@ -237,7 +238,6 @@
     "AI/EfficientML/Quantization.md",
     "Untitled.base",
     "Agents/Smol-Course.md",
-    "Programming/DSA/LinkedList.md",
     "Programming/DSA/Introduction.md",
     "Programming/Mojo/benchmarks/Results.md"
   ]
