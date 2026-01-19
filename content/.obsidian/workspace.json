@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "533fe41bc2ad8876",
+        "id": "662c571c72f6129a",
         "type": "tabs",
         "children": [
           {
-            "id": "adc70976defa4709",
+            "id": "2d3c7f5b5040ea74",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CS/Mojo/Notes/Basics.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Basics"
             }
           }
         ]
@@ -152,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/DSA/DataStructures/LinkedList.md",
+                "file": "CS/Mojo/Notes/Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LinkedList"
+              "title": "Outline of Basics"
             }
           }
         ],
@@ -183,20 +187,22 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "06a39c1fa12998c9",
+  "active": "2d3c7f5b5040ea74",
   "lastOpenFiles": [
+    "Shortcuts.md",
+    "CS/Mojo/Notes/Basics.md",
+    "CS/Mojo/Introduction.md",
+    "CS/Mojo/Notes/Traits & Parameters.md",
+    "CS/DSA/Algorithms/Introduction.md",
+    "CS/DSA/DataStructures/LinkedList.md",
     "CS/DSA/Introduction.md",
     "CS/DSA/DataStructures",
-    "CS/DSA/Algorithms/Intro.md",
     "CS/DSA/Algorithms",
     "CS/SystemDesign/Introduction.md",
     "CS/SystemDesign",
     "CS/Mojo/Notes/Pointers.md",
     "CS/Mojo/Notes/Intro-old.md",
     "CS/Mojo/Notes/attachments/Pasted-image-20260108221717.png",
-    "CS/DSA/DataStructures/LinkedList.md",
-    "CS/Mojo/Notes/Traits & Parameters.md",
-    "CS/Mojo/Notes/Basics.md",
     "AI/Study/Distributed-Training.md",
     "AI/EfficientML/NAS.md",
     "AI/EfficientML/Efficient-ML.md",
@@ -205,7 +211,6 @@
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "index.md",
     "CS/Mojo/Notes/SIMD.md",
-    "CS/Mojo/Notes/Intro.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
@@ -216,7 +221,6 @@
     "AI/Study/attachments/Pasted-image-20240703174204.png",
     "AI/Study/attachments/Pasted-image-20240703173906.png",
     "Programming/Mojo/Notes/Intro 1.md",
-    "Shortcuts.md",
     "AI/Models/Vision/Vision-Transformer.md",
     "AI/Models/Vision/Untitled.md",
     "Investing/Equity/Screener.md",

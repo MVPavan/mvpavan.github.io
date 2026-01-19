@@ -49,7 +49,7 @@ Obsidian uses Markdown for formatting, and here are some essential shortcuts to 
 - **Horizontal Line**: `---` or `***` 
 ---
 ***
-- W<sub>subscript</sub> , W<sup>superscript</sup>, match symbols - $\lambda$  
+- W<sub>subscript</sub> , W<sup>superscript</sup>, math symbols - $\lambda$  
 -  $$Anything\ in\ block$$
 
 ✅ **Use `$ ... $` for inline math** (e.g., `$e^{\ln x} = x$`).  

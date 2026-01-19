@@ -1,6 +1,6 @@
 [Mojo Manual | Modular](https://docs.modular.com/mojo/manual/)
 
-Systems programming language developed from scratch with MLIR 
+Systems programming language developed from scratch with MLIR CPU+GPU
 
 # Core Highlights
 
@@ -24,12 +24,12 @@ During compile mojo used technique called reference analysis, not reference coun
 ### Reference Analysis
 Usually in languages like python there is counter which keeps count of number of references for the variable, once the counter counts to zero it will be set to delete once out of scope, where as mojo during compile time, remembers who referenced it and who is actual owner, once after the reference or owner is last used, compiler hardcodes to delete it as per ASAP Destruction policy.
 
-| Feature               | Python                      | Mojo                           |
+| Feature               | Python                     | Mojo                           |
 | --------------------- | -------------------------- | ------------------------------ |
-| **Mechanism**         Runtime Reference Counting c  | Compile-time Lifetime Analysis |
-| **Destruction**       | End of Scope / `d           | Last Use (ASAP)                |
-| **Runtime Overhead**  | High (updating count        | Zero (Static analysis)         |
-| **Garbage Collector**                               | No                             |
+| **Mechanism**         | Runtime Reference Counting | Compile-time Lifetime Analysis |
+| **Destruction**       | End of Scope / `del`       | Last Use (ASAP)                |
+| **Runtime Overhead**  | High (updating counter)    | Zero (Static analysis)         |
+| **Garbage Collector** | Yes                        | No                             |
 
 ## Compile-time Metaprogramming
 During compile, based on compile time parameters unique function / type is generated, similar to C++ templates

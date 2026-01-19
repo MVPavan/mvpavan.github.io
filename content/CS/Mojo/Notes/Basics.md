@@ -125,9 +125,10 @@ dig: 2
 |**Size**|Fixed at Compile-Time|Variable at Runtime|
 |**Responsibility**|Manages the "Handle"|Stores the "Payload"|
 
-## Self-referential Structs
-- Mojo won't let you build a type that stores another instance of itself, no direct nested recursions. This will blowup struct type and mem requirement at compile time
-- We use Pointers for this, pointer has fixed size 
+> [!warning] Mojo won't let you build a type that stores another instance of itself, no direct nested recursions. This will blowup struct type and mem requirement at compile time
+
+> [!tip] We use Pointers for this, pointer has fixed size
+
 
 ## Trait
 
