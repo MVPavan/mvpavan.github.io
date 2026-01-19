@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/DSA/Introduction.md",
+                "file": "CS/SystemDesign/Introduction.md",
                 "mode": "source",
                 "source": false
               },
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/DSA/Introduction.md",
+                "file": "CS/SystemDesign/Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,21 +203,24 @@
   },
   "active": "968473dfe17adfd1",
   "lastOpenFiles": [
-    "Programming/Mojo/Notes/Pointers.md",
-    "Programming/Mojo/Notes/Intro-old.md",
-    "Programming/Mojo/Notes/attachments/Pasted-image-20260108221717.png",
-    "Programming/DSA/LinkedList.md",
-    "Programming/Mojo/Notes/Traits & Parameters.md",
-    "Programming/Mojo/Notes/Basics.md",
+    "CS/DSA/Introduction.md",
+    "CS/SystemDesign/Introduction.md",
+    "CS/SystemDesign",
+    "CS/Mojo/Notes/Pointers.md",
+    "CS/Mojo/Notes/Intro-old.md",
+    "CS/Mojo/Notes/attachments/Pasted-image-20260108221717.png",
+    "CS/DSA/LinkedList.md",
+    "CS/Mojo/Notes/Traits & Parameters.md",
+    "CS/Mojo/Notes/Basics.md",
     "AI/Study/Distributed-Training.md",
     "AI/EfficientML/NAS.md",
     "AI/EfficientML/Efficient-ML.md",
     "AI/Intro.md",
-    "Programming/Mojo/Notes/Decorators.md",
-    "Programming/Mojo/Notes/Ownership & Lifecycle.md",
+    "CS/Mojo/Notes/Decorators.md",
+    "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "index.md",
-    "Programming/Mojo/Notes/SIMD.md",
-    "Programming/Mojo/Notes/Intro.md",
+    "CS/Mojo/Notes/SIMD.md",
+    "CS/Mojo/Notes/Intro.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
@@ -237,7 +240,6 @@
     "Investing/Equity/Gold-&-Silver.md",
     "AI/EfficientML/Quantization.md",
     "Untitled.base",
-    "Agents/Smol-Course.md",
-    "Programming/DSA/Introduction.md"
+    "Agents/Smol-Course.md"
   ]
 }
