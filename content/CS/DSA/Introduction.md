@@ -2,7 +2,10 @@ Following are collection of data structures and algorithms planned to be impleme
 
 ## Resources
 
+- [ ] [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms
 - [ ] [GitHub - jwasham/coding-interview-university: A complete computer science study plan to become a software engineer.](https://github.com/jwasham/coding-interview-university?tab=readme-ov-file)
+- [ ] [GitHub - keon/algorithms: Minimal examples of data structures and algorithms in Python](https://github.com/keon/algorithms)
+- [ ] [GitHub - TheAlgorithms/Python: All Algorithms implemented in Python](https://github.com/TheAlgorithms/Python)
 - [ ] 
 ## Data structures
 
