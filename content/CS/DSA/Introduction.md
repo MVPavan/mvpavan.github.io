@@ -12,7 +12,7 @@ Following are collection of data structures and algorithms planned to be impleme
 - [ ] [Top Data Structures That Every Programmer Must Know - GeeksforGeeks](https://www.geeksforgeeks.org/top-data-structures-that-every-programmer-must-know/)
 - [ ] [Seven (7) Essential Data Structures](https://towardsdatascience.com/seven-7-essential-data-structures-for-a-coding-interview-and-associated-common-questions-72ceb644290)
 - [ ] [10 Most Important Algorithms For Coding Interviews - GeeksforGeeks](https://www.geeksforgeeks.org/algorithms-for-interviews/)
-- [ ] [🚀 DSA Master (interviewmaster.io)](https://www.interviewmaster.io/p/dsa-master)
+- [ ] [DSA Master (interviewmaster.io)](https://www.interviewmaster.io/p/dsa-master)
 - [ ] [LeetCode was HARD until I Learned these 15 Patterns (algomaster.io)](https://blog.algomaster.io/p/15-leetcode-patterns)
 - [ ] [Top 7 Algorithms for Coding Interviews Explained SIMPLY (youtube.com)](https://www.youtube.com/watch?v=kp3fCihUXEg)
 ## Data structures
