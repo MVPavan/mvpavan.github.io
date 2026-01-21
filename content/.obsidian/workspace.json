@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
+                "file": "CS/Mojo/Notes/StdLib.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ownership & Lifecycle"
+              "title": "StdLib"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
+                "file": "CS/Mojo/Notes/StdLib.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ownership & Lifecycle"
+              "title": "Outline of StdLib"
             }
           }
         ],
@@ -189,6 +189,8 @@
   },
   "active": "2d3c7f5b5040ea74",
   "lastOpenFiles": [
+    "CS/Mojo/Notes/Ownership & Lifecycle.md",
+    "CS/Mojo/Notes/StdLib.md",
     "CS/DSA/Introduction.md",
     "CS/Mojo/Introduction.md",
     "CS/Mojo/Notes/Basics.md",
@@ -208,7 +210,6 @@
     "AI/EfficientML/Efficient-ML.md",
     "AI/Intro.md",
     "CS/Mojo/Notes/Decorators.md",
-    "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "index.md",
     "CS/Mojo/Notes/SIMD.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
