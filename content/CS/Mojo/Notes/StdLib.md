@@ -7,6 +7,8 @@
 
 ### Functional
 
+> [!note] Most APIs in `fucntional` take `func` as a compile time parameter.
+
 #### `elementwise` 
 
 - **Purpose**: N-dimensional iteration with automatic SIMD vectorization
@@ -29,8 +31,6 @@
   ```
 - **Chunking Behavior**: For a 10-element dimension with SIMD width 4:
   - Processes: 4 + 4 + 1 + 1 (vectorized + cleanup) per row
-> [!note] `func` has to be compile time parameter.
-
 
 #### `map`
 
@@ -47,3 +47,20 @@ fn worker(idx: Int):
 	
 map[worker](10)
 ```
+
+#### `parallelize`  
+
+- **Purpose**: Multi-threaded work distribution for CPU-intensive tasks
+- **Signature**: `parallelize[func: fn(Int) capturing [origins] -> None](num_work_items: Int)`
+- **Use Case**: Heavy independent computations (e.g., image processing, scientific calc)
+- **Example**:
+```mojo
+var results = List[Int](capacity=1000)
+# ... (fill list) ...
+@parameter
+fn process(idx: Int):
+	# Heavy computation on independent index
+	results[idx] = expensive_calc(results[idx])
+parallelize[process](1000)
+```   
+- **Variants**: `parallelize` (async), `sync_parallelize` (blocking)
