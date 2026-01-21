@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Mojo/Notes/StdLib.md",
+                "file": "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "StdLib"
+              "title": "Tiling and Unswitching"
+            }
+          },
+          {
+            "id": "130e0b37573b1c75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tiling and Unswitching"
             }
           },
           {
@@ -27,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Mojo/Notes/parallelize.md",
+                "file": "CS/Mojo/Notes/algorithm/parallelize.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,7 +49,8 @@
               "title": "parallelize"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Mojo/Notes/StdLib.md",
+                "file": "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of StdLib"
+              "title": "Outline of Tiling and Unswitching"
             }
           }
         ],
@@ -201,9 +216,11 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "2d3c7f5b5040ea74",
+  "active": "130e0b37573b1c75",
   "lastOpenFiles": [
-    "CS/Mojo/Notes/parallelize.md",
+    "CS/Mojo/Notes/algorithm/parallelize.md",
+    "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
+    "CS/Mojo/Notes/algorithm",
     "CS/Mojo/Notes/StdLib.md",
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/DSA/Introduction.md",
@@ -240,8 +257,6 @@
     "AI/Models/Vision/Vision-Transformer.md",
     "AI/Models/Vision/Untitled.md",
     "Investing/Equity/Screener.md",
-    "Investing/Equity/Potential.md",
-    "Investing/Equity/Notes.md",
     "Untitled.base"
   ]
 }
