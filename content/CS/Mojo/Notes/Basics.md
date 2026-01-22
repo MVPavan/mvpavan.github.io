@@ -247,3 +247,14 @@ def create_immovable_object3(var name: String) -> ImmovableObject:
 - `create_immovable_object2` error because `obj` is created here and is not movable or copyable
 - `create_immovable_object` works because `obj` is `out` object, its created by caller, here its only referenced by memory, once function completes, caller will have the modified `obj`
 - `create_immovable_object3` also works because its an intelligent optimization done by compiler, return object is not created in `create_immovable_object3` scope, rather in caller scope. However for this happen, `return` has to be immediate after obj creation, no modifications can be done on obj.
+
+
+## Closure
+
+A **closure** is a function that "remembers" the variables from the scope where it was created, even after that outer scope has finished executing.
+
+The key idea is that a function captures its surrounding environment, not just its own local variables.
+
+- runtime - escaping
+-  compile time - capturing
+
