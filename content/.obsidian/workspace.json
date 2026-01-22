@@ -36,18 +36,6 @@
             }
           },
           {
-            "id": "c47417393de5fc2f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
-          },
-          {
             "id": "2f795a109821ae26",
             "type": "leaf",
             "state": {
@@ -62,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -228,7 +216,7 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "c47417393de5fc2f",
+  "active": "130e0b37573b1c75",
   "lastOpenFiles": [
     "CS/Mojo/Notes/algorithm/parallelize.md",
     "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
