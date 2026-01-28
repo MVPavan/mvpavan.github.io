@@ -249,12 +249,51 @@ def create_immovable_object3(var name: String) -> ImmovableObject:
 - `create_immovable_object3` also works because its an intelligent optimization done by compiler, return object is not created in `create_immovable_object3` scope, rather in caller scope. However for this happen, `return` has to be immediate after obj creation, no modifications can be done on obj.
 
 
-## Closure
+## Closure-Captures
+
+#### Capture (verb/noun)
 
 A **closure** is a function that "remembers" the variables from the scope where it was created, even after that outer scope has finished executing.
-
 The key idea is that a function captures its surrounding environment, not just its own local variables.
 
 - runtime - escaping
 -  compile time - capturing
+
+Its **mechanism** of accessing variables from an outer scope inside a nested function.
+**Capture** specifically refers to:
+- The act of "grabbing" an outer variable
+- The individual variable being accessed (`a` is a "captured variable")
+- The mechanism used (copy, reference, mutable reference)
+#### Closure (noun)
+The **complete package**: a function bundled with its captured environment.
+
+**Closure** = **Code** + **Data** (captured variables)
+
+### Closure vs Capture
+
+| Term        | What it is                  | Analogy                          |
+| ----------- | --------------------------- | -------------------------------- |
+| **Capture** | Grabbing a variable         | Taking an ingredient             |
+| **Closure** | Function + all its captures | Complete recipe with ingredients |
+
+```mojo
+fn outer():
+	var a = 1 # Will be captured
+	var b = 2 # Will be captured
+	
+	# This entire function + its access to 'a,b' together form a CLOSURE
+	fn inner(): # ← CLOSURE (the complete package) 
+		print(a) # ← CAPTURE of 'a'
+		print(b) # ← CAPTURE of 'b'
+```
+
+### Summary
+
+| |Closure|Capture|
+|---|---|---|
+|**Is**|Function + environment|A single grabbed variable|
+|**Count**|One per nested function|Can be many per closure|
+|**Focus**|The whole entity|The individual connection|
+
+> [!note] A closure **has** captures. Captures **belong to** a closure.
 
