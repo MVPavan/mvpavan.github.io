@@ -253,22 +253,16 @@ def create_immovable_object3(var name: String) -> ImmovableObject:
 
 #### Capture (verb/noun)
 
-A **closure** is a function that "remembers" the variables from the scope where it was created, even after that outer scope has finished executing.
-The key idea is that a function captures its surrounding environment, not just its own local variables.
-
-- runtime - escaping
--  compile time - capturing
-
 Its **mechanism** of accessing variables from an outer scope inside a nested function.
-**Capture** specifically refers to:
+Capture specifically refers to:
 - The act of "grabbing" an outer variable
 - The individual variable being accessed (`a` is a "captured variable")
 - The mechanism used (copy, reference, mutable reference)
 #### Closure (noun)
+
+A **closure** is a function that "remembers" the variables from the scope where it was created, even after that outer scope has finished executing.
 The **complete package**: a function bundled with its captured environment.
-
 **Closure** = **Code** + **Data** (captured variables)
-
 ### Closure vs Capture
 
 | Term        | What it is                  | Analogy                          |
@@ -287,13 +281,20 @@ fn outer():
 		print(b) # ← CAPTURE of 'b'
 ```
 
-### Summary
+### Closure Types
 
-| |Closure|Capture|
-|---|---|---|
-|**Is**|Function + environment|A single grabbed variable|
-|**Count**|One per nested function|Can be many per closure|
-|**Focus**|The whole entity|The individual connection|
+| Type          | Keyword      | Use Case                                  |
+| ------------- | ------------ | ----------------------------------------- |
+| **Runtime**   | (none)       | Dynamic dispatch, simple nested functions |
+| **Parameter** | `@parameter` | Metaprogramming, `vectorize`, `map`       |
+
+### Capture Modes
+
+|Closure Type|Capture Mode|Int Modify Persists?|List Works?|
+|---|---|---|---|
+|Runtime|**COPY**|❌ No|❌ Error|
+|`@parameter`|**REFERENCE**|✅ Yes|✅ Yes|
+|`unified {mut}`|**MUTABLE REF**|✅ Yes|✅ Yes|
 
 > [!note] A closure **has** captures. Captures **belong to** a closure.
 
