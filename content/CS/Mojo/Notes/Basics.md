@@ -288,13 +288,27 @@ fn outer():
 | **Runtime**   | (none)       | Dynamic dispatch, simple nested functions |
 | **Parameter** | `@parameter` | Metaprogramming, `vectorize`, `map`       |
 
+| Type              | Signature                 | State      | Use Case                      |
+| ----------------- | ------------------------- | ---------- | ----------------------------- |
+| **Non-capturing** | `fn() -> T`               | None       | Top-level pure functions      |
+| **Capturing**     | `fn() capturing [_] -> T` | Reference  | @parameter, vectorize, map    |
+| **Escaping**      | `fn() escaping -> T`      | Owned copy | Store/return runtime closures |
+#### Key Differences
+
+| Aspect       | capturing           | escaping         |
+| ------------ | ------------------- | ---------------- |
+| **When**     | Compile-time        | Runtime          |
+| **State**    | Reference to outer  | Owned copy       |
+| **Lifetime** | Tied to outer scope | Independent      |
+| **Storage**  | Inlined             | Heap/stack value |
 ### Capture Modes
 
-|Closure Type|Capture Mode|Int Modify Persists?|List Works?|
-|---|---|---|---|
-|Runtime|**COPY**|❌ No|❌ Error|
-|`@parameter`|**REFERENCE**|✅ Yes|✅ Yes|
-|`unified {mut}`|**MUTABLE REF**|✅ Yes|✅ Yes|
+| Closure Type      | Capture Mode           | Int Modify Persists? | List Works? |
+| ----------------- | ---------------------- | -------------------- | ----------- |
+| Runtime           | **COPY**               | ❌ No                 | ❌ Error     |
+| `@parameter`      | **REFERENCE**          | ✅ Yes                | ✅ Yes       |
+| `unified {mut}`   | **MUTABLE REF**        | ✅ Yes                | ✅ Yes       |
+| `unified {var x}` | **Transfer Ownership** | ✅ Yes                | ✅ Yes       |
 
 > [!note] A closure **has** captures. Captures **belong to** a closure.
 
