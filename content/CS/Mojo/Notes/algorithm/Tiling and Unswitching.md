@@ -138,3 +138,5 @@ The key difference lies in the **structure** of the optimization (Alignment vs P
 | **Problem** | "Is my pointer aligned?" | "Do I have enough neighbors?" |
 | **Structure** | Start is aligned (Safe/Fast).<br>Only the **End** might be unaligned (Slow). | **Start** (Left) is missing neighbors (Slow).<br>**End** (Right) is missing neighbors (Slow).<br>Only **Middle** is safe (Fast). |
 | **Flow** | **FAST** $\rightarrow$ **SLOW** | **SLOW** $\rightarrow$ **FAST** $\rightarrow$ **SLOW** |
+
+
