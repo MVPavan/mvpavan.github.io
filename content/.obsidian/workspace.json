@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
+                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tiling and Unswitching"
+              "title": "Ownership & Lifecycle"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
+                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tiling and Unswitching"
+              "title": "Outline of Ownership & Lifecycle"
             }
           }
         ],
@@ -218,9 +218,9 @@
   },
   "active": "130e0b37573b1c75",
   "lastOpenFiles": [
+    "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
     "CS/Mojo/Notes/Basics.md",
     "CS/Mojo/Introduction.md",
-    "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
     "CS/Mojo/Notes/algorithm/parallelize.md",
     "CS/Mojo/Notes/algorithm",
     "CS/Mojo/Notes/StdLib.md",
