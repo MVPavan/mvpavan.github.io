@@ -189,6 +189,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-importer:Open Importer": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -202,10 +203,11 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "a5ab55eac9aeffcd",
+  "active": "2f795a109821ae26",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Invention Disclosure Form.md",
     "CS/Mojo/Notes/algorithm/parallelize.md",
+    "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/Mojo/Notes/algorithm/Tiling-and-Unswitching.md",
     "CS/Mojo/Notes/Traits-&-Parameters.md",
@@ -243,7 +245,6 @@
     "AI/EfficientML/Efficient-ML.md",
     "AI/Intro.md",
     "CS/Mojo/Notes/Decorators.md",
-    "index.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
