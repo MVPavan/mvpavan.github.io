@@ -16,7 +16,7 @@ Zero cost. Functions/args can use traits instead of types. Traits can share mult
 ## ASAP Destruction
 Mojo during compile tracks the usage of variable rather than scope which many languages does (even c++). It then hardcodes to delete it immediately once the usage completes even without going out of scope.
 
-If you have a large 1GB array and you use it on line 10, but your function goes on until line 100, Mojo can see that line 10 was the **last use**. It will deallocate that memory on line 11, even though the variable hasn't technically gone "out of scope" yet.
+If you have a large 1GB array and you use it on line 10, but your function goes on until line 100, Mojo can see that line 10 was the **last use**. It will deallocate that memory on line 11, even though the variable hasn't technically gone "out of scope" yet.
 
 ## Value ownership
 Any specific value is always owned by only one variable at a given time. 
@@ -27,7 +27,7 @@ Usually in languages like python there is counter which keeps count of number of
 | Feature               | Python                     | Mojo                           |
 | --------------------- | -------------------------- | ------------------------------ |
 | **Mechanism**         | Runtime Reference Counting | Compile-time Lifetime Analysis |
-| **Destruction**       | End of Scope / `del`       | Last Use (ASAP)                |
+| **Destruction**       | End of Scope / `del`       | Last Use (ASAP)                |
 | **Runtime Overhead**  | High (updating counter)    | Zero (Static analysis)         |
 | **Garbage Collector** | Yes                        | No                             |
 

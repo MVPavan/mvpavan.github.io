@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "130e0b37573b1c75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ownership & Lifecycle"
-            }
-          },
-          {
             "id": "2f795a109821ae26",
             "type": "leaf",
             "state": {
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Mojo/Notes/Ownership & Lifecycle.md",
+                "file": "CS/Mojo/Notes/algorithm/parallelize.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ownership & Lifecycle"
+              "title": "Outline of parallelize"
             }
           }
         ],
@@ -216,15 +202,30 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "130e0b37573b1c75",
+  "active": "a5ab55eac9aeffcd",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "CS/Mojo/Notes/algorithm/parallelize.md",
+    "CS/Mojo/Notes/Ownership & Lifecycle.md",
+    "CS/Mojo/Notes/algorithm/Tiling-and-Unswitching.md",
+    "CS/Mojo/Notes/Traits-&-Parameters.md",
+    "CS/Mojo/Notes/Ownership-&-Lifecycle.md",
+    "AI/others/Kalman-Filters/Kalmanfilters.net.md",
+    "AI/others/Kalman-Filters/Kalmanfilters.net---Ink.svg",
+    "AI/others/Kalman-Filters/Introduction---Ink.svg",
+    "AI/others/Kalman-Filters/Introduction.md",
+    "AI/others/attachments/Exported-image-20260205012530-3.jpg",
+    "AI/others/attachments/Exported-image-20260205012528-2.jpg",
+    "AI/others/attachments/Exported-image-20260205012526-1.jpg",
+    "AI/others/attachments/Exported-image-20260205012525-0.jpg",
+    "AI/others/Kalman-Filters",
+    "AI/others/attachments",
+    "AI/others",
     "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
     "CS/Mojo/Notes/Basics.md",
     "CS/Mojo/Introduction.md",
-    "CS/Mojo/Notes/algorithm/parallelize.md",
     "CS/Mojo/Notes/algorithm",
     "CS/Mojo/Notes/StdLib.md",
-    "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/DSA/Introduction.md",
     "Shortcuts.md",
     "CS/Mojo/Notes/Traits & Parameters.md",
@@ -243,20 +244,9 @@
     "AI/Intro.md",
     "CS/Mojo/Notes/Decorators.md",
     "index.md",
-    "CS/Mojo/Notes/SIMD.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
-    "AI/Study/attachments/Pasted-image-20240703184727.png",
-    "AI/Study/attachments/Pasted-image-20240703184517.png",
-    "AI/Study/attachments/Pasted-image-20240703183721.png",
-    "AI/Study/attachments/Pasted-image-20240703183650.png",
-    "AI/Study/attachments/Pasted-image-20240703174204.png",
-    "AI/Study/attachments/Pasted-image-20240703173906.png",
-    "Programming/Mojo/Notes/Intro 1.md",
-    "AI/Models/Vision/Vision-Transformer.md",
-    "AI/Models/Vision/Untitled.md",
-    "Investing/Equity/Screener.md",
     "Untitled.base"
   ]
 }

@@ -331,6 +331,8 @@ def main(content_dir: str = "./content"):
     print(f"🔄 Preprocessing Obsidian notes in: {content_path.absolute()}")
     print()
     
+
+    
     # Step 1: Rename files with spaces
     print("📁 Step 1: Renaming files with spaces...")
     renames = rename_files_with_spaces(content_path)

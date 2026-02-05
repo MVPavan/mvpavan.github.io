@@ -7,18 +7,18 @@ Pointer dereferencing: `ptr[]`
 - **Safe pointers**: Memory safe    
 - **Nullable pointers**: can point to an invalid memory location (typically 0, or a “null pointer”). Safe pointers aren't nullable.    
 - **Smart pointers**: 
-	- own their pointees, which means that the value they point to may be deallocated when the pointer itself is destroyed.
-	- Non-owning pointers may point to values owned elsewhere, or may require some manual management of the value lifecycle.
+  - own their pointees, which means that the value they point to may be deallocated when the pointer itself is destroyed.
+  - Non-owning pointers may point to values owned elsewhere, or may require some manual management of the value lifecycle.
 - **Memory allocation**: 
-	- some pointer types can allocate memory to store their pointees, while other pointers can only point to pre-existing values. 
-	- Memory allocation can either be implicit (that is, performed automatically when initializing a pointer with a value) or explicit. 
+  - some pointer types can allocate memory to store their pointees, while other pointers can only point to pre-existing values. 
+  - Memory allocation can either be implicit (that is, performed automatically when initializing a pointer with a value) or explicit. 
 - **Uninitialized memory**: Memory location that haven't been initialized with a value(contain random data). 
-	- Newly-allocated memory is uninitialized. 
-	- The safe pointer types don't allow users to access memory that's uninitialized. 
-	- Unsafe pointers can allocate a block of uninitialized memory locations and then initialize them one at a time. Being able to access uninitialized memory is unsafe by definition.
+  - Newly-allocated memory is uninitialized. 
+  - The safe pointer types don't allow users to access memory that's uninitialized. 
+  - Unsafe pointers can allocate a block of uninitialized memory locations and then initialize them one at a time. Being able to access uninitialized memory is unsafe by definition.
 - **Copyable types**: 
-	- Implicitly copyable types: `copied_ptr = ptr`
-	- Explicitly copyable types: copy, using a constructor with a keyword argument `copied_owned_ptr = OwnedPointer(other=owned_ptr)`
+  - Implicitly copyable types: `copied_ptr = ptr`
+  - Explicitly copyable types: copy, using a constructor with a keyword argument `copied_owned_ptr = OwnedPointer(other=owned_ptr)`
 
 ### Types
 
@@ -45,12 +45,12 @@ Note:
 
 ## Origin
 
-- Every variable that lives in memory has a unique Origin. The Mojo compiler uses this to track the **Identity** and **Lifetime** of that memory.
-- If you have a `String`  (which owns its memory), it has a specific origin. If you create a `StringSlice` (which is just a "window" into that string), the slice **carries the same Origin** as the original string. This tells the compiler: This slice is only valid as long as the original string is still alive.
-- `origin_of()`: You can get the Origin of any variable using this built-in operator. This happens entirely during compilation.
+- Every variable that lives in memory has a unique Origin. The Mojo compiler uses this to track the **Identity** and **Lifetime** of that memory.
+- If you have a `String`  (which owns its memory), it has a specific origin. If you create a `StringSlice` (which is just a "window" into that string), the slice **carries the same Origin** as the original string. This tells the compiler: This slice is only valid as long as the original string is still alive.
+- `origin_of()`: You can get the Origin of any variable using this built-in operator. This happens entirely during compilation.
 
 ### Types
 
 - `MutOrigin`: A mutable origin (you can change the memory).
 - `ImmutOrigin`: An immutable origin (read-only).
-- `StaticConstantOrigin`: A special origin for things that **live forever** in your program's binary (like hard-coded `StringLiteral` values).
+- `StaticConstantOrigin`: A special origin for things that **live forever** in your program's binary (like hard-coded `StringLiteral` values).
