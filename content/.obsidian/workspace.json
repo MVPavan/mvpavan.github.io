@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Mojo/Notes/algorithm/parallelize.md",
+                "file": "AI/temp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "parallelize"
+              "title": "temp"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Mojo/Notes/algorithm/parallelize.md",
+                "file": "AI/temp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of parallelize"
+              "title": "Outline of temp"
             }
           }
         ],
@@ -205,8 +205,9 @@
   },
   "active": "2f795a109821ae26",
   "lastOpenFiles": [
-    "Invention Disclosure Form.md",
     "CS/Mojo/Notes/algorithm/parallelize.md",
+    "AI/temp.md",
+    "Invention Disclosure Form.md",
     "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/Mojo/Notes/algorithm/Tiling-and-Unswitching.md",
@@ -244,7 +245,6 @@
     "AI/EfficientML/NAS.md",
     "AI/EfficientML/Efficient-ML.md",
     "AI/Intro.md",
-    "CS/Mojo/Notes/Decorators.md",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
     "AI/Study/attachments/Pasted-image-20240703184944.png",
