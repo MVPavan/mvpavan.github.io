@@ -31,7 +31,7 @@ a:Target = b # is valid, due to implicit conversion
 ```
 
 ### @fieldwise_init("implicit")
-it allows the struct to be implicitly converted from its fields
+it allows the struct to be implicitly converted from its fields
 
 ## @always_inline
 

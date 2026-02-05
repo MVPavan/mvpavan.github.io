@@ -30,4 +30,4 @@ overview: [[Basics#Parameterization|Parameters overview]]
 
 - generics use parameters to specify types, generics are functions/containers that can act on multiple types of values.
 - `//` in parameter list indicates that everything before it is only infer type.
-- Parameter inference: The Mojo compiler can often _infer_ parameter values. It's inferring parameters from the statically-known _types_ of the arguments (not runtime values/args).
+- Parameter inference: The Mojo compiler can often _infer_ parameter values. It's inferring parameters from the statically-known _types_ of the arguments (not runtime values/args).

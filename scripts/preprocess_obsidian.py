@@ -26,6 +26,240 @@ import shutil
 import sys
 from pathlib import Path
 
+try:
+    from PIL import Image
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
+    print("Warning: Pillow not installed. Image conversion disabled. Install with: pip install Pillow")
+
+
+def flatten_onenote_structure(content_dir: Path) -> int:
+    """
+    Move contents of content/OneNote/MVPavan@Personal/* up to content/OneNote/.
+    Removes MVPavan@Personal after flattening.
+    Returns count of items moved.
+    """
+    onenote_dir = content_dir / "OneNote"
+    personal_dir = onenote_dir / "MVPavan@Personal"
+    
+    if not personal_dir.exists():
+        print("  MVPavan@Personal not found, skipping flatten.")
+        return 0
+    
+    moved_count = 0
+    for item in personal_dir.iterdir():
+        dest = onenote_dir / item.name
+        if dest.exists():
+            print(f"  Warning: {item.name} already exists in OneNote/, skipping")
+            continue
+        shutil.move(str(item), str(dest))
+        moved_count += 1
+        print(f"  Moved: {item.name}")
+    
+    # Remove empty MVPavan@Personal directory
+    if personal_dir.exists() and not any(personal_dir.iterdir()):
+        personal_dir.rmdir()
+        print("  Removed empty MVPavan@Personal directory")
+    
+    return moved_count
+
+
+def delete_all_pdfs(content_dir: Path) -> int:
+    """
+    Recursively delete all PDF files in content directory.
+    Returns count of deleted files.
+    """
+    pdf_files = list(content_dir.rglob("*.pdf"))
+    for pdf in pdf_files:
+        pdf.unlink()
+        print(f"  Deleted: {pdf.relative_to(content_dir)}")
+    return len(pdf_files)
+
+
+def convert_exported_images(content_dir: Path, quality: int = 85) -> tuple[int, int]:
+    """
+    Find 'Exported image' files (PNG and JPEG), convert PNGs to JPEG, 
+    move all to appropriate attachments folder based on which markdown references them.
+    
+    Returns: (processed_count, updated_md_count)
+    """
+    if not PIL_AVAILABLE:
+        print("  Skipping image conversion (Pillow not installed)")
+        return 0, 0
+    
+    # Find all exported images in content/ root (not in subdirectories)
+    # Match both original (with spaces) and renamed (with dashes) variants
+    # Include both PNG and JPEG files
+    exported_images = []
+    for pattern in [
+        "Exported image *.png", "Exported-image-*.png",
+        "Exported image *.jpeg", "Exported-image-*.jpeg",
+        "Exported image *.jpg", "Exported-image-*.jpg"
+    ]:
+        exported_images.extend(content_dir.glob(pattern))
+    
+    if not exported_images:
+        print("  No exported images found in content root")
+        return 0, 0
+    
+    # Build index of which markdown files reference which images
+    md_files = list(content_dir.rglob("*.md"))
+    image_to_md: dict[str, Path] = {}
+    
+    for md_file in md_files:
+        try:
+            content = md_file.read_text(encoding='utf-8')
+        except UnicodeDecodeError:
+            continue
+        
+        for img in exported_images:
+            # Check various link formats (both space and dash variants)
+            img_name = img.name
+            img_encoded = img_name.replace(" ", "%20")
+            # Also check for the dashed version in case markdown was updated
+            img_dashed = img_name.replace(" ", "-")
+            if img_name in content or img_encoded in content or img_dashed in content:
+                image_to_md[img_name] = md_file
+    
+    processed = 0
+    updated_mds: set[Path] = set()
+    
+    for img in exported_images:
+        img_name = img.name
+        is_png = img.suffix.lower() == '.png'
+        
+        # Find target directory
+        if img_name in image_to_md:
+            target_dir = image_to_md[img_name].parent / "attachments"
+        else:
+            # Fallback: put in OneNote/attachments
+            target_dir = content_dir / "OneNote" / "attachments"
+        
+        target_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Determine target filename
+        if is_png:
+            # Convert PNG to JPEG
+            jpg_name = img.stem + ".jpg"
+            target_path = target_dir / jpg_name
+        else:
+            # Just move JPEG as-is
+            jpg_name = img.name
+            target_path = target_dir / img.name
+        
+        try:
+            if is_png:
+                with Image.open(img) as pil_img:
+                    # Convert to RGB (JPEG doesn't support alpha)
+                    if pil_img.mode in ('RGBA', 'LA', 'P'):
+                        pil_img = pil_img.convert('RGB')
+                    pil_img.save(target_path, 'JPEG', quality=quality, optimize=True)
+                img.unlink()
+                print(f"  Converted: {img_name} → {target_path.relative_to(content_dir)}")
+            else:
+                # Move JPEG file
+                shutil.move(str(img), str(target_path))
+                print(f"  Moved: {img_name} → {target_path.relative_to(content_dir)}")
+            
+            processed += 1
+            
+            # Update referencing markdown file
+            if img_name in image_to_md:
+                md_file = image_to_md[img_name]
+                md_content = md_file.read_text(encoding='utf-8')
+                
+                # Replace markdown image links with wikilinks
+                img_encoded = img_name.replace(" ", "%20")
+                img_dashed = img_name.replace(" ", "-")
+                old_patterns = [
+                    f"![{img.stem}]({img_encoded})",
+                    f"![]({img_encoded})",
+                    f"![Exported image]({img_encoded})",
+                    f"![{img.stem}]({img_name})",
+                    f"![]({img_name})",
+                    f"![Exported image]({img_name})",
+                    f"![{img.stem}]({img_dashed})",
+                    f"![]({img_dashed})",
+                    f"![Exported image]({img_dashed})",
+                ]
+                new_link = f"![[{jpg_name}]]"
+                
+                for old in old_patterns:
+                    if old in md_content:
+                        md_content = md_content.replace(old, new_link)
+                
+                # Also handle any remaining references with regex
+                for name_variant in [img_name, img_encoded, img_dashed]:
+                    pattern = rf'!\[[^\]]*\]\([^)]*{re.escape(name_variant)}[^)]*\)'
+                    md_content = re.sub(pattern, new_link, md_content)
+                
+                md_file.write_text(md_content, encoding='utf-8')
+                updated_mds.add(md_file)
+                
+        except Exception as e:
+            print(f"  Error processing {img_name}: {e}")
+    
+    return processed, len(updated_mds)
+
+
+def fix_broken_exported_image_links(content_dir: Path) -> int:
+    """
+    Fix markdown files that still reference old 'Exported image' PNG files
+    by updating them to point to the new JPEG files in attachments.
+    
+    Returns: count of updated markdown files
+    """
+    # Build index of available images in attachments folders
+    available_images: dict[str, Path] = {}
+    for attach_dir in content_dir.rglob("attachments"):
+        if attach_dir.is_dir():
+            for img in attach_dir.iterdir():
+                if img.is_file() and img.suffix.lower() in ('.jpg', '.jpeg', '.png'):
+                    # Index by timestamp portion (the unique identifier)
+                    # e.g., "Exported-image-20260205011058-0.jpg" -> key on "20260205011058-0"
+                    match = re.search(r'(\d{14}-\d+)', img.stem)
+                    if match:
+                        available_images[match.group(1)] = img
+    
+    if not available_images:
+        print("  No images found in attachments folders")
+        return 0
+    
+    updated_count = 0
+    md_files = list(content_dir.rglob("*.md"))
+    
+    for md_file in md_files:
+        try:
+            content = md_file.read_text(encoding='utf-8')
+            original = content
+            
+            # Find all references to "Exported image" or "Exported-image" files
+            # Pattern matches: ![...](Exported%20image%20TIMESTAMP.png) or ![...](Exported-image-TIMESTAMP.png)
+            pattern = r'!\[([^\]]*)\]\(([^)]*[Ee]xported[\s%20-]+image[\s%20-]+(\d{14}-\d+)[^)]*\.(png|jpg|jpeg))\)'
+            
+            def replace_link(match):
+                alt_text = match.group(1)
+                timestamp = match.group(3)
+                
+                if timestamp in available_images:
+                    img_path = available_images[timestamp]
+                    new_filename = img_path.name
+                    return f"![[{new_filename}]]"
+                return match.group(0)  # Keep original if not found
+            
+            content = re.sub(pattern, replace_link, content, flags=re.IGNORECASE)
+            
+            if content != original:
+                md_file.write_text(content, encoding='utf-8')
+                updated_count += 1
+                print(f"  Fixed: {md_file.relative_to(content_dir)}")
+                
+        except Exception as e:
+            print(f"  Error processing {md_file}: {e}")
+    
+    return updated_count
+
 
 def rename_files_with_spaces(content_dir: Path) -> dict[str, str]:
     """
@@ -331,14 +565,32 @@ def main(content_dir: str = "./content"):
     print(f"🔄 Preprocessing Obsidian notes in: {content_path.absolute()}")
     print()
     
-    # Step 1: Rename files with spaces
-    print("📁 Step 1: Renaming files with spaces...")
+    # Step 1: Flatten OneNote structure
+    print("📂 Step 1: Flattening OneNote structure...")
+    moved = flatten_onenote_structure(content_path)
+    print(f"   Moved {moved} items")
+    print()
+    
+    # Step 2: Delete PDFs
+    print("🗑️  Step 2: Deleting PDF files...")
+    deleted = delete_all_pdfs(content_path)
+    print(f"   Deleted {deleted} PDF files")
+    print()
+    
+    # Step 3: Convert and relocate exported images
+    print("🖼️  Step 3: Converting exported images (PNG → JPEG)...")
+    converted, updated = convert_exported_images(content_path)
+    print(f"   Converted {converted} images, updated {updated} markdown files")
+    print()
+    
+    # Step 4: Rename files with spaces
+    print("📁 Step 4: Renaming files with spaces...")
     renames = rename_files_with_spaces(content_path)
     print(f"   Renamed {len(renames)} files/directories")
     print()
     
-    # Step 2: Process markdown files
-    print("📝 Step 2: Transforming markdown content...")
+    # Step 5: Process markdown files
+    print("📝 Step 5: Transforming markdown content...")
     md_files = list(content_path.rglob("*.md"))
     modified_count = 0
     
@@ -350,17 +602,27 @@ def main(content_dir: str = "./content"):
     print(f"   Modified {modified_count} of {len(md_files)} files")
     print()
     
-    # Step 3: Find and fix broken asset links
-    print("🔗 Step 3: Finding and fixing broken asset links...")
+    # Step 6: Find and fix broken asset links
+    print("🔗 Step 6: Finding and fixing broken asset links...")
     fixed_count, missing_count = find_and_fix_broken_assets(content_path)
     print(f"   Fixed {fixed_count} broken asset links")
     if missing_count > 0:
         print(f"   ⚠️  {missing_count} assets could not be found")
     print()
     
+    # Step 7: Fix broken exported image links
+    print("🔧 Step 7: Fixing broken exported image links...")
+    fixed_links = fix_broken_exported_image_links(content_path)
+    print(f"   Fixed {fixed_links} markdown files with broken image links")
+    print()
+    
     print("✅ Preprocessing complete!")
     print()
     print("Transformations applied:")
+    print("  • OneNote structure: MVPavan@Personal flattened")
+    print("  • PDF files: deleted")
+    print("  • Exported images: PNG → JPEG, moved to attachments")
+    print("  • Broken exported image links: fixed")
     print("  • File/folder names: spaces → dashes")
     print("  • Image links: ![](attachments/...) → ![[...]]")
     print("  • Heading links: [[#Parent#Child]] → [[#Child]]")

@@ -38,9 +38,9 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 #### String (Run-Time)
 - A String is a more flexible, dynamic container for text.
 - Storage: It stores data in three possible ways:
-	- Inlined (SSO): Small strings (up to 23 bytes) are stored directly inside the String variable itself (on the stack).
-	- Heap-Allocated: Large strings are stored in "Heap" memory.
-	- Reference to Literal: It can also act as a "view" of a StringLiteral to avoid copying.
+  - Inlined (SSO): Small strings (up to 23 bytes) are stored directly inside the String variable itself (on the stack).
+  - Heap-Allocated: Large strings are stored in "Heap" memory.
+  - Reference to Literal: It can also act as a "view" of a StringLiteral to avoid copying.
 - Mutability: It is mutable. You can append text, change characters, or clear it.
 - Management: It uses Mojo’s ASAP destruction. When a String variable is no longer used, Mojo automatically frees its heap memory.
 
@@ -54,7 +54,7 @@ Single instruction Multiple data, processor tech that allows you to perform an o
 | **Speed**       | Fastest             | Fast (but has management overhead) |
 | **Flexibility** | Fixed               | Can be changed/appended            |
 
-**Key Tip:** In Mojo, you should use `StringLiteral`  as much as possible for constants. Only convert to `String` when you actually need to modify the text or receive data from a user/file at runtime.
+**Key Tip:** In Mojo, you should use `StringLiteral`  as much as possible for constants. Only convert to `String` when you actually need to modify the text or receive data from a user/file at runtime.
 
 ### Collections
 List, Dict, Set, Optional
@@ -67,7 +67,7 @@ List, Dict, Set, Optional
 
 #### Dict
 - Dict key must conform to `KeyElement` trait, value must conform to `Copyable` trait
-- Dict iterators all yield references which are copied to declared name by default, we can use `ref` to avoid copy, but its a unmeasurable micro-optimization, but is useful with types that aren't `Copyable`.
+- Dict iterators all yield references which are copied to declared name by default, we can use `ref` to avoid copy, but its a unmeasurable micro-optimization, but is useful with types that aren't `Copyable`.
 
 #### Set
 - Set element must conform to `KeyElement` trait.
@@ -134,22 +134,22 @@ dig: 2
 
 ``` mojo
 trait SomeTrait:
-	fn required_method(self, x: Int): ...
+  fn required_method(self, x: Int): ...
 
 @fieldwise_init
 struct SomeStruct(SomeTrait):    
-	fn required_method(self, x: Int):        
-		print("hello traits", x)
+  fn required_method(self, x: Int):        
+    print("hello traits", x)
 
 fn fun_with_type(x: SomeStruct):
-	x.required_method(42)
+  x.required_method(42)
 
 fn fun_with_traits[T: SomeTrait](x: T):
     x.required_method(42)
 
 fn use_trait_function():    
-	var thing = SomeStruct()    
-	fun_with_traits(thing)
+  var thing = SomeStruct()    
+  fun_with_traits(thing)
 
 ```
 
@@ -182,7 +182,7 @@ def repeat[count: Int](msg: String):
 
 - `fn` : compiler doesn't allow fn to raise error without explicit raises
 - `def` : is always treated as raising function by default irrespective of the `def` code
-- If a non-raising function calls a raising function, it must handle any possible errors
+- If a non-raising function calls a raising function, it must handle any possible errors
 - Only non raising `fn` can be used with any `comptime` variables, as `comptime` is evaluated during compilation, compiler cannot handle errors, so we need a 100% guarantee of success
 
 ### Return values
@@ -190,7 +190,7 @@ def repeat[count: Int](msg: String):
 - syntax: `fn  -> type`
 - By default value is returned to called as an owned value
 - value may be implicitly converted to return type
--  can also return a mutable or immutable reference using a `ref` return value
+-  can also return a mutable or immutable reference using a `ref` return value
 
 ### Named Results
 
@@ -202,7 +202,7 @@ def get_name_tag(var name: String, out name_tag: NameTag):
 - allow a function to return a value that can't be moved or copied
 - function must initialize the out argument, by default its uninitialized
 - no explicit return required, if valid return is included its returned as usual 
-- A function can declare only one return value, whether it's declared using an `out` argument or using the standard `-> type` syntax
+- A function can declare only one return value, whether it's declared using an `out` argument or using the standard `-> type` syntax
 
 ```
 def get_name_tag(var name: String) -> NameTag:    ...
@@ -217,7 +217,7 @@ tag = get_name_tag("Judith")
 
 `...` in mojo functions represents its not defined now and should be defined by who ever uses it. 
 
-###  Copy Elision
+###  Copy Elision
 
 Or RVO - Return Value Optimization
 
@@ -228,11 +228,11 @@ struct ImmovableObject:
             self.name = name^
 
 def create_immovable_object(var name: String, out obj: ImmovableObject):    
-	obj = ImmovableObject(name^)    
-	obj.name += "!"    # obj is implicitly returned
+  obj = ImmovableObject(name^)    
+  obj.name += "!"    # obj is implicitly returned
 
 def main():    
-	my_obj = create_immovable_object("Blob")
+  my_obj = create_immovable_object("Blob")
 
 def create_immovable_object2(var name: String) -> ImmovableObject:
     obj = ImmovableObject(name^)
@@ -251,18 +251,18 @@ def create_immovable_object3(var name: String) -> ImmovableObject:
 
 ## Closure-Captures
 
-#### Capture (verb/noun)
+#### Capture (verb/noun)
 
-Its **mechanism** of accessing variables from an outer scope inside a nested function.
-Capture specifically refers to:
+Its **mechanism** of accessing variables from an outer scope inside a nested function.
+Capture specifically refers to:
 - The act of "grabbing" an outer variable
 - The individual variable being accessed (`a` is a "captured variable")
 - The mechanism used (copy, reference, mutable reference)
-#### Closure (noun)
+#### Closure (noun)
 
 A **closure** is a function that "remembers" the variables from the scope where it was created, even after that outer scope has finished executing.
-The **complete package**: a function bundled with its captured environment.
-**Closure** = **Code** + **Data** (captured variables)
+The **complete package**: a function bundled with its captured environment.
+**Closure** = **Code** + **Data** (captured variables)
 ### Closure vs Capture
 
 | Term        | What it is                  | Analogy                          |
@@ -272,13 +272,13 @@ The **complete package**: a function bundled with its captured environment.
 
 ```mojo
 fn outer():
-	var a = 1 # Will be captured
-	var b = 2 # Will be captured
-	
-	# This entire function + its access to 'a,b' together form a CLOSURE
-	fn inner(): # ← CLOSURE (the complete package) 
-		print(a) # ← CAPTURE of 'a'
-		print(b) # ← CAPTURE of 'b'
+  var a = 1 # Will be captured
+  var b = 2 # Will be captured
+  
+  # This entire function + its access to 'a,b' together form a CLOSURE
+  fn inner(): # ← CLOSURE (the complete package) 
+    print(a) # ← CAPTURE of 'a'
+    print(b) # ← CAPTURE of 'b'
 ```
 
 ### Closure Types
@@ -286,7 +286,7 @@ fn outer():
 | Type          | Keyword      | Use Case                                  |
 | ------------- | ------------ | ----------------------------------------- |
 | **Runtime**   | (none)       | Dynamic dispatch, simple nested functions |
-| **Parameter** | `@parameter` | Metaprogramming, `vectorize`, `map`       |
+| **Parameter** | `@parameter` | Metaprogramming, `vectorize`, `map`       |
 
 | Type              | Signature                 | State      | Use Case                      |
 | ----------------- | ------------------------- | ---------- | ----------------------------- |
@@ -310,5 +310,5 @@ fn outer():
 | `unified {mut}`   | **MUTABLE REF**        | ✅ Yes                | ✅ Yes       |
 | `unified {var x}` | **Transfer Ownership** | ✅ Yes                | ✅ Yes       |
 
-> [!note] A closure **has** captures. Captures **belong to** a closure.
+> [!note] A closure **has** captures. Captures **belong to** a closure.
 
