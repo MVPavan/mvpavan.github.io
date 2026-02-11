@@ -11,12 +11,14 @@
             "id": "2d3c7f5b5040ea74",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "CS/SystemDesign/Introduction.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-file",
+              "title": "Introduction"
             }
           }
         ]
@@ -154,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "CS/SystemDesign/Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Introduction"
             }
           }
         ],
