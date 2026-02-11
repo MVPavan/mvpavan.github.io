@@ -11,10 +11,12 @@
             "id": "2d3c7f5b5040ea74",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
         ]
@@ -152,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/temp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of temp"
+              "title": "Outline"
             }
           }
         ],
@@ -184,7 +185,7 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "06a39c1fa12998c9",
+  "active": "2d3c7f5b5040ea74",
   "lastOpenFiles": [
     "CS/Mojo/Notes/algorithm/parallelize.md",
     "AI/temp.md",
