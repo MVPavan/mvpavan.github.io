@@ -152,13 +152,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/temp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of temp"
+              "title": "Outline"
             }
           }
         ],
