@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "662c571c72f6129a",
+        "id": "5bf83e0f72a5873d",
         "type": "tabs",
         "children": [
           {
-            "id": "2d3c7f5b5040ea74",
+            "id": "a9c897e4d51a5af2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -183,12 +183,12 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "06a39c1fa12998c9",
+  "active": "a9c897e4d51a5af2",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/algorithm/parallelize.md",
     "AI/temp.md",
     "Invention Disclosure Form.md",
-    "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/Mojo/Notes/algorithm/Tiling-and-Unswitching.md",
     "CS/Mojo/Notes/Traits-&-Parameters.md",
