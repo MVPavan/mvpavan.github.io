@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/SystemDesign/Introduction.md",
+                "file": "CS/GPU/Intro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Intro"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/SystemDesign/Introduction.md",
+                "file": "CS/GPU/Intro.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction"
+              "title": "Outline of Intro"
             }
           }
         ],
@@ -205,6 +205,9 @@
   },
   "active": "52850229dbee1b93",
   "lastOpenFiles": [
+    "CS/SystemDesign/Introduction.md",
+    "CS/GPU/Intro.md",
+    "CS/GPU",
     "CS/Deployment/kubernetes/k8s-core-concepts.md",
     "CS/Deployment/kubernetes/02-installation.md",
     "CS/Deployment/kubernetes/01b-questions-answered.md",
@@ -241,14 +244,12 @@
     "Shortcuts.md",
     "CS/Mojo/Notes/Traits & Parameters.md",
     "CS/DSA/Algorithms/Introduction.md",
-    "CS/DSA/DataStructures/LinkedList.md",
     "CS/DSA/DataStructures",
     "CS/DSA/Algorithms",
     "CS/SystemDesign",
     "CS/Mojo/Notes/attachments/Pasted-image-20260108221717.png",
     "AI/Study/attachments/Pasted-image-20240703185030.png",
     "AI/Study/attachments/Pasted-image-20240703185009.png",
-    "AI/Study/attachments/Pasted-image-20240703184944.png",
-    "Untitled.base"
+    "AI/Study/attachments/Pasted-image-20240703184944.png"
   ]
 }
