@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "5bf83e0f72a5873d",
+        "id": "662c571c72f6129a",
         "type": "tabs",
         "children": [
           {
-            "id": "a9c897e4d51a5af2",
+            "id": "2d3c7f5b5040ea74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Deployment/kubernetes/kubectl-commands.md",
+                "file": "AI/Study/Loss---Metrics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubectl-commands"
-            }
-          },
-          {
-            "id": "52850229dbee1b93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/SystemDesign/Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Loss---Metrics"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/SystemDesign/Introduction.md",
+                "file": "AI/Study/Loss---Metrics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction"
+              "title": "Outline of Loss---Metrics"
             }
           }
         ],
@@ -203,20 +188,28 @@
       "obsidian-file-cleaner:Clean files": false
     }
   },
-  "active": "52850229dbee1b93",
+  "active": "2d3c7f5b5040ea74",
   "lastOpenFiles": [
+    "AI/Study/Mixture-of-Experts.md",
+    "AI/Study/Loss---Metrics.md",
+    "AI/Study/Evaluation.md",
+    "AI/EfficientML/Quantization.md",
+    "AI/EfficientML/Pruning.md",
+    "AI/EfficientML/NAS.md",
+    "AI/EfficientML/Efficient-ML.md",
+    "AI/Models/Vision/Vision-Transformer.md",
+    "CS/SystemDesign/Introduction.md",
     "CS/Deployment/kubernetes/k8s-core-concepts.md",
     "CS/Deployment/kubernetes/02-installation.md",
     "CS/Deployment/kubernetes/01b-questions-answered.md",
-    "CS/Deployment/kubernetes/01-concepts.md",
-    "CS/Deployment/Kubernetes.md",
-    "CS/Deployment/kubernetes",
     "CS/Deployment/kubernetes/kubectl-commands.md",
+    "CS/Deployment/kubernetes/01-concepts.md",
+    "CS/Deployment/kubernetes",
     "CS/Deployment",
-    "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/algorithm/parallelize.md",
     "AI/temp.md",
     "Invention Disclosure Form.md",
+    "conflict-files-obsidian-git.md",
     "CS/Mojo/Notes/Ownership & Lifecycle.md",
     "CS/Mojo/Notes/algorithm/Tiling-and-Unswitching.md",
     "CS/Mojo/Notes/Traits-&-Parameters.md",
@@ -234,14 +227,7 @@
     "AI/others",
     "CS/Mojo/Notes/algorithm/Tiling and Unswitching.md",
     "CS/Mojo/Notes/Basics.md",
-    "CS/Mojo/Introduction.md",
     "CS/Mojo/Notes/algorithm",
-    "CS/Mojo/Notes/StdLib.md",
-    "CS/DSA/Introduction.md",
-    "Shortcuts.md",
-    "CS/Mojo/Notes/Traits & Parameters.md",
-    "CS/DSA/Algorithms/Introduction.md",
-    "CS/DSA/DataStructures/LinkedList.md",
     "CS/DSA/DataStructures",
     "CS/DSA/Algorithms",
     "CS/SystemDesign",
